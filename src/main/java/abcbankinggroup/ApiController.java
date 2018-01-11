@@ -22,7 +22,7 @@ public class ApiController {
      * Add some comments
      */
     @ApiOperation("Create a new Lead")
-    @RequestMapping(value = "/register",
+    @RequestMapping(value = "/register-new",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
             method = RequestMethod.POST)
