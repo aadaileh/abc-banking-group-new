@@ -17,6 +17,6 @@ public class AbcBankingGroupApplication {
 	 * debugging mode) for local development.
 	 */
 	public static void main(String[] args) {
-		SpringApplication.run(AbcBankingGroupApplication.class,args);
+		SpringApplication.run(AbcBankingGroupApplication.class, args);
 	}
 }
