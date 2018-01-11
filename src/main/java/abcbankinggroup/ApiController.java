@@ -90,7 +90,7 @@ public class ApiController {
                 output.add("Read from DB: " + rs.getTimestamp("tick"));
             }
 
-            connection.close();
+//            connection.close();
 
         } catch (Exception e) {
 
