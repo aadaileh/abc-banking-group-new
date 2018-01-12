@@ -9,7 +9,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -24,6 +27,9 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 @RestController
+@Configuration
+@EnableAutoConfiguration
+@EnableDiscoveryClient
 public class ApiController {
 
     private static final Logger LOG = LoggerFactory.getLogger(ApiController.class);
@@ -81,7 +87,7 @@ public class ApiController {
 
         try (Connection connection = dataSource.getConnection()) {
             Statement stmt = connection.createStatement();
-            stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
+            stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks2 (tick timestamp)");
             stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
             ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
 
@@ -90,7 +96,7 @@ public class ApiController {
                 output.add("Read from DB: " + rs.getTimestamp("tick"));
             }
 
-//            connection.close();
+            connection.close();
 
         } catch (Exception e) {
 
