@@ -2,6 +2,12 @@ package abcbankinggroup;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import feign.Feign;
+import feign.auth.BasicAuthRequestInterceptor;
+import feign.gson.GsonDecoder;
+import feign.gson.GsonEncoder;
+import feign.okhttp.OkHttpClient;
+import feign.slf4j.Slf4jLogger;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -19,7 +25,9 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
+import javax.ws.rs.core.UriBuilder;
 import java.io.IOException;
+import java.net.URI;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -110,7 +118,44 @@ public class ApiController {
     }
 
 
-        @Bean
+    /**
+     * Add some comments
+     */
+    @ApiOperation("Create a new Lead")
+    @RequestMapping(value = "/call-the-new-service-on-the-cloud",
+            consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
+            method = RequestMethod.POST)
+    @ResponseBody
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Created"),
+            @ApiResponse(code = 401, message = "Unauthorized"),
+            @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.") })
+    public void callTheNewServiceOnTheCloud() {
+
+        SampleFeignClient bookClient = Feign.builder()
+                .client(new OkHttpClient())
+                .encoder(new GsonEncoder())
+                .decoder(new GsonDecoder())
+                .requestInterceptor(getRequestInterceptor())
+                .logger(new Slf4jLogger(SampleFeignClient.class))
+                .target(SampleFeignClient.class, "https://warm-harbor-89034.herokuapp.com/db");
+
+        bookClient.db();
+
+    }
+
+    private BasicAuthRequestInterceptor getRequestInterceptor() {
+        return new BasicAuthRequestInterceptor("apiuser", "pass");
+    }
+
+    private static URI getBaseURI() {
+        return UriBuilder.fromUri("https://warm-harbor-89034.herokuapp.com").build();
+    }
+
+
+
+    @Bean
     public DataSource dataSource() throws SQLException {
         if (dbUrl == null || dbUrl.isEmpty()) {
             return new HikariDataSource();
