@@ -33,6 +33,7 @@ import java.util.ArrayList;
 public class ApiController {
 
     private static final Logger LOG = LoggerFactory.getLogger(ApiController.class);
+
     @Value("${spring.datasource.url}")
     private String dbUrl;
 
@@ -83,6 +84,7 @@ public class ApiController {
             @ApiResponse(code = 201, message = "Created"),
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.") })
+
     public void db() {
 
         try (Connection connection = dataSource.getConnection()) {
@@ -99,9 +101,8 @@ public class ApiController {
             connection.close();
 
         } catch (Exception e) {
-
-            int x=0;
-
+            
+            LOG.debug(e.getMessage());
         }
     }
 
