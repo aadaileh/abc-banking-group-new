@@ -142,7 +142,6 @@ public class ApiController {
                 .target(SampleFeignClient.class, "https://warm-harbor-89034.herokuapp.com/db");
 
         bookClient.db();
-
     }
 
     private BasicAuthRequestInterceptor getRequestInterceptor() {
