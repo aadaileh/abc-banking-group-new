@@ -85,7 +85,7 @@ public class ApiController {
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.") })
 
-    public void db() {
+    public String db() {
 
         try (Connection connection = dataSource.getConnection()) {
             Statement stmt = connection.createStatement();
@@ -100,10 +100,13 @@ public class ApiController {
 
             connection.close();
 
+            return "ok, added";
+
         } catch (Exception e) {
-            
+
             LOG.debug(e.getMessage());
         }
+        return "";
     }
 
 
