@@ -17,11 +17,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
@@ -33,14 +34,17 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.UUID;
 
 @RestController
 @Configuration
 @EnableAutoConfiguration
 @EnableDiscoveryClient
-public class ApiController {
+@CrossOrigin(origins = "*", maxAge = 3600)
+@EnableSwagger2
+public class LoginServiceController {
 
-    private static final Logger LOG = LoggerFactory.getLogger(ApiController.class);
+    private static final Logger LOG = LoggerFactory.getLogger(LoginServiceController.class);
 
     @Value("${spring.datasource.url}")
     private String dbUrl;
@@ -52,7 +56,7 @@ public class ApiController {
      * Add some comments
      */
     @ApiOperation("Create a new Lead")
-    @RequestMapping(value = "/register-new",
+    @RequestMapping(value = "/api/login-service/register-new",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
             method = RequestMethod.POST)
@@ -62,6 +66,12 @@ public class ApiController {
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.") })
     public User register(@RequestBody User user) {
+
+        /**
+         * This is the way how to create UUID!!!!!
+         * To be used for creating transaction's UUID later on!!!!!!!
+         */
+        UUID.randomUUID().toString();
 
         boolean usernameAlreadyExists = false;
         if(usernameAlreadyExists) {
@@ -78,12 +88,11 @@ public class ApiController {
         return returnedUser;
     }
 
-
     /**
      * Add some comments
      */
     @ApiOperation("Create a new Lead")
-    @RequestMapping(value = "/db",
+    @RequestMapping(value = "/api/login-service/db",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
             method = RequestMethod.POST)
@@ -93,8 +102,9 @@ public class ApiController {
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.") })
 
-    public String db() {
+    public String db() throws SQLException {
 
+        DataSource dataSource = dataSource();
         try (Connection connection = dataSource.getConnection()) {
             Statement stmt = connection.createStatement();
             stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks2 (tick timestamp)");
@@ -122,26 +132,26 @@ public class ApiController {
      * Add some comments
      */
     @ApiOperation("Create a new Lead")
-    @RequestMapping(value = "/call-the-new-service-on-the-cloud",
+    @RequestMapping(value = "/api/login-service/call-the-new-service-on-the-cloud",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
             method = RequestMethod.POST)
     @ResponseBody
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "Created"),
-            @ApiResponse(code = 401, message = "Unauthorized"),
+            @ApiResponse(code = 405, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.") })
     public void callTheNewServiceOnTheCloud() {
 
-        SampleFeignClient bookClient = Feign.builder()
+        FeignClient bookClient = Feign.builder()
                 .client(new OkHttpClient())
                 .encoder(new GsonEncoder())
                 .decoder(new GsonDecoder())
                 .requestInterceptor(getRequestInterceptor())
-                .logger(new Slf4jLogger(SampleFeignClient.class))
-                .target(SampleFeignClient.class, "https://warm-harbor-89034.herokuapp.com/db");
+                .logger(new Slf4jLogger(FeignClient.class))
+                .target(FeignClient.class, "https://warm-harbor-89034.herokuapp.com/db");
 
-        bookClient.db();
+        bookClient.loginService(getSampleUser());
     }
 
     private BasicAuthRequestInterceptor getRequestInterceptor() {
@@ -152,9 +162,19 @@ public class ApiController {
         return UriBuilder.fromUri("https://warm-harbor-89034.herokuapp.com").build();
     }
 
+    private User getSampleUser() {
+        User returnedUser = new User();
 
+        returnedUser.setAddress("address");
+        returnedUser.setLastName("lastname");
+        returnedUser.setMail("email");
+        returnedUser.setName("name");
+        returnedUser.setPassword("password");
 
-    @Bean
+        return returnedUser;
+    }
+
+//    @Bean
     public DataSource dataSource() throws SQLException {
         if (dbUrl == null || dbUrl.isEmpty()) {
             return new HikariDataSource();
@@ -172,5 +192,9 @@ public class ApiController {
             HttpServletResponse response) throws IOException {
 
         response.sendError(HttpStatus.BAD_REQUEST.value());
+    }
+
+    public ResponseEntity handle() {
+        return new ResponseEntity(HttpStatus.OK);
     }
 }

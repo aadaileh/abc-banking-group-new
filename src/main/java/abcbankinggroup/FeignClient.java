@@ -6,7 +6,7 @@ import feign.RequestLine;
 
 import java.util.List;
 
-public interface SampleFeignClient {
+public interface FeignClient {
     @RequestLine("GET /{isbn}")
     User findByIsbn(@Param("isbn") String isbn);
 
@@ -15,7 +15,7 @@ public interface SampleFeignClient {
 
     @RequestLine("POST")
     @Headers("Content-Type: application/json")
-    void db();
+    User loginService(User user);
 }
 
 // Unit-Testing Code..
