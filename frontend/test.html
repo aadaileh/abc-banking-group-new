@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" language="javascript">
+       	$(document).ready(function(){
+               $("#Save").click(function(){
+
+                  var person = new Object();
+                  person.Name = $('#Name').val();
+                  person.EmailAddress = $('#EmailAddress').val();
+                  person.CustomFields = [0];
+                  person.CustomFields[0].Key = "[Country]";
+                  person.CustomFields[0].Value = $('#Country').val();;
+
+               $.ajax({
+                 url: 'http://localhost:8080/call-the-new-service-on-the-cloud',
+                 headers: {  'Access-Control-Allow-Origin': 'http://localhost' },
+                 type: 'POST',
+                 dataType: 'json',
+                 data:"",
+                 success: function(data,textStatus,xhr){
+
+                     console.log(data);
+                 },
+                 error: function(xhr,textStatus,errorThrown){
+                     console.log('Error Something');
+                 },
+                 beforeSend: function(xhr) {
+                    xhr.setRequestHeader("Authorization", "Basic YXBpdXNlcjpwYXNz"); 
+                 }
+             });
+         });
+     });
+        </script>
+    </head>
+
+    <body>
+        <div>
+            <p class="greeting-id">The ID is </p>
+            <p class="greeting-content">The content is </p>
+        </div>
+        <button id="Save">Save</button>
+    </body>
+</html>

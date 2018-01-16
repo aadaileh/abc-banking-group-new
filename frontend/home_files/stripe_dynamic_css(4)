@@ -1,0 +1,241 @@
+/*CACHED*//******************************************************************************************************
+ *            DYNAMIC STYLE FOR style-6a196-aaaeps1p
+ *                                 	 
+ ******************************************************************************************************/
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p  .preview-content-holder  {
+		
+						margin-right: 0px;
+						padding-bottom: 0px;
+						text-align: left;
+						max-width: 650px;
+						padding-right: 0px;
+						margin-top: 50px;
+						margin-left: 0px;
+						padding-top: 0px;
+						margin-bottom: 50px;
+						background-color: rgba(230, 210, 80, 0);
+						padding-left: 0px;	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .item-content:not(.blocks_layout)  {
+		
+						background-color: rgba(0, 0, 0, 0);	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-divider  {
+		
+						border-style: solid;
+						border-color: rgb(255, 255, 255);
+						border-bottom-width: 5px;
+						margin-top: 20px;
+						margin-bottom: 20px;
+						width: 100%;	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .inner-pic  {
+		
+						opacity: 0.8;
+						color: rgb(255, 255, 255);
+		    			-webkit-filter: brightness(0.6);	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-subtitle-holder  {
+		
+						max-width: 650px;	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .multi_layout .helper-div.middle-center .pic-side  {
+		
+						margin-left: -6%;	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .multi_layout .helper-div.middle-center  {
+		
+						padding-left: 6%;
+						padding-right: 6%;
+						width: 88%;	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .background-div  {
+			
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p.master.item-box   {
+		
+						background-color: rgb(244, 244, 244);	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-title  ,  .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-body h1  { 
+						font-family: "Playfair Display";
+						font-size: 40px;
+						color: rgb(255, 255, 255);
+						letter-spacing: 0.05em;
+						margin-top: 0px;
+						margin-bottom: 10px;
+						line-height: 1.0em;
+						background-color: rgba(255, 255, 255, 0);	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-item-links span  ,  .style-6a196-uw3vxk7s .style-6a196-aaaeps1p #sr-basket-widget *  { 
+						font-family: Abel;
+						font-size: 16px;
+						color: rgb(255, 255, 255);
+						padding-bottom: 15px;
+						border-color: rgba(0, 0, 0, 0);
+						letter-spacing: 0.1em;
+						padding-right: 20px;
+						margin-top: 20px;
+						padding-left: 20px;
+						border-radius: 0px;
+						padding-top: 15px;
+						margin-bottom: 15px;
+						border-width: 2px;
+						background-color: rgb(149, 143, 120);	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .stripe-background  {
+		
+						opacity: 0.61;	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-element.icon-source  {
+		
+						width: 50px;
+						margin-bottom: 15px;	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .background-image-div  {
+		
+						color: rgb(255, 255, 255);
+						opacity: 1;	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-link-img  {
+		
+						margin: 7px;	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-icon-holder  {
+		
+						margin-bottom: 40px;	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-body-holder  {
+		
+						max-width: 800px;	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p  .preview-content-wrapper  {
+		
+						text-align: left;
+						vertical-align: middle;	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-item-links span:hover  ,  .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-element.Link.hover-tester  { 
+						color: rgb(255, 255, 255);
+						background-color: rgb(0, 0, 0);	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .inner-pic-holder  {
+		
+						background-color: rgb(0, 0, 0);	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-item-links span:before  ,  .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .effect-tester  { 
+						background-color: rgb(0, 0, 0);	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-body  {
+		
+						font-family: Montserrat;
+						font-size: 14px;
+						color: rgb(255, 255, 255);
+						letter-spacing: 0.05em;
+						max-width: 1000px;
+						margin-top: 10px;
+						margin-bottom: 10px;
+						line-height: 1.4em;	
+		}
+	
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-social-holder  {
+		
+						margin-bottom: 10px;
+						margin-top: 10px;	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .middle_layout .helper-div  ,  .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .multi_layout .helper-div.middle-center .text-side  { 
+						max-width: 1000px;	
+		}
+	 .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-subtitle  ,  .style-6a196-uw3vxk7s .style-6a196-aaaeps1p .preview-body h2  { 
+						line-height: 1.4em;
+						font-size: 16px;
+						color: rgb(255, 255, 255);
+						letter-spacing: 0.05em;
+						margin-right: 0px;
+						margin-top: 10px;
+						margin-left: 0px;
+						margin-bottom: 10px;
+						font-family: "Playfair Display";	
+		}
+
+/******************************************************************************************************
+ *            UNIQUE STYLE
+ *                                 	 
+ ******************************************************************************************************/
+ .style-6a196-aaaeps1p #vbid-6a196-ombmtt34 .preview-content-holder{
+				
+							text-align : center;
+					
+				}
+
+
+ .style-6a196-aaaeps1p #vbid-6a196-iiasnnxy.inner-pic{
+				
+							background-position : 47.0449% 12.9383%;
+					
+				} .style-6a196-aaaeps1p #vbid-6a196-bamgyt1m.inner-pic{
+				
+							background-size : 143%;
+					
+				} .style-6a196-aaaeps1p #vbid-6a196-ibw3nsau.inner-pic{
+				
+							background-size : contain;
+					
+							background-position : 50% 50%;
+					
+				} .style-6a196-aaaeps1p #vbid-6a196-mkrazfkl.inner-pic{
+				
+							background-position : 38.5371% 17.057%;
+					
+				} .style-6a196-aaaeps1p #vbid-6a196-npuf4m50.inner-pic{
+				
+							background-size : cover;
+					
+							background-position : 31.5622% 47.7852%;
+					
+				} .style-6a196-aaaeps1p #vbid-6a196-dacvq1b6.inner-pic{
+				
+							background-size : cover;
+					
+							background-position : 29% 19%;
+					
+				} .style-6a196-aaaeps1p #vbid-6a196-gieps8ij.inner-pic{
+				
+							background-position : 48.2968368530273% 17.8304233551025%;
+					
+				} .style-6a196-aaaeps1p #vbid-6a196-frh65dyh.inner-pic{
+				
+							background-position : 40.6865% 31.5728%;
+					
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .style-6a196-aaaeps1p #vbid-6a196-ombmtt34 .preview-content-wrapper{
+				
+							text-align : center;
+					
+				}
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************************************
+ *            WEBSITE STYLE
+ *                                 	 
+ ******************************************************************************************************/

@@ -1,0 +1,566 @@
+/******************************************************************************************************
+ *                                              STRIPE DATA STYLE
+ *                                 	 
+ ******************************************************************************************************/
+
+ 
+ #vbid-3c6e4999-53vf6a0x.master.item-box    {
+	min-height: 516px;
+}
+ 
+ #vbid-3c6e4999-4rgcfalb   {
+	background-position: 47.9101371765137% 31.5561962127686%;
+}
+
+ 
+ #vbid-3c6e4999-qonweyjx   {
+	background-position: 50.5673980712891% 54.6576156616211%;
+}
+ 
+ #vbid-3c6e4999-ybbjewrc.master.item-box    {
+	padding-top: 70px;
+	padding-bottom: 60px;
+	min-height: 202px;
+} 
+ #vbid-3c6e4999-ybbjewrc.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-tk0c6odo.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 20px;
+} 
+ #vbid-3c6e4999-tk0c6odo.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-334a6yjs   {
+	background-position: 44.2089881896973% 48.3110046386719%;
+}
+ 
+ #vbid-3c6e4999-imvtrfs9.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 688px;
+}
+ 
+ #vbid-3c6e4999-bw97hjlc.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 392px;
+}
+ 
+ #vbid-3c6e4999-g9tnpav0   {
+	background-position: 51.7937202453613% 11.3861389160156%;
+}
+ 
+ #vbid-3c6e4999-gbm8cxwb.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 714px;
+}
+ 
+ #vbid-3c6e4999-bucrcoog.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 312px;
+} 
+ #vbid-3c6e4999-bucrcoog.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-5iu8ta7a.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 310px;
+}
+ 
+ #vbid-3c6e4999-zbplptv0.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 1343px;
+} 
+ #vbid-3c6e4999-zbplptv0.item-box > .item-wrapper    {
+	max-width: 1416px;
+}
+ 
+ #vbid-3c6e4999-mru93chc.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 242px;
+}
+ 
+ #vbid-3c6e4999-qem8ls7f.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 416px;
+}
+ 
+ #vbid-3c6e4999-smqi0lbv.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 428px;
+}
+ 
+ #vbid-3c6e4999-hxuffsbk   {
+	background-position: 53.9237670898438% 51.5926666259766%;
+}
+ 
+ #vbid-3c6e4999-eqbzvavs.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 1343px;
+}
+ 
+ #vbid-3c6e4999-iqzawh5d.master.item-box    {
+} 
+ #vbid-3c6e4999-iqzawh5d.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 501px;
+}
+ 
+ #vbid-3c6e4999-myksenpi.master.item-box    {
+	min-height: 603px;
+}
+ 
+ #vbid-3c6e4999-ryxc2fho.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 229px;
+}
+ 
+ #vbid-3c6e4999-ruo7wysr.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 81px;
+}
+ 
+ #vbid-3c6e4999-vwgksjtr.master.item-box    {
+	padding-top: 15px;
+}
+ 
+ #vbid-3c6e4999-a4d5ez0f.master.item-box    {
+	min-height: 386px;
+}
+ 
+ #vbid-3c6e4999-dygalybn   {
+	background-position: 50% 31.2688827514648%;
+}
+ 
+ #vbid-3c6e4999-baqois0y   {
+	background-position: 48.4326019287109% 71.0374603271484%;
+}
+ 
+ #vbid-3c6e4999-sdaqnamz   {
+	background-position: 46.8609848022461% 26.2973518371582%;
+}
+ 
+ #vbid-3c6e4999-flfdspvk.master.item-box    {
+	padding-bottom: 0px;
+	min-height: 883px;
+} 
+ #vbid-3c6e4999-flfdspvk.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-1eny5bcv.master.item-box    {
+	min-height: 699px;
+}
+ 
+ #vbid-3c6e4999-nsufbbnx   {
+	background-position: 54.0752334594727% 91.5584411621094%;
+}
+ 
+ #vbid-3c6e4999-ghjjbhgw.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 296px;
+}
+ 
+ #vbid-3c6e4999-rx2ipk9b.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 281px;
+}
+ 
+ #vbid-3c6e4999-seqildax.master.item-box    {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	min-height: 202px;
+} 
+ #vbid-3c6e4999-seqildax.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-szdlbgiz.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 35px;
+	min-height: 1343px;
+} 
+ #vbid-3c6e4999-szdlbgiz.item-box > .item-wrapper    {
+	max-width: 1168px;
+}
+ 
+ #vbid-3c6e4999-fybhyaev.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 257px;
+}
+ 
+ #vbid-3c6e4999-bx07rwbe.master.item-box    {
+	min-height: 231px;
+}
+ 
+ #vbid-3c6e4999-vnv97bvy   {
+	background-position: 48.2062797546387% 23.9910316467285%;
+}
+ 
+ #vbid-3c6e4999-ujulrtiv.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 371px;
+}
+ 
+ #vbid-3c6e4999-vx20wnca.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 496px;
+}
+ 
+ #vbid-3c6e4999-1fcjqyzj   {
+	background-position: 54.0358734130859% 100%;
+}
+ 
+ #vbid-3c6e4999-h2s2v7co   {
+	background-position: 12.0986547470093% 42.2062797546387%;
+}
+ 
+ #vbid-3c6e4999-fi3g9xn1.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 376px;
+}
+ 
+ #vbid-3c6e4999-jb5min65.master.item-box    {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	min-height: 114px;
+} 
+ #vbid-3c6e4999-jb5min65.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-nrzefzjh   {
+	background-position: 51.8808784484863% 24.1324920654297%;
+}
+ 
+ #vbid-3c6e4999-dayp9ufn.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 802px;
+}
+ 
+ #vbid-3c6e4999-b4be7edp   {
+	background-position: 46.9696960449219% 89.3939361572266%;
+}
+ 
+ #vbid-3c6e4999-glvf0jbj.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 85px;
+}
+ 
+ #vbid-3c6e4999-4otc69py.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 334px;
+}
+ 
+ #vbid-3c6e4999-ptxyahqr.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 426px;
+}
+ 
+ #vbid-3c6e4999-2kze7dnm.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 514px;
+}
+ 
+ #vbid-3c6e4999-geq8r85w.master.item-box    {
+} 
+ #vbid-3c6e4999-geq8r85w.master.item-box    {
+	min-height: 365px;
+}
+ 
+ #vbid-3c6e4999-jsdsml5m.master.item-box    {
+	min-height: 773px;
+}
+ 
+ #vbid-3c6e4999-inyugt6q.master.item-box    {
+	padding-top: 0px;
+	min-height: 423px;
+}
+ 
+ #vbid-3c6e4999-smqsghs9.master.item-box    {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-height: 114px;
+} 
+ #vbid-3c6e4999-smqsghs9.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-iimqisar.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 421px;
+}
+ 
+ #vbid-3c6e4999-yprewfsn   {
+	background-position: 51.9258079528809% 44.8459205627441%;
+}
+ 
+ #vbid-3c6e4999-ri352cku   {
+	background-size: 92%;
+}
+ 
+ #vbid-3c6e4999-sxbg5wpu.master.item-box    {
+	padding-top: 60px;
+	padding-bottom: 80px;
+	min-height: 1343px;
+} 
+ #vbid-3c6e4999-sxbg5wpu.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-7q2uegyg.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 376px;
+} 
+ #vbid-3c6e4999-7q2uegyg.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-cgvlti3l.master.item-box    {
+	padding-top: 70px;
+	padding-bottom: 70px;
+} 
+ #vbid-3c6e4999-cgvlti3l.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-ti8qukzw.master.item-box    {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-height: 114px;
+} 
+ #vbid-3c6e4999-ti8qukzw.item-box > .item-wrapper    {
+	max-width: 1270px;
+}
+ 
+ #vbid-3c6e4999-eftnhvk4   {
+	background-position: 23.3408069610596% 0%;
+}
+ 
+ #vbid-3c6e4999-rbepkwjo.master.item-box    {
+	padding-top: 0px;
+	min-height: 503px;
+} 
+ #vbid-3c6e4999-rbepkwjo.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-uyr8wslp.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 147px;
+}
+ 
+ #vbid-3c6e4999-ntodshq5.master.item-box    {
+	min-height: 551px;
+}
+ 
+ #vbid-3c6e4999-g2vt2zvn.master.item-box    {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-height: 114px;
+} 
+ #vbid-3c6e4999-g2vt2zvn.item-box > .item-wrapper    {
+	max-width: 1144px;
+}
+ 
+ #vbid-3c6e4999-rbjsbxho   {
+	background-position: 43.6865196228027% 53.7792205810547%;
+}
+ 
+ #vbid-3c6e4999-6g49cqh6.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 682px;
+}
+ 
+ #vbid-3c6e4999-avkdr812.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 366px;
+}
+ 
+ #vbid-3c6e4999-5yiw9ciy.master.item-box    {
+	min-height: 231px;
+}
+ 
+ #vbid-3c6e4999-p6jxfdjb.master.item-box    {
+	padding-top: 70px;
+	padding-bottom: 70px;
+} 
+ #vbid-3c6e4999-p6jxfdjb.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-by3podba.master.item-box    {
+	padding-top: 70px;
+	padding-bottom: 70px;
+} 
+ #vbid-3c6e4999-by3podba.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-v6p5mjqn.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 704px;
+}
+ 
+ #vbid-3c6e4999-7vg7eill   {
+	background-position: 48.6415901184082% 18.5064926147461%;
+}
+ 
+ #vbid-3c6e4999-hcylztwi   {
+	background-size: contain;
+}
+ 
+ #vbid-3c6e4999-alril57x   {
+	background-position: 45.6293716430664% 22.344690322876%;
+}
+ 
+ #vbid-3c6e4999-lyexmhjx.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 507px;
+}
+ 
+ #vbid-3c6e4999-hsrib6mu.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 140px;
+}
+ 
+ #vbid-3c6e4999-6ym15v30   {
+	background-size: contain;
+}
+ 
+ #vbid-3c6e4999-ltqfxpgg.master.item-box    {
+} 
+ #vbid-3c6e4999-ltqfxpgg.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 404px;
+} 
+ #vbid-3c6e4999-ltqfxpgg.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-bou91oi9   {
+	background-position: 48.6415901184082% 26.6233768463135%;
+}
+ 
+ #vbid-3c6e4999-lalbjep0   {
+	background-position: 41.9580421447754% 0%;
+}
+ 
+ #vbid-3c6e4999-twmmrbaf.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 312px;
+}
+ 
+ #vbid-3c6e4999-eetaoxm1   {
+	background-position: 51.3452911376953% 16.8316841125488%;
+}
+ 
+ #vbid-3c6e4999-3wdjf5dk.master.item-box    {
+} 
+ #vbid-3c6e4999-3wdjf5dk.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 389px;
+}
+ 
+ #vbid-3c6e4999-rc61rmak.master.item-box    {
+	padding-top: 40px;
+	padding-bottom: 40px;
+} 
+ #vbid-3c6e4999-rc61rmak.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-9jvlq17z   {
+	background-position: 36.0986557006836% 48.3706703186035%;
+}
+ 
+ #vbid-3c6e4999-drm6mgas.master.item-box    {
+	padding-top: 40px;
+	padding-bottom: 40px;
+} 
+ #vbid-3c6e4999-drm6mgas.item-box > .item-wrapper    {
+	max-width: 1000px;
+}
+ 
+ #vbid-3c6e4999-ufthcydi.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 427px;
+}
+ 
+ #vbid-3c6e4999-tip2rlev.master.item-box    {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	min-height: 1343px;
+}
+ 
+ #vbid-3c6e4999-tpo22pft.master.item-box    {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-height: 114px;
+} 
+ #vbid-3c6e4999-tpo22pft.item-box > .item-wrapper    {
+	max-width: 1144px;
+}
+ 
+ #vbid-3c6e4999-78zsgaix.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 604px;
+}
+ 
+ #vbid-3c6e4999-vjanbqd8   {
+	background-position: 49.8955078125% 0.613496959209442%;
+}
+ 
+ #vbid-3c6e4999-mfuwbfvz   {
+	background-position: 56.0606079101563% 100%;
+}
+ 
+ #vbid-3c6e4999-iylaqv52   {
+	background-size: contain;
+}
+ 
+ #vbid-3c6e4999-xvp6i9u7.master.item-box    {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 417px;
+}
