@@ -1,0 +1,7 @@
+params:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    jdbcUrl: jdbc:mysql://b9579c6ae9cba0:89a88141@us-cdbr-iron-east-05.cleardb.net/heroku_2e3934b285290c8?reconnect=true
+    username: b9579c6ae9cba0
+    password: 89a88141
+    maximumPoolSize: 50

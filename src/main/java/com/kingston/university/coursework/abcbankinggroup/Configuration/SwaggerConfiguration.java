@@ -1,4 +1,4 @@
-package abcbankinggroup.configuration;
+package com.kingston.university.coursework.abcbankinggroup.Configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,7 +19,7 @@ public class SwaggerConfiguration {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("abcbankinggroup"))
+                .apis(RequestHandlerSelectors.basePackage("com/kingston/university/coursework/abcbankinggroup"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo());

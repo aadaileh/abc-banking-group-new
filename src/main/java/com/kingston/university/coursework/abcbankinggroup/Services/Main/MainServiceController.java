@@ -1,5 +1,7 @@
-package abcbankinggroup;
+package com.kingston.university.coursework.abcbankinggroup.Services.Main;
 
+import com.kingston.university.coursework.abcbankinggroup.Clients.FeignClient;
+import com.kingston.university.coursework.abcbankinggroup.DTOs.User;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import feign.Feign;
@@ -22,6 +24,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
@@ -40,7 +43,7 @@ import java.util.UUID;
 @EnableAutoConfiguration
 @EnableDiscoveryClient
 @CrossOrigin(origins = "*", maxAge = 3600)
-//@EnableSwagger2
+@EnableSwagger2
 public class MainServiceController {
 
     private static final Logger LOG = LoggerFactory.getLogger(MainServiceController.class);

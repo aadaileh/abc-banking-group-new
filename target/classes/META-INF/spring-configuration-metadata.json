@@ -2,6 +2,11 @@
   "hints": [],
   "groups": [
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource",
+      "type": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource",
       "type": "abcbankinggroup.configuration.DataBaseConfiguration"
@@ -9,8 +14,18 @@
   ],
   "properties": [
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.allow-pool-suspension",
+      "type": "java.lang.Boolean"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource.allow-pool-suspension",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.auto-commit",
       "type": "java.lang.Boolean"
     },
     {
@@ -19,8 +34,18 @@
       "type": "java.lang.Boolean"
     },
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.catalog",
+      "type": "java.lang.String"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource.catalog",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.connection-init-sql",
       "type": "java.lang.String"
     },
     {
@@ -29,9 +54,19 @@
       "type": "java.lang.String"
     },
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.connection-test-query",
+      "type": "java.lang.String"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource.connection-test-query",
       "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.connection-timeout",
+      "type": "java.lang.Long"
     },
     {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
@@ -39,8 +74,18 @@
       "type": "java.lang.Long"
     },
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.data-source-class-name",
+      "type": "java.lang.String"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource.data-source-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.data-source-j-n-d-i",
       "type": "java.lang.String"
     },
     {
@@ -49,9 +94,19 @@
       "type": "java.lang.String"
     },
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.data-source-properties",
+      "type": "java.util.Properties"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource.data-source-properties",
       "type": "java.util.Properties"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.driver-class-name",
+      "type": "java.lang.String"
     },
     {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
@@ -59,9 +114,19 @@
       "type": "java.lang.String"
     },
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.health-check-properties",
+      "type": "java.util.Properties"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource.health-check-properties",
       "type": "java.util.Properties"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.health-check-registry",
+      "type": "java.lang.Object"
     },
     {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
@@ -69,13 +134,28 @@
       "type": "java.lang.Object"
     },
     {
-      "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
       "name": "params.datasource.idle-timeout",
       "type": "java.lang.Long"
     },
     {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
+      "name": "params.datasource.idle-timeout",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
       "name": "params.datasource.initialization-fail-fast",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
+      "name": "params.datasource.initialization-fail-fast",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.isolate-internal-queries",
       "type": "java.lang.Boolean"
     },
     {
@@ -84,9 +164,21 @@
       "type": "java.lang.Boolean"
     },
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.jdbc-url",
+      "type": "java.lang.String"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource.jdbc-url",
       "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "deprecated": true,
+      "name": "params.datasource.jdbc4-connection-test",
+      "type": "java.lang.Boolean",
+      "deprecation": {}
     },
     {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
@@ -96,8 +188,18 @@
       "deprecation": {}
     },
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.leak-detection-threshold",
+      "type": "java.lang.Long"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource.leak-detection-threshold",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.max-lifetime",
       "type": "java.lang.Long"
     },
     {
@@ -106,9 +208,19 @@
       "type": "java.lang.Long"
     },
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.maximum-pool-size",
+      "type": "java.lang.Integer"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource.maximum-pool-size",
       "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.metric-registry",
+      "type": "java.lang.Object"
     },
     {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
@@ -116,9 +228,19 @@
       "type": "java.lang.Object"
     },
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.metrics-tracker-factory",
+      "type": "com.zaxxer.hikari.metrics.MetricsTrackerFactory"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource.metrics-tracker-factory",
       "type": "com.zaxxer.hikari.metrics.MetricsTrackerFactory"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.minimum-idle",
+      "type": "java.lang.Integer"
     },
     {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
@@ -126,8 +248,18 @@
       "type": "java.lang.Integer"
     },
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.password",
+      "type": "java.lang.String"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.pool-name",
       "type": "java.lang.String"
     },
     {
@@ -136,8 +268,18 @@
       "type": "java.lang.String"
     },
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.read-only",
+      "type": "java.lang.Boolean"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource.read-only",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.register-mbeans",
       "type": "java.lang.Boolean"
     },
     {
@@ -146,9 +288,19 @@
       "type": "java.lang.Boolean"
     },
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.scheduled-executor-service",
+      "type": "java.util.concurrent.ScheduledThreadPoolExecutor"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource.scheduled-executor-service",
       "type": "java.util.concurrent.ScheduledThreadPoolExecutor"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.transaction-isolation",
+      "type": "java.lang.String"
     },
     {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
@@ -156,9 +308,19 @@
       "type": "java.lang.String"
     },
     {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.username",
+      "type": "java.lang.String"
+    },
+    {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",
       "name": "params.datasource.username",
       "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.kingston.university.coursework.abcbankinggroup.Configuration.DataBaseConfiguration",
+      "name": "params.datasource.validation-timeout",
+      "type": "java.lang.Long"
     },
     {
       "sourceType": "abcbankinggroup.configuration.DataBaseConfiguration",

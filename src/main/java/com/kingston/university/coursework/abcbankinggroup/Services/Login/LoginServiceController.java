@@ -1,7 +1,8 @@
-package abcbankinggroup;
+package com.kingston.university.coursework.abcbankinggroup.Services.Login;
 
-import com.zaxxer.hikari.HikariConfig;
-import com.zaxxer.hikari.HikariDataSource;
+import com.kingston.university.coursework.abcbankinggroup.Clients.FeignClient;
+import com.kingston.university.coursework.abcbankinggroup.DTOs.User;
+import com.kingston.university.coursework.abcbankinggroup.Services.Login.impl.LoginServiceImplentations;
 import feign.Feign;
 import feign.auth.BasicAuthRequestInterceptor;
 import feign.gson.GsonDecoder;
@@ -29,12 +30,7 @@ import javax.sql.DataSource;
 import javax.ws.rs.core.UriBuilder;
 import java.io.IOException;
 import java.net.URI;
-import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.UUID;
 
 @RestController
 @Configuration
@@ -42,7 +38,7 @@ import java.util.UUID;
 @EnableDiscoveryClient
 @CrossOrigin(origins = "*", maxAge = 3600)
 @EnableSwagger2
-public class LoginServiceController {
+public class LoginServiceController extends LoginServiceImplentations {
 
     private static final Logger LOG = LoggerFactory.getLogger(LoginServiceController.class);
 
@@ -52,41 +48,8 @@ public class LoginServiceController {
     @Autowired
     private DataSource dataSource;
 
-    /**
-     * Add some comments
-     */
-    @ApiOperation("Create a new Lead")
-    @RequestMapping(value = "/api/login-service/register-new",
-            consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
-            produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
-            method = RequestMethod.POST)
-    @ResponseBody
-    @ApiResponses(value = {
-            @ApiResponse(code = 201, message = "Created"),
-            @ApiResponse(code = 401, message = "Unauthorized"),
-            @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.") })
-    public User register(@RequestBody User user) {
-
-        /**
-         * This is the way how to create UUID!!!!!
-         * To be used for creating transaction's UUID later on!!!!!!!
-         */
-        UUID.randomUUID().toString();
-
-        boolean usernameAlreadyExists = false;
-        if(usernameAlreadyExists) {
-            throw new IllegalArgumentException("error.username");
-        }
-        User returnedUser = new User();
-
-        returnedUser.setAddress(user.getAddress());
-        returnedUser.setLastName(user.getLastName());
-        returnedUser.setMail(user.getMail());
-        returnedUser.setName(user.getName());
-        returnedUser.setPassword(user.getPassword());
-
-        return returnedUser;
-    }
+    @Autowired
+    private LoginServiceImplentations loginService;
 
     /**
      * Add some comments
@@ -101,30 +64,9 @@ public class LoginServiceController {
             @ApiResponse(code = 201, message = "Created"),
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.") })
-
     public String db() throws SQLException {
-
-        DataSource dataSource = dataSource();
-        try (Connection connection = dataSource.getConnection()) {
-            Statement stmt = connection.createStatement();
-            stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks2 (tick timestamp)");
-            stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
-            ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
-
-            ArrayList<String> output = new ArrayList<String>();
-            while (rs.next()) {
-                output.add("Read from DB: " + rs.getTimestamp("tick"));
-            }
-
-            connection.close();
-
-            return "ok, added";
-
-        } catch (Exception e) {
-
-            LOG.debug(e.getMessage());
-        }
-        return "";
+        int x = 0;
+        return loginService.dbService();
     }
 
 
@@ -174,18 +116,7 @@ public class LoginServiceController {
         return returnedUser;
     }
 
-//    @Bean
-    public DataSource dataSource() throws SQLException {
-        if (dbUrl == null || dbUrl.isEmpty()) {
-            return new HikariDataSource();
-        } else {
-            HikariConfig config = new HikariConfig();
-            config.setJdbcUrl(dbUrl);
-            config.setUsername("b9579c6ae9cba0");
-            config.setPassword("89a88141");
-            return new HikariDataSource(config);
-        }
-    }
+
     @ExceptionHandler
     void handleIllegalArgumentException(
             IllegalArgumentException e,

@@ -1,4 +1,4 @@
-package abcbankinggroup.configuration;
+package com.kingston.university.coursework.abcbankinggroup.Configuration;
 
 
 import com.zaxxer.hikari.HikariConfig;

@@ -1,4 +1,4 @@
-package abcbankinggroup;
+package com.kingston.university.coursework.abcbankinggroup.DTOs;
 
 public class User {
 

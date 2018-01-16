@@ -1,4 +1,4 @@
-package abcbankinggroup.configuration;
+package com.kingston.university.coursework.abcbankinggroup.Configuration;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

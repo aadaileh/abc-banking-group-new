@@ -1,5 +1,6 @@
-package abcbankinggroup;
+package com.kingston.university.coursework.abcbankinggroup.Clients;
 
+import com.kingston.university.coursework.abcbankinggroup.DTOs.User;
 import feign.Headers;
 import feign.Param;
 import feign.RequestLine;
