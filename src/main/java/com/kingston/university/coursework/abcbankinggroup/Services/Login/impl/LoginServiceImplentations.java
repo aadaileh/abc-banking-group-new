@@ -32,18 +32,18 @@ public class LoginServiceImplentations {
         DataSource dataSource = databaseConnectionSingleton.dataSource();
         try (Connection connection = dataSource.getConnection()) {
             Statement stmt = connection.createStatement();
-            stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks2 (tick timestamp)");
+            stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
             stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
-            ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
+            ResultSet resultSet = stmt.executeQuery("SELECT tick FROM ticks");
 
             ArrayList<String> output = new ArrayList<String>();
-            while (rs.next()) {
-                output.add("Read from DB: " + rs.getTimestamp("tick"));
+            while (resultSet.next()) {
+                output.add("Read from DB: " + resultSet.getTimestamp("tick"));
             }
 
             connection.close();
 
-            return "ok, added";
+            return output.toString(); //"ok, added";
 
         } catch (Exception e) {
 
