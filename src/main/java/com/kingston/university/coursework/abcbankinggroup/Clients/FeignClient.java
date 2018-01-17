@@ -1,5 +1,6 @@
 package com.kingston.university.coursework.abcbankinggroup.Clients;
 
+import com.kingston.university.coursework.abcbankinggroup.DTOs.Credentials;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.User;
 import feign.Headers;
 import feign.Param;
@@ -16,7 +17,7 @@ public interface FeignClient {
 
     @RequestLine("POST")
     @Headers("Content-Type: application/json")
-    User loginService(User user);
+    User loginServiceVerifyLogin(Credentials credentials);
 }
 
 // Unit-Testing Code..

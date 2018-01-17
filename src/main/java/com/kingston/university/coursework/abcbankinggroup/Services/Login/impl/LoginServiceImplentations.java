@@ -1,6 +1,8 @@
 package com.kingston.university.coursework.abcbankinggroup.Services.Login.impl;
 
 import com.kingston.university.coursework.abcbankinggroup.Connection.DatabaseConnectionSingleton;
+import com.kingston.university.coursework.abcbankinggroup.DTOs.Credentials;
+import com.kingston.university.coursework.abcbankinggroup.DTOs.User;
 import com.kingston.university.coursework.abcbankinggroup.Services.Login.LoginServiceController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +15,6 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
 
 @Service
 public class LoginServiceImplentations {
@@ -23,32 +24,67 @@ public class LoginServiceImplentations {
     @Value("${spring.datasource.url}")
     private String dbUrl;
 
+    @Value("${spring.datasource.username}")
+    private String username;
+
+    @Value("${spring.datasource.password}")
+    private String password;
+
     @Autowired
     private DataSource dataSource;
 
-    public String dbService()  throws SQLException {
-        DatabaseConnectionSingleton databaseConnectionSingleton = DatabaseConnectionSingleton.getInstance();
-        databaseConnectionSingleton.setDbUrl(dbUrl);
-        DataSource dataSource = databaseConnectionSingleton.dataSource();
-        try (Connection connection = dataSource.getConnection()) {
-            Statement stmt = connection.createStatement();
-            stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
-            stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
-            ResultSet resultSet = stmt.executeQuery("SELECT tick FROM ticks");
+    public User verifyCredentials(Credentials credentials) throws SQLException {
 
-            ArrayList<String> output = new ArrayList<String>();
+        DataSource dataSource = getDataSource();
+        Connection connection = null;
+        User user = new User();
+
+        try {
+            connection = dataSource.getConnection();
+            Statement stmt = connection.createStatement();
+            ResultSet resultSet = stmt.executeQuery(
+                    "SELECT * " +
+                            "FROM client " +
+                            "WHERE username_card_id = '" + credentials.getUsername() + "' " +
+                            "AND password_pin = '" + credentials.getPassword() + "'");
+
+            user.setLoggedIn(false);
+
             while (resultSet.next()) {
-                output.add("Read from DB: " + resultSet.getTimestamp("tick"));
+                user.setLoggedIn(true);
+                user.setName(resultSet.getString("user_name"));
+                user.setEmail(resultSet.getString("user_email"));
+                user.setAddress(resultSet.getString("user_address"));
+
+                int updatedRowId = updateRecord(stmt, resultSet);
             }
 
-            connection.close();
-
-            return output.toString(); //"ok, added";
+            return user;
 
         } catch (Exception e) {
 
             LOG.debug(e.getMessage());
+
+        } finally {
+            connection.close();
         }
-        return "";
+
+        return user;
+    }
+
+    private int updateRecord(Statement stmt, ResultSet resultSet) throws SQLException {
+        String updateRowWithTimestamp = "UPDATE client " +
+                "SET last_logged_in = NOW() " +
+                "WHERE id = " + resultSet.getRowId(0);
+        return stmt.executeUpdate(
+                updateRowWithTimestamp);
+    }
+
+    private DataSource getDataSource() throws SQLException {
+        DatabaseConnectionSingleton databaseConnectionSingleton = DatabaseConnectionSingleton.getInstance();
+        databaseConnectionSingleton.setDbUrl(dbUrl);
+        databaseConnectionSingleton.setUsername(username);
+        databaseConnectionSingleton.setPassword(password);
+        return databaseConnectionSingleton.dataSource();
     }
 }

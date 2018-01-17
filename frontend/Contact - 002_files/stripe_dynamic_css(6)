@@ -1,0 +1,215 @@
+/*CACHED*//******************************************************************************************************
+ *            DYNAMIC STYLE FOR style-6a196-4wbc7mra
+ *                                 	 
+ ******************************************************************************************************/
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra  .preview-content-holder  {
+		
+						margin-right: 0px;
+						padding-bottom: 0px;
+						text-align: center;
+						max-width: 500px;
+						padding-right: 0px;
+						margin-top: 30px;
+						margin-left: 0px;
+						padding-top: 0px;
+						margin-bottom: 45px;
+						background-color: rgba(0, 0, 0, 0);
+						padding-left: 0px;	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .item-content:not(.blocks_layout)  {
+		
+						background-color: rgb(227, 227, 227);	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-divider  {
+		
+						margin-bottom: 20px;
+						border-bottom-width: 1px;
+						margin-top: 10px;
+						border-color: rgb(0, 0, 0);
+						width: 10%;	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .inner-pic  {
+		
+						color: rgb(0, 0, 0);
+						opacity: 1;
+		    			-webkit-filter: brightness(0.6);	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-form .Field  {
+		
+						border-width: 0px;
+						font-size: 14px;
+						color: rgb(255, 255, 255);
+						padding-bottom: 15px;
+						border-color: rgb(0, 0, 0);
+						max-width: 500px;
+						padding-right: 10px;
+		    			border-top-style:solid,border-bottom-style:solid,border-left-style:solid,border-right-style:solid;border-style:solid;
+						padding-left: 15px;
+						padding-top: 15px;
+						min-width: 220px;
+						font-family: Raleway;
+						background-color: rgb(232, 232, 232);	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .multi_layout .helper-div.middle-center .pic-side  {
+		
+						margin-left: -6%;	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-form .Field:hover  ,  .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-form .Field.hover-tester:not(.placeholder-mode)  { 
+						color: rgb(0, 0, 0);
+						background-color: rgb(244, 244, 244);	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-form .Field:not(.placeholder-mode):not(:hover)  {
+		
+						color: rgb(255, 255, 255);	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .multi_layout .helper-div.middle-center  {
+		
+						padding-left: 6%;
+						padding-right: 6%;
+						width: 88%;	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .background-div  {
+		
+						opacity: 0.4;	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra.master.item-box   {
+		
+						background-color: rgba(0, 0, 0, 0);	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-title  ,  .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-body h1  { 
+						font-family: Montserrat;
+						font-size: 16px;
+						color: rgb(0, 0, 0);
+						letter-spacing: -0.05em;
+						margin-top: 0px;
+						margin-bottom: 10px;
+						line-height: 1.1em;
+						background-color: rgba(0, 0, 0, 0);	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra.master.item-box   {
+		
+						padding-left: 0%;
+						width: 100%;
+						padding-right: 0%;	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-item-links span  ,  .style-6a196-3byibqmz .style-6a196-4wbc7mra #sr-basket-widget *  { 
+						border-width: 0px;
+						font-size: 16px;
+						color: rgb(255, 255, 255);
+						padding-bottom: 15px;
+						border-color: rgba(0, 0, 0, 0);
+						letter-spacing: 0.15em;
+						padding-right: 30px;
+						margin-top: 35px;
+						padding-left: 30px;
+						border-radius: 20px;
+						padding-top: 15px;
+						margin-bottom: 10px;
+						font-family: Montserrat;
+						background-color: rgb(149, 143, 120);	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .stripe-background  {
+		
+						margin-left: 0%;	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-element.icon-source  {
+		
+						margin-bottom: 0px;
+						margin-top: 0px;
+						width: 80px;	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-form .Field.placeholder-mode:not(:hover)  {
+		
+						color: rgb(103, 103, 103);	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .background-image-div  {
+		
+						color: rgb(0, 0, 0);	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-item-links span:before  ,  .style-6a196-3byibqmz .style-6a196-4wbc7mra .effect-tester  { 
+						background-color: rgb(35, 35, 35);	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-body-holder  {
+		
+						max-width: 600px;	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra  .preview-content-wrapper  {
+		
+						text-align: center;	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-item-links span:hover  ,  .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-element.Link.hover-tester  { 
+						color: rgb(255, 255, 255);
+						background-color: rgb(0, 0, 0);	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .inner-pic-holder  {
+		
+						background-color: rgb(244, 244, 244);	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-body  {
+		
+						line-height: 1.4em;
+						font-size: 12px;
+						color: rgb(0, 0, 0);
+						letter-spacing: 0em;
+						max-width: 800px;
+						margin-top: 10px;
+						margin-bottom: 30px;
+						font-family: Arial;	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .field-holder  {
+			
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .middle_layout .helper-div  ,  .style-6a196-3byibqmz .style-6a196-4wbc7mra .multi_layout .helper-div.middle-center .text-side  { 
+						max-width: 1000px;	
+		}
+	 .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-subtitle  ,  .style-6a196-3byibqmz .style-6a196-4wbc7mra .preview-body h2  { 
+						line-height: 1.1em;
+						font-size: 16px;
+						text-transform: uppercase;
+						color: rgb(87, 98, 117);
+						letter-spacing: 0em;
+						margin-right: 0px;
+						margin-top: 10px;
+						margin-left: 0px;
+						margin-bottom: 5px;
+						font-family: Raleway;	
+		}
+
+/******************************************************************************************************
+ *            UNIQUE STYLE
+ *                                 	 
+ ******************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************************************
+ *            WEBSITE STYLE
+ *                                 	 
+ ******************************************************************************************************/

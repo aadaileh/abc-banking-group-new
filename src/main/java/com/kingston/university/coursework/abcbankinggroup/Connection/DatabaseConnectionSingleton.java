@@ -9,23 +9,28 @@ import java.sql.SQLException;
 @Component
 public class DatabaseConnectionSingleton {
 
-    private String dbUrl;
-
     private static DatabaseConnectionSingleton ourInstance = new DatabaseConnectionSingleton();
+    private String dbUrl;
+    private String username;
+    private String password;
+
+    private DatabaseConnectionSingleton() {
+    }
 
     public static DatabaseConnectionSingleton getInstance() {
         return ourInstance;
     }
 
-    private DatabaseConnectionSingleton() {
-    }
-
-    public String getDbUrl() {
-        return dbUrl;
-    }
-
     public void setDbUrl(String dbUrl) {
         this.dbUrl = dbUrl;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     //    @Bean
@@ -35,8 +40,8 @@ public class DatabaseConnectionSingleton {
         } else {
             HikariConfig config = new HikariConfig();
             config.setJdbcUrl(dbUrl);
-            config.setUsername("b9579c6ae9cba0");
-            config.setPassword("89a88141");
+            config.setUsername(username);
+            config.setPassword(password);
             return new HikariDataSource(config);
         }
     }

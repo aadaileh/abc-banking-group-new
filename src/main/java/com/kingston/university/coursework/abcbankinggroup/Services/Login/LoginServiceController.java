@@ -1,14 +1,8 @@
 package com.kingston.university.coursework.abcbankinggroup.Services.Login;
 
-import com.kingston.university.coursework.abcbankinggroup.Clients.FeignClient;
+import com.kingston.university.coursework.abcbankinggroup.DTOs.Credentials;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.User;
 import com.kingston.university.coursework.abcbankinggroup.Services.Login.impl.LoginServiceImplentations;
-import feign.Feign;
-import feign.auth.BasicAuthRequestInterceptor;
-import feign.gson.GsonDecoder;
-import feign.gson.GsonEncoder;
-import feign.okhttp.OkHttpClient;
-import feign.slf4j.Slf4jLogger;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -49,13 +43,24 @@ public class LoginServiceController extends LoginServiceImplentations {
     private DataSource dataSource;
 
     @Autowired
-    private LoginServiceImplentations loginService;
+    private LoginServiceImplentations loginServiceImplentations;
+
+    private static URI getBaseURI() {
+        return UriBuilder.fromUri("https://warm-harbor-89034.herokuapp.com").build();
+    }
 
     /**
-     * Add some comments
+     * Method to verify the given credentials. Credentials can be either coming from ATM (card-id, pin) or
+     * Online banking (username, password). This method makes a use of the login-service via Feign client.
+     * It returns either the logged in user's data, in case of success. Or FALSE, in case of failure.
+     *
+     * @param credentials contains user's credentials
+     * @return user user's data (if success), or null in case of failure
+     *
+     * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
      */
-    @ApiOperation("Create a new Lead")
-    @RequestMapping(value = "/api/login-service/db",
+    @ApiOperation("Authenticate system users by verifying their login credentials")
+    @RequestMapping(value = "/api/login-service/login",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
             method = RequestMethod.POST)
@@ -63,59 +68,11 @@ public class LoginServiceController extends LoginServiceImplentations {
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "Created"),
             @ApiResponse(code = 401, message = "Unauthorized"),
-            @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.") })
-    public String db() throws SQLException {
-        int x = 0;
-        return loginService.dbService();
+            @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
+    public User verifyLogin(@RequestBody Credentials credentials) throws SQLException {
+
+        return loginServiceImplentations.verifyCredentials(credentials);
     }
-
-
-    /**
-     * Add some comments
-     */
-    @ApiOperation("Create a new Lead")
-    @RequestMapping(value = "/api/login-service/call-the-new-service-on-the-cloud",
-            consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
-            produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
-            method = RequestMethod.POST)
-    @ResponseBody
-    @ApiResponses(value = {
-            @ApiResponse(code = 201, message = "Created"),
-            @ApiResponse(code = 405, message = "Unauthorized"),
-            @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.") })
-    public void callTheNewServiceOnTheCloud() {
-
-        FeignClient bookClient = Feign.builder()
-                .client(new OkHttpClient())
-                .encoder(new GsonEncoder())
-                .decoder(new GsonDecoder())
-                .requestInterceptor(getRequestInterceptor())
-                .logger(new Slf4jLogger(FeignClient.class))
-                .target(FeignClient.class, "https://warm-harbor-89034.herokuapp.com/db");
-
-        bookClient.loginService(getSampleUser());
-    }
-
-    private BasicAuthRequestInterceptor getRequestInterceptor() {
-        return new BasicAuthRequestInterceptor("apiuser", "pass");
-    }
-
-    private static URI getBaseURI() {
-        return UriBuilder.fromUri("https://warm-harbor-89034.herokuapp.com").build();
-    }
-
-    private User getSampleUser() {
-        User returnedUser = new User();
-
-        returnedUser.setAddress("address");
-        returnedUser.setLastName("lastname");
-        returnedUser.setMail("email");
-        returnedUser.setName("name");
-        returnedUser.setPassword("password");
-
-        return returnedUser;
-    }
-
 
     @ExceptionHandler
     void handleIllegalArgumentException(
