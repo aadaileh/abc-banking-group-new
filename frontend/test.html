@@ -2,45 +2,36 @@
 <html>
     <head>
         <title>Hello jQuery</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script type="text/javascript" language="javascript">
-       	$(document).ready(function(){
-               $("#Save").click(function(){
 
-                  var person = new Object();
-                  person.Name = $('#Name').val();
-                  person.EmailAddress = $('#EmailAddress').val();
-                  person.CustomFields = [0];
-                  person.CustomFields[0].Key = "[Country]";
-                  person.CustomFields[0].Value = $('#Country').val();;
+<script type="text/javascript" language="javascript">
 
-               $.ajax({
-                 url: 'http://localhost:8080/call-the-new-service-on-the-cloud',
-                 headers: {  'Access-Control-Allow-Origin': 'http://localhost' },
-                 type: 'POST',
-                 dataType: 'json',
-                 data:"",
-                 success: function(data,textStatus,xhr){
+var data = JSON.stringify({
+  "mail": "test@test.de",
+  "password": "password",
+  "lastName": "lastName",
+  "name": "name",
+  "address": "somewhere"
+});
 
-                     console.log(data);
-                 },
-                 error: function(xhr,textStatus,errorThrown){
-                     console.log('Error Something');
-                 },
-                 beforeSend: function(xhr) {
-                    xhr.setRequestHeader("Authorization", "Basic YXBpdXNlcjpwYXNz"); 
-                 }
-             });
-         });
-     });
-        </script>
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+
+xhr.addEventListener("readystatechange", function () {
+  if (this.readyState === this.DONE) {
+    console.log(this.responseText);
+  }
+});
+
+xhr.open("POST", "http://localhost:8080/call-the-new-service-on-the-cloud");
+//xhr.setRequestHeader("cookie", "JSESSIONID=BD0A2C50644101AEE6CD8093D5AD9240");
+xhr.setRequestHeader("content-type", "application/json");
+xhr.setRequestHeader("authorization", "Basic YXBpdXNlcjpwYXNz");
+
+xhr.send(data);
+
+</script>
     </head>
 
     <body>
-        <div>
-            <p class="greeting-id">The ID is </p>
-            <p class="greeting-content">The content is </p>
-        </div>
-        <button id="Save">Save</button>
     </body>
 </html>

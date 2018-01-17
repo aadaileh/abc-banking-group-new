@@ -32,7 +32,7 @@ import java.sql.SQLException;
 @EnableDiscoveryClient
 @CrossOrigin(origins = "*", maxAge = 3600)
 @EnableSwagger2
-public class LoginServiceController extends LoginServiceImplentations {
+public class LoginServiceController extends LoginServiceImplentations implements LoginServiceInterface {
 
     private static final Logger LOG = LoggerFactory.getLogger(LoginServiceController.class);
 

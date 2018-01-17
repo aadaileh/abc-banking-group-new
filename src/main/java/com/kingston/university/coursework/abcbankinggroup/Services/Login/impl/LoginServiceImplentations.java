@@ -33,11 +33,23 @@ public class LoginServiceImplentations {
     @Autowired
     private DataSource dataSource;
 
+    /**
+     * Method verifies the given credentials (username/card-id and password/pin)
+     * it returns the user object on success and empty user objecton failure.
+     *
+     * @param credentials username/card-id and password/pin
+     * @return user
+     *
+     * @throws SQLException
+     *
+     * @Author Ahmed Al-Adaileh <k1560383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
     public User verifyCredentials(Credentials credentials) throws SQLException {
 
         DataSource dataSource = getDataSource();
         Connection connection = null;
         User user = new User();
+        int userId = 0;
 
         try {
             connection = dataSource.getConnection();
@@ -56,7 +68,13 @@ public class LoginServiceImplentations {
                 user.setEmail(resultSet.getString("user_email"));
                 user.setAddress(resultSet.getString("user_address"));
 
-                int updatedRowId = updateRecord(stmt, resultSet);
+                //get the row id to use it for updating the record's timestamp later on
+                userId = resultSet.getInt("id");
+            }
+
+            //Set the timestamp user-last-logged-in when successfully logged in
+            if (user.isLoggedIn()){
+                int updatedRowId = updateRecord(stmt, userId);
             }
 
             return user;
@@ -72,14 +90,32 @@ public class LoginServiceImplentations {
         return user;
     }
 
-    private int updateRecord(Statement stmt, ResultSet resultSet) throws SQLException {
+    /**
+     * Set the timestamp user-last-logged-in when successfully logged in
+     * @param stmt SQL Stmt to update timestamp
+     * @param id Row id
+     *
+     * @return updated row id
+     * @throws SQLException
+     *
+     * @Author Ahmed Al-Adaileh <k1560383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
+    private int updateRecord(Statement stmt, int id) throws SQLException {
         String updateRowWithTimestamp = "UPDATE client " +
                 "SET last_logged_in = NOW() " +
-                "WHERE id = " + resultSet.getRowId(0);
+                "WHERE id = " + id;
         return stmt.executeUpdate(
                 updateRowWithTimestamp);
     }
 
+    /**
+     * Build connection to database
+     * @return Datasource to the database
+     *
+     * @throws SQLException
+     *
+     * @Author Ahmed Al-Adaileh <k1560383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
     private DataSource getDataSource() throws SQLException {
         DatabaseConnectionSingleton databaseConnectionSingleton = DatabaseConnectionSingleton.getInstance();
         databaseConnectionSingleton.setDbUrl(dbUrl);
