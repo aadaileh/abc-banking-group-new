@@ -9,8 +9,8 @@ import feign.RequestLine;
 import java.util.List;
 
 public interface FeignClient {
-    @RequestLine("GET /{isbn}")
-    User findByIsbn(@Param("isbn") String isbn);
+    @RequestLine("GET /{username}")
+    User getUser(@Param("username") String username);
 
     @RequestLine("GET")
     List<User> findAll();
@@ -18,6 +18,7 @@ public interface FeignClient {
     @RequestLine("POST")
     @Headers("Content-Type: application/json")
     User loginServiceVerifyLogin(Credentials credentials);
+
 }
 
 // Unit-Testing Code..

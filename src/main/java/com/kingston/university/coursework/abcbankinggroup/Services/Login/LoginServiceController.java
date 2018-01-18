@@ -21,11 +21,15 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
-import javax.ws.rs.core.UriBuilder;
 import java.io.IOException;
-import java.net.URI;
 import java.sql.SQLException;
 
+/**
+ * Main Controller for the Login-Service. It implements all needed
+ * methods for the mentioned service.
+ *
+ * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ */
 @RestController
 @Configuration
 @EnableAutoConfiguration
@@ -44,10 +48,6 @@ public class LoginServiceController extends LoginServiceImplentations implements
 
     @Autowired
     private LoginServiceImplentations loginServiceImplentations;
-
-    private static URI getBaseURI() {
-        return UriBuilder.fromUri("https://warm-harbor-89034.herokuapp.com").build();
-    }
 
     /**
      * Method to verify the given credentials. Credentials can be either coming from ATM (card-id, pin) or
@@ -72,6 +72,28 @@ public class LoginServiceController extends LoginServiceImplentations implements
     public User verifyLogin(@RequestBody Credentials credentials) throws SQLException {
 
         return loginServiceImplentations.verifyCredentials(credentials);
+    }
+
+    /**
+     * Return the logged in user's data upon need. It returns either the requested user's data,
+     * in case it is found, Or empty object, in case of failure.
+     *
+     * @param username user's username
+     * @return user user's data (if success), or null in case of failure
+     *
+     * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
+    @ApiOperation("Returns the logged in user's data")
+    @RequestMapping(value = "/api/login-service/users/{username}",
+            method = RequestMethod.GET)
+    @ResponseBody
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Created"),
+            @ApiResponse(code = 401, message = "Unauthorized"),
+            @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
+    public User getUser(@PathVariable String username) throws SQLException {
+
+        return loginServiceImplentations.returnUser(username);
     }
 
     @ExceptionHandler

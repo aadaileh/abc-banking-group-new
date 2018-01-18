@@ -17,7 +17,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 @Service
-public class LoginServiceImplentations {
+public class LoginServiceImplentations{
 
     private static final Logger LOG = LoggerFactory.getLogger(LoginServiceController.class);
 
@@ -49,7 +49,6 @@ public class LoginServiceImplentations {
         DataSource dataSource = getDataSource();
         Connection connection = null;
         User user = new User();
-        int userId = 0;
 
         try {
             connection = dataSource.getConnection();
@@ -67,14 +66,12 @@ public class LoginServiceImplentations {
                 user.setName(resultSet.getString("user_name"));
                 user.setEmail(resultSet.getString("user_email"));
                 user.setAddress(resultSet.getString("user_address"));
-
-                //get the row id to use it for updating the record's timestamp later on
-                userId = resultSet.getInt("id");
+                user.setClientId(resultSet.getInt("id"));
             }
 
             //Set the timestamp user-last-logged-in when successfully logged in
             if (user.isLoggedIn()){
-                int updatedRowId = updateRecord(stmt, userId);
+                int updatedRowId = updateRecord(stmt, user.getClientId());
             }
 
             return user;
@@ -85,6 +82,51 @@ public class LoginServiceImplentations {
 
         } finally {
             connection.close();
+        }
+
+        return user;
+    }
+
+    /**
+     * Method to return the logged in user's data upon need. It returns either the requested user's data,
+     * in case it is found, Or empty object, in case of failure.
+     *
+     * @param username contains user's username
+     * @return user user's data (if success), or null in case of failure
+     *
+     * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
+    public User returnUser(String username) throws SQLException {
+
+        DataSource dataSource = getDataSource();
+        Connection connection = null;
+        User user = new User();
+
+        try {
+            connection = dataSource.getConnection();
+            Statement stmt = connection.createStatement();
+            ResultSet resultSet = stmt.executeQuery(
+                    "SELECT * " +
+                            "FROM client " +
+                            "WHERE username_card_id = '" + username + "'");
+
+            while (resultSet.next()) {
+                user.setClientId(resultSet.getInt("id"));
+                user.setName(resultSet.getString("user_name"));
+                user.setEmail(resultSet.getString("user_email"));
+                user.setAddress(resultSet.getString("user_address"));
+            }
+
+            return user;
+
+        } catch (Exception e) {
+
+            LOG.debug(e.getMessage());
+
+        } finally {
+
+            connection.close();
+
         }
 
         return user;

@@ -2,10 +2,19 @@ package com.kingston.university.coursework.abcbankinggroup.DTOs;
 
 public class User {
 
+    private int clientId;
     private String name;
     private String address;
     private String email;
     private boolean loggedIn;
+
+    public int getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(int clientId) {
+        this.clientId = clientId;
+    }
 
     public String getName() {
         return name;

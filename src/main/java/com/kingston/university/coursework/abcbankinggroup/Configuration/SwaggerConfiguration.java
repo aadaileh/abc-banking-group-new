@@ -1,5 +1,6 @@
 package com.kingston.university.coursework.abcbankinggroup.Configuration;
 
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.PathSelectors;
@@ -14,12 +15,13 @@ import java.util.Collections;
 
 @Configuration
 @EnableSwagger2
+@EnableAutoConfiguration
 public class SwaggerConfiguration {
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com/kingston/university/coursework/abcbankinggroup"))
+                .apis(RequestHandlerSelectors.basePackage("com.kingston.university.coursework.abcbankinggroup"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo());

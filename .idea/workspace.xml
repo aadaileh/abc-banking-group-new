@@ -2,396 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98585c54-a67e-4bfb-9af8-fcfdc26c54ff" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceInterface.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Account.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/TransactionList.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceInterface.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/6facebook.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/6instagram.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/6twitter.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/AuthenticationService.Authenticate" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/all_css.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/all_js.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/common.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/common.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/effects.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/fonts.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/ga.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/geocoder.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/iframe_api" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/imos.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/index-6da11f252ec7f2954d8b82138b5a7a14.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/inner-975baddac6a374ad033fdc34a9226a03.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/inner-be64e0c3627044f9b350f294ab5c215c.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/inner.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/jquery-2.x-git.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/jquery.cookie.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/jquery.mobile.custom.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/lightbox.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/lightbox.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/outer.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/saved_resource" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/saved_resource(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/spimeengine.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/spimeview.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/stats.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/stripe_data_css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/stripe_data_css(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/stripe_dynamic_css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/stripe_dynamic_css(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/stripe_dynamic_css(2)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/stripe_dynamic_css(3)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/stripe_dynamic_css(4)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/stripe_dynamic_css(5)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/sweetalert.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/sweetalert.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/translation_js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/util.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/www-widgetapi.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/About clean - abc-banking-group-coursework_files/xprs_helper.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/43-pXHjwrpmVO8Oean-6BD0uzARvcqUQrpdi7Yw2bxaXwEoP21UdN5kW6Ks9pdOxf7ropMUrh0djgYPwYPU=s50" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/6facebook.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/6instagram.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/6twitter.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/6zb8WwTey8418Mlgf5wJomMN_7JjY8T8ULq74HO77G1_wYJQC3o70RMGnRyP_89wZ4jQ93uNwIP82kKRz6AakfxfKA=s50" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/79BzLZRsxbQ-P3jvmdDEafrr95zxDCqMVDbKoE6NxRAD1zwyyi3RQwqICTA-MVT73q5dGwqHwhHTe_nx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/9rwgVnDglPdPFugSu98fhDmxzjXC9KovZ_7BuHkXPIv6jvg9S96flGnhL_e4y8mIpPpZQstfqEV-WitY=s50" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/AuthenticationService.Authenticate" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/EWqW7DEI4kOTRMLjK2-ObFHp-EYBt5apFYZ1LVFAhLtTLjigCRfx5hCCTKbIjIm68VQ00p9twloHJ9w8=s50" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/QuotaService.RecordEvent" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/TgRyMQvJ3_h9RmOnu7AlhIE7NLOOBsRoBounARrs8fQv8HCRPaFtpBneSqJOSZpI6l7He_bAZKN179JBig=s50" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/ViewportInfoService.GetViewportInfo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/ZMARmveTg1geksYKXZKdh71KW09XrhDLg8N-XrfXCGsDBEHnuKwhmYpHd55Y2-NwuwLX8qsyx26JNyJWtr1jEcxD=s50" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/all_css.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/all_js.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/cb_scout5_hdpi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/common.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/common.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/controls.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/effects.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/fonts.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/ga.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/geocoder.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/google4_hdpi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/iframe_api" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/imgs8.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/imos.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/index-6da11f252ec7f2954d8b82138b5a7a14.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/inner-975baddac6a374ad033fdc34a9226a03.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/inner-be64e0c3627044f9b350f294ab5c215c.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/inner.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/jquery-2.x-git.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/jquery.cookie.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/jquery.mobile.custom.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/lightbox.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/lightbox.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/map.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/mapcnt6.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/marker.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/onion.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/outer.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/saved_resource" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/saved_resource(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/spimeengine.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/spimeview.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/stats.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/stripe_data_css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/stripe_data_css(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/stripe_dynamic_css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/stripe_dynamic_css(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/stripe_dynamic_css(2)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/stripe_dynamic_css(3)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/stripe_dynamic_css(4)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/stripe_dynamic_css(5)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/stripe_dynamic_css(6)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/stripe_dynamic_css(7)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/stripe_dynamic_css(8)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/sv9.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/sweetalert.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/sweetalert.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/tmapctrl4_hdpi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/tmapctrl_hdpi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/translation_js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/transparent.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/util.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(10)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(11)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(12)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(13)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(14)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(15)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(16)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(17)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(18)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(19)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(2)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(20)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(21)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(3)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(4)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(5)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(6)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(7)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(8)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/vt(9)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/www-widgetapi.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - 002_files/xprs_helper.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/6facebook.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/6instagram.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/6twitter.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/AuthenticationService.Authenticate" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/QuotaService.RecordEvent" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/ViewportInfoService.GetViewportInfo" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/all_css.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/all_js.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/cb_scout5_hdpi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/common.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/common.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/controls.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/effects.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/fonts.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/ga.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/geocoder.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/google4_hdpi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/iframe_api" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/imgs8.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/imos.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/index-6da11f252ec7f2954d8b82138b5a7a14.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/inner-975baddac6a374ad033fdc34a9226a03.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/inner-be64e0c3627044f9b350f294ab5c215c.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/inner.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/jquery-2.x-git.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/jquery.cookie.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/jquery.mobile.custom.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/lightbox.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/lightbox.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/map.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/mapcnt6.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/marker.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/onion.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/outer.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/saved_resource" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/saved_resource(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/spimeengine.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/spimeview.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/stats.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/stripe_data_css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/stripe_data_css(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/stripe_dynamic_css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/stripe_dynamic_css(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/stripe_dynamic_css(2)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/stripe_dynamic_css(3)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/stripe_dynamic_css(4)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/stripe_dynamic_css(5)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/stripe_dynamic_css(6)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/stripe_dynamic_css(7)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/stripe_dynamic_css(8)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/sv9.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/sweetalert.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/sweetalert.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/tmapctrl4_hdpi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/tmapctrl_hdpi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/translation_js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/transparent.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/util.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(10)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(11)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(12)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(13)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(14)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(15)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(16)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(17)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(18)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(19)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(2)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(20)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(21)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(3)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(4)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(5)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(6)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(7)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(8)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/vt(9)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/www-widgetapi.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Contact - abc-banking-group-coursework_files/xprs_helper.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/6facebook.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/6instagram.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/6twitter.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/all_css.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/all_js.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/common.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/common.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/effects.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/fonts.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/ga.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/geocoder.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/iframe_api" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/imos.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/index-6da11f252ec7f2954d8b82138b5a7a14.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/inner-975baddac6a374ad033fdc34a9226a03.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/inner-be64e0c3627044f9b350f294ab5c215c.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/inner.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/jquery-2.x-git.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/jquery.cookie.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/jquery.mobile.custom.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/lightbox.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/lightbox.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/outer.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/saved_resource" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/saved_resource(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/spimeengine.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/spimeview.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/stats.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/stripe_data_css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/stripe_dynamic_css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/stripe_dynamic_css(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/stripe_dynamic_css(10)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/stripe_dynamic_css(11)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/stripe_dynamic_css(2)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/stripe_dynamic_css(3)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/stripe_dynamic_css(4)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/stripe_dynamic_css(5)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/stripe_dynamic_css(6)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/stripe_dynamic_css(7)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/stripe_dynamic_css(8)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/stripe_dynamic_css(9)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/sweetalert.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/sweetalert.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/translation_js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/util.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/www-widgetapi.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Smith&amp;Co Law Firm_files/xprs_helper.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/43-pXHjwrpmVO8Oean-6BD0uzARvcqUQrpdi7Yw2bxaXwEoP21UdN5kW6Ks9pdOxf7ropMUrh0djgYPwYPU=s50" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/6facebook.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/6instagram.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/6twitter.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/6zb8WwTey8418Mlgf5wJomMN_7JjY8T8ULq74HO77G1_wYJQC3o70RMGnRyP_89wZ4jQ93uNwIP82kKRz6AakfxfKA=s50" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/79BzLZRsxbQ-P3jvmdDEafrr95zxDCqMVDbKoE6NxRAD1zwyyi3RQwqICTA-MVT73q5dGwqHwhHTe_nx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/9rwgVnDglPdPFugSu98fhDmxzjXC9KovZ_7BuHkXPIv6jvg9S96flGnhL_e4y8mIpPpZQstfqEV-WitY=s50" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/AuthenticationService.Authenticate" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/EWqW7DEI4kOTRMLjK2-ObFHp-EYBt5apFYZ1LVFAhLtTLjigCRfx5hCCTKbIjIm68VQ00p9twloHJ9w8=s50" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/TgRyMQvJ3_h9RmOnu7AlhIE7NLOOBsRoBounARrs8fQv8HCRPaFtpBneSqJOSZpI6l7He_bAZKN179JBig=s50" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/ZMARmveTg1geksYKXZKdh71KW09XrhDLg8N-XrfXCGsDBEHnuKwhmYpHd55Y2-NwuwLX8qsyx26JNyJWtr1jEcxD=s50" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/all_css.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/all_js.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/common.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/common.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/effects.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/fonts.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/ga.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/geocoder.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/iframe_api" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/imos.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/index-6da11f252ec7f2954d8b82138b5a7a14.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/inner-975baddac6a374ad033fdc34a9226a03.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/inner-be64e0c3627044f9b350f294ab5c215c.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/inner.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/jquery-2.x-git.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/jquery.cookie.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/jquery.mobile.custom.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/lightbox.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/lightbox.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/outer.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/saved_resource" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/saved_resource(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/spimeengine.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/spimeview.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/stats.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/stripe_data_css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/stripe_data_css(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/stripe_dynamic_css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/stripe_dynamic_css(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/stripe_dynamic_css(2)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/stripe_dynamic_css(3)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/stripe_dynamic_css(4)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/stripe_dynamic_css(5)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/stripe_dynamic_css(6)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/sweetalert.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/sweetalert.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/translation_js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/util.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/www-widgetapi.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/Team - 002_files/xprs_helper.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/6facebook.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/6instagram.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/6twitter.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/AuthenticationService.Authenticate" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/all_css.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/all_js.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/common.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/common.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/effects.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/fonts.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/ga.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/geocoder.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/iframe_api" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/imos.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/index-6da11f252ec7f2954d8b82138b5a7a14.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/inner-975baddac6a374ad033fdc34a9226a03.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/inner-be64e0c3627044f9b350f294ab5c215c.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/inner.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/jquery-2.x-git.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/jquery.cookie.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/jquery.mobile.custom.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/lightbox.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/lightbox.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/outer.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/saved_resource" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/saved_resource(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/spimeengine.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/spimeview.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/stats.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/stripe_data_css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/stripe_dynamic_css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/stripe_dynamic_css(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/stripe_dynamic_css(10)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/stripe_dynamic_css(11)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/stripe_dynamic_css(2)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/stripe_dynamic_css(3)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/stripe_dynamic_css(4)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/stripe_dynamic_css(5)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/stripe_dynamic_css(6)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/stripe_dynamic_css(7)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/stripe_dynamic_css(8)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/stripe_dynamic_css(9)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/sweetalert.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/sweetalert.min.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/translation_js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/util.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/www-widgetapi.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/abc-banking-group-coursework_files/xprs_helper.js.Download" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/account.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/home.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/login.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/test.html" afterPath="$PROJECT_DIR$/frontend/test.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Clients/FeignClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Clients/FeignClient.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Configuration/SwaggerConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Configuration/SwaggerConfiguration.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/User.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceInterface.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceInterface.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Clients/FeignClient.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Clients/FeignClient.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Configuration/SwaggerConfiguration.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Configuration/SwaggerConfiguration.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/DTOs/User.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/DTOs/User.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceInterface.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceInterface.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -407,128 +37,87 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MainServiceController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java">
+      <file leaf-file-name="AccountServiceController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+            <state relative-caret-position="264">
+              <caret line="37" column="94" lean-forward="false" selection-start-line="37" selection-start-column="94" selection-end-line="37" selection-end-column="94" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginServiceController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.java">
+      <file leaf-file-name="AccountServiceImplentations.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="462">
+              <caret line="78" column="61" lean-forward="false" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-378">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="441">
+              <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
               <folding>
-                <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#324#325#0" expanded="true" />
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#388#389#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#242#243#0" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
+                <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/TransactionList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+              <folding>
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
                 <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#504#505#0" expanded="true" />
-                <element signature="e#532#533#0" expanded="true" />
-                <element signature="e#574#575#0" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#674#675#0" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#572#573#0" expanded="true" />
+                <element signature="e#626#627#0" expanded="true" />
+                <element signature="e#668#669#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
+                <element signature="e#822#823#0" expanded="true" />
+                <element signature="e#866#867#0" expanded="true" />
+                <element signature="e#906#907#0" expanded="true" />
+                <element signature="e#972#973#0" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
+                <element signature="e#1070#1071#0" expanded="true" />
+                <element signature="e#1106#1107#0" expanded="true" />
+                <element signature="e#1164#1165#0" expanded="true" />
+                <element signature="e#1214#1215#0" expanded="true" />
+                <element signature="e#1247#1248#0" expanded="true" />
+                <element signature="e#1276#1277#0" expanded="true" />
+                <element signature="e#1320#1321#0" expanded="true" />
+                <element signature="e#1356#1357#0" expanded="true" />
+                <element signature="e#1393#1394#0" expanded="true" />
+                <element signature="e#1426#1427#0" expanded="true" />
+                <element signature="e#1478#1479#0" expanded="true" />
+                <element signature="e#1522#1523#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Credentials.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Credentials.java">
+      <file leaf-file-name="AccountServiceInterface.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-              <folding>
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-                <element signature="e#391#392#0" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginServiceImplentations.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="86" column="31" lean-forward="true" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+            <state relative-caret-position="268">
+              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginServiceInterface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseConnectionSingleton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Connection/DatabaseConnectionSingleton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#658#659#0" expanded="true" />
-                <element signature="e#692#693#0" expanded="true" />
-                <element signature="e#740#741#0" expanded="true" />
-                <element signature="e#780#781#0" expanded="true" />
-                <element signature="e#828#829#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -540,8 +129,8 @@
       <list>
         <option value="app" />
         <option value="Singleton" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -606,13 +195,23 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Connection/DatabaseConnectionSingleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Clients/FeignClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Credentials.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Configuration/SwaggerConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Clients/FeignClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/Login/LoginServiceInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/LoginServiceInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/LoginServiceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/LoginServiceImplentations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/TransactionList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java" />
       </list>
     </option>
   </component>
@@ -697,6 +296,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="abcbankinggroup" type="462c0819:PsiDirectoryNode" />
+              <item name="Configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="abc-banking-group-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abc-banking-group-new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="abcbankinggroup" type="462c0819:PsiDirectoryNode" />
               <item name="DTOs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -707,6 +315,27 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="abcbankinggroup" type="462c0819:PsiDirectoryNode" />
               <item name="Services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="abc-banking-group-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abc-banking-group-new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="abcbankinggroup" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+              <item name="Account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="abc-banking-group-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abc-banking-group-new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="abcbankinggroup" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+              <item name="Account" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="abc-banking-group-new" type="b2602c69:ProjectViewProjectNode" />
@@ -762,21 +391,23 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="copyright.filetypes.JAVA" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\abc-banking-group-new\src\main\resources" />
-      <recent name="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\abc-banking-group-new\src\main\java\abcbankinggroup" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\abc-banking-group-new\src\main\java\com\kingston\university\coursework\abcbankinggroup\Services\Account" />
+      <recent name="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\abc-banking-group-new\src\main\java\com\kingston\university\coursework\abcbankinggroup\Services" />
+      <recent name="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\abc-banking-group-new\src\main\java" />
+      <recent name="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\abc-banking-group-new" />
+      <recent name="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\abc-banking-group-new\src\main\appengine" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="abcbankinggroup" />
       <recent name="abcbankinggroup.configuration" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\abc-banking-group-new\src\main\java" />
-      <recent name="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\abc-banking-group-new" />
-      <recent name="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\abc-banking-group-new\src\main\appengine" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\abc-banking-group-new\src\main\resources" />
+      <recent name="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\abc-banking-group-new\src\main\java\abcbankinggroup" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -951,6 +582,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -961,19 +593,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37328768" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24515393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2850627" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26960257" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23845327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Google Cloud Storage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4173318" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -995,36 +627,66 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java</url>
-          <line>79</line>
+          <line>76</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java</url>
-          <line>106</line>
+          <line>148</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java</url>
-          <line>103</line>
+          <line>145</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java</url>
-          <line>76</line>
+          <line>73</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java</url>
-          <line>75</line>
+          <line>72</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceController.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="31" />
+      <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1040,6 +702,16 @@
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>feignClient.getUser(username)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>feignClient.getUser(username);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>resultSet.getInt(&quot;id&quot;)</expression-string>
         <language-id>JAVA</language-id>
@@ -1075,82 +747,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>resultSet.getArray(0)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>resultSet.next()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="107" lean-forward="false" selection-start-line="0" selection-start-column="107" selection-end-line="0" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Configuration/DataBaseConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1743">
-          <caret line="83" column="31" lean-forward="true" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/AbcBankingGroupApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="19" column="63" lean-forward="false" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/abcbankinggroup/MyFirstDbConnection.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/AbcBankingGroupApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1264,13 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Configuration/SwaggerConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="21" column="77" lean-forward="true" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Connection/DataSource.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1288,43 +880,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Connection/DatabaseConnectionSingleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#828#829#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Clients/FeignClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Credentials.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
           <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="false" />
+            <element signature="e#303#304#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+            <element signature="e#391#392#0" expanded="false" />
+            <element signature="e#426#427#0" expanded="false" />
+            <element signature="e#457#458#0" expanded="false" />
+            <element signature="e#505#506#0" expanded="false" />
+            <element signature="e#545#546#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1337,53 +905,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Connection/DatabaseConnectionSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="798">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#658#659#0" expanded="false" />
+            <element signature="e#692#693#0" expanded="false" />
+            <element signature="e#740#741#0" expanded="false" />
+            <element signature="e#780#781#0" expanded="false" />
+            <element signature="e#828#829#0" expanded="false" />
+            <element signature="e#868#869#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Configuration/SwaggerConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        <state relative-caret-position="252">
+          <caret line="23" column="109" lean-forward="false" selection-start-line="23" selection-start-column="109" selection-end-line="23" selection-end-column="109" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/User.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/9.5.0/feign-core-9.5.0.jar!/feign/ReflectiveFeign.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state relative-caret-position="244">
+          <caret line="338" column="0" lean-forward="false" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1396,10 +945,173 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/Login/LoginServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/Login/impl/LoginServiceImplentations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/Login/LoginServiceInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="86" column="31" lean-forward="true" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+        <state relative-caret-position="88">
+          <caret line="113" column="53" lean-forward="false" selection-start-line="113" selection-start-column="53" selection-end-line="113" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding>
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Clients/FeignClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="93" column="37" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="37" column="94" lean-forward="false" selection-start-line="37" selection-start-column="94" selection-end-line="37" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/TransactionList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1320#1321#0" expanded="true" />
+            <element signature="e#1356#1357#0" expanded="true" />
+            <element signature="e#1393#1394#0" expanded="true" />
+            <element signature="e#1426#1427#0" expanded="true" />
+            <element signature="e#1478#1479#0" expanded="true" />
+            <element signature="e#1522#1523#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding>
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="78" column="61" lean-forward="false" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -1482,6 +1194,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

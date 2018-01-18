@@ -52,10 +52,11 @@ public class MainServiceController {
      *
      * @param credentials contains user's credentials
      * @return user user's data (if success), or null in case of failure
+     *
      * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
      */
     @ApiOperation("Authenticate system users by verifying their login credentials")
-    @RequestMapping(value = "/api/main/login",
+    @RequestMapping(value = "/api/main-service/login",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
             method = RequestMethod.POST)
@@ -76,6 +77,35 @@ public class MainServiceController {
         return feignClient.loginServiceVerifyLogin(credentials);
     }
 
+    /**
+     * Return the logged in user's data upon need. It returns either the requested user's data,
+     * in case it is found, Or empty object, in case of failure.
+     *
+     * @param username contains user's username
+     * @return user user's data (if success), or null in case of failure
+     *
+     * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
+    @ApiOperation("Authenticate system users by verifying their login credentials")
+    @RequestMapping(value = "/api/main-service/users/{username}",
+            method = RequestMethod.GET)
+    @ResponseBody
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Created"),
+            @ApiResponse(code = 401, message = "Unauthorized"),
+            @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
+    public User getUser(@PathVariable String username) {
+
+        FeignClient feignClient = getFeignClient("/api/login-service/users");
+
+        return feignClient.getUser(username);
+    }
+
+    /**
+     * Prepare Feign-client for communication with other services
+     * @param path
+     * @return
+     */
     private FeignClient getFeignClient(String path) {
         return Feign.builder()
                 .client(new OkHttpClient())
