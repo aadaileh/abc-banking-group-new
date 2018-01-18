@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98585c54-a67e-4bfb-9af8-fcfdc26c54ff" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-    </list>
+    <list default="true" id="98585c54-a67e-4bfb-9af8-fcfdc26c54ff" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -928,25 +925,25 @@
         <state relative-caret-position="189">
           <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding>
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="false" />
+            <element signature="e#328#329#0" expanded="false" />
+            <element signature="e#368#369#0" expanded="false" />
+            <element signature="e#399#400#0" expanded="false" />
+            <element signature="e#426#427#0" expanded="false" />
+            <element signature="e#466#467#0" expanded="false" />
+            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+            <element signature="e#562#563#0" expanded="false" />
+            <element signature="e#608#609#0" expanded="false" />
+            <element signature="e#646#647#0" expanded="false" />
+            <element signature="e#678#679#0" expanded="false" />
+            <element signature="e#706#707#0" expanded="false" />
+            <element signature="e#748#749#0" expanded="false" />
+            <element signature="e#782#783#0" expanded="false" />
+            <element signature="e#817#818#0" expanded="false" />
+            <element signature="e#848#849#0" expanded="false" />
+            <element signature="e#897#898#0" expanded="false" />
+            <element signature="e#937#938#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -982,7 +979,7 @@
         <state relative-caret-position="247">
           <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
