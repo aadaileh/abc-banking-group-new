@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98585c54-a67e-4bfb-9af8-fcfdc26c54ff" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Account.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/TransactionList.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceInterface.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Clients/FeignClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Clients/FeignClient.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Configuration/SwaggerConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Configuration/SwaggerConfiguration.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceInterface.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceInterface.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Clients/FeignClient.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Clients/FeignClient.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Configuration/SwaggerConfiguration.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Configuration/SwaggerConfiguration.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/DTOs/User.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/DTOs/User.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceInterface.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceInterface.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,18 +22,28 @@
       <file leaf-file-name="AccountServiceController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="378">
               <caret line="37" column="94" lean-forward="false" selection-start-line="37" selection-start-column="94" selection-end-line="37" selection-end-column="94" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccountServiceImplentations.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AccountServiceImplentations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="78" column="61" lean-forward="false" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
+            <state relative-caret-position="336">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -60,7 +52,7 @@
       <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
+            <state relative-caret-position="315">
               <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
               <folding>
                 <element signature="e#242#243#0" expanded="true" />
@@ -77,7 +69,7 @@
       <file leaf-file-name="TransactionList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/TransactionList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="252">
               <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding>
                 <element signature="e#369#370#0" expanded="true" />
@@ -115,8 +107,8 @@
       <file leaf-file-name="AccountServiceInterface.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="294">
+              <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -193,7 +185,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentationsxxx.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Connection/DataSource.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Connection/DatabaseConnectionSingleton.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Credentials.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Configuration/SwaggerConfiguration.java" />
@@ -212,6 +203,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Account.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -247,6 +239,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -379,8 +373,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -586,20 +578,18 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.022805016" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37328768" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2850627" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2850627" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23845327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24167562" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Google Cloud Storage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -611,7 +601,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.022805016" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -834,13 +826,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/account.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/abcbankinggroup/MyFirstDbConnection.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -897,27 +883,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Connection/DatabaseConnectionSingleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#658#659#0" expanded="false" />
-            <element signature="e#692#693#0" expanded="false" />
-            <element signature="e#740#741#0" expanded="false" />
-            <element signature="e#780#781#0" expanded="false" />
-            <element signature="e#828#829#0" expanded="false" />
-            <element signature="e#868#869#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -933,7 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="338" column="0" lean-forward="false" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,34 +909,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/Login/LoginServiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/Login/impl/LoginServiceImplentations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/Login/LoginServiceInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/Login/LoginServiceController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/Login/impl/LoginServiceImplentations.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/Login/LoginServiceInterface.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1043,15 +989,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="294">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="378">
           <caret line="37" column="94" lean-forward="false" selection-start-line="37" selection-start-column="94" selection-end-line="37" selection-end-column="94" />
           <folding />
         </state>
@@ -1059,7 +1005,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/TransactionList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="252">
           <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
             <element signature="e#369#370#0" expanded="true" />
@@ -1095,7 +1041,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
+        <state relative-caret-position="315">
           <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
           <folding>
             <element signature="e#242#243#0" expanded="true" />
@@ -1110,8 +1056,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="78" column="61" lean-forward="false" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
+        <state relative-caret-position="336">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding />
         </state>
       </provider>
