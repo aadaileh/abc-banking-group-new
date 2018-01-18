@@ -8,7 +8,7 @@ if(count($_POST) == 2) {
 
 	curl_setopt_array($curl, array(
 	CURLOPT_PORT => "8080",
-	CURLOPT_URL => "http://localhost:8080/api/main/login",
+	CURLOPT_URL => "http://localhost:8080/api/main-service/login",
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_ENCODING => "",
 	CURLOPT_MAXREDIRS => 10,
@@ -47,7 +47,7 @@ if(count($_POST) == 2) {
 		$_SESSION["user_email"] = $data->email;
 		$_SESSION["user_address"] = $data->address;
 
-		header("Location: /abc-banking-group-coursework/account.php");
+		header("Location: /account.php");
 	} else {
 		session_destroy();
 		$error = '<div style="height: 30px; text-align: center;color: red;font-family: Arial; font-size: 10pt;">Wrong credentials. Please try again!</div>';
