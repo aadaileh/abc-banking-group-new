@@ -75,7 +75,7 @@ public class TransactionServiceController extends TransactionServiceImplentation
      *
      * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
      */
-    @ApiOperation("Verify all related and necessary information before processing the fund transfer")
+    @ApiOperation("Add a record to the database including all necessary fields as a preperation for later processing by external applications.")
     @RequestMapping(value = "/api/transaction-service/transaction/add",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,

@@ -134,7 +134,7 @@ public class MainServiceController {
      *
      * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
      */
-    @ApiOperation("Retrieves all account details and transactions related to the given client-id")
+    @ApiOperation("Perform all necessary actions to fullfill a fund transfer")
     @RequestMapping(value = "/api/main-service/transfer-fund",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,

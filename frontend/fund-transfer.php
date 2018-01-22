@@ -6,26 +6,37 @@ session_start();
 
 include_once("settings.php");
 
-echo "<pre>post:";
-print_r($_POST);
-echo "</pre>";
+// echo "<pre>post:";
+// print_r($_POST);
+// echo "</pre>";
 	
 if(count($_POST) > 0) {
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
 	CURLOPT_PORT => "8080",
-	CURLOPT_URL => $GLOBALS["host"] . "/api/main-service/transaction/",
+	CURLOPT_URL => $GLOBALS["host"] . "/api/main-service/transfer-fund",
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_ENCODING => "",
 	CURLOPT_MAXREDIRS => 10,
 	CURLOPT_TIMEOUT => 30,
 	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-	CURLOPT_CUSTOMREQUEST => "POST",
+	CURLOPT_CUSTOMREQUEST => "PUT",
 	CURLOPT_POSTFIELDS => "{
-			\"client_id\":\"" . $_SESSION["client_id"] . "\",
-			\"username\":\"" . $_POST['username'] . "\",
-			\"password\":\"" . $_POST['password'] . "\"
+			\"clientId\":\"" . $_SESSION["client_id"] . "\",
+			\"iban\":\"" . $_POST['iban'] . "\",
+			\"swift\":\"" . $_POST['swift'] . "\",
+			\"beneficiaryFullName\":\"" . $_POST['beneficiary_full_name'] . "\",
+			\"beneficiaryAddress\":\"" . $_POST['beneficiary_address'] . "\",
+			\"country\":\"" . $_POST['country'] . "\",
+			\"city\":\"" . $_POST['city'] . "\",
+			\"bankName\":\"" . $_POST['bank_name'] . "\",
+			\"branch\":\"" . $_POST['branch'] . "\",
+			\"amount\":\"" . $_POST['amount'] . "\",
+			\"transferPurpose\":\"" . $_POST['transfer_purpose'] . "\",
+			\"transferOn\":\"" . $_POST['transfer_on'] . "\",
+			\"notes\":\"" . $_POST['notes'] . "\",
+			\"transferCurrency\":\"" . $_POST['transfer_currency'] . "\"
 		}",
 	CURLOPT_HTTPHEADER => array(
 	"authorization: Basic YXBpdXNlcjpwYXNz",
@@ -49,12 +60,9 @@ if(count($_POST) > 0) {
 	print_r($data);
 	echo "</pre>";
 
-	if ($data->loggedIn) {
-		$_SESSION["logged_in"] = true;
-		$_SESSION["user_name"] = $data->name;
-		$_SESSION["user_email"] = $data->email;
-		$_SESSION["user_address"] = $data->address;
-
+	if ($data->results == true) {
+		// do nothing
+		$message = "Fund transfer is accomplished correctly. Plese check your account to see this action in your transactions list";
 		header("Location: /account.php");
 	} else {
 		echo "FAILURE";

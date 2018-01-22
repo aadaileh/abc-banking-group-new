@@ -157,7 +157,7 @@ public class AccountServiceImplentations {
         try {
             connection = dataSource.getConnection();
             Statement stmt = connection.createStatement();
-            ResultSet resultSet = stmt.executeQuery(
+            int resultSet = stmt.executeUpdate(
                     "INSERT INTO `account` (" +
                             "`transaction_uuid`, " +
                             "`client_id`, " +

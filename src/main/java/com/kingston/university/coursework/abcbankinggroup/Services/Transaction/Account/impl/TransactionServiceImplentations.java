@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -97,7 +96,7 @@ public class TransactionServiceImplentations {
         try {
             connection = dataSource.getConnection();
             Statement stmt = connection.createStatement();
-            ResultSet resultSet = stmt.executeQuery(
+            int resultSet = stmt.executeUpdate(
                     "INSERT INTO `transfers` (" +
                             "`timestamp`, " +
                             "`client_id`, " +
@@ -130,7 +129,7 @@ public class TransactionServiceImplentations {
             return true;
 
         } catch (Exception e) {
-
+            connection.close();
             LOG.debug(e.getMessage());
             return false;
 

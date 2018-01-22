@@ -1,5 +1,6 @@
 package com.kingston.university.coursework.abcbankinggroup.Services.Account;
 
+import com.kingston.university.coursework.abcbankinggroup.DTOs.FundTransferRequest;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.Transaction;
 import com.kingston.university.coursework.abcbankinggroup.Services.Account.impl.AccountServiceImplentations;
 import io.swagger.annotations.ApiOperation;
@@ -89,6 +90,29 @@ public class AccountServiceController extends AccountServiceImplentations implem
         double accountDetails = accountServiceImplentations.retrieveAccountBalance(clientId);
 
         return accountDetails;
+    }
+
+    /**
+     * Method to update the account records by adding the latest transferred fund
+     *
+     * @param fundTransferRequest contains all fund transfer fields
+     * @return boolean
+     *
+     * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
+    @ApiOperation("Returns the account balance based on the given client-id")
+    @RequestMapping(value = "/api/account-service/update",
+            consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
+            method = RequestMethod.PUT)
+    @ResponseBody
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Created"),
+            @ApiResponse(code = 401, message = "Unauthorized"),
+            @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
+    public Boolean updateAccountTable(@RequestBody FundTransferRequest fundTransferRequest) throws SQLException {
+
+        return accountServiceImplentations.updateAccountTable(fundTransferRequest);
     }
 
     @ExceptionHandler
