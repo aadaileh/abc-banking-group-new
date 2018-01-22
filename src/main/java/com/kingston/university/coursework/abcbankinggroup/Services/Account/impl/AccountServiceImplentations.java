@@ -2,7 +2,7 @@ package com.kingston.university.coursework.abcbankinggroup.Services.Account.impl
 
 import com.kingston.university.coursework.abcbankinggroup.Connection.DatabaseConnectionSingleton;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.Account;
-import com.kingston.university.coursework.abcbankinggroup.DTOs.TransactionList;
+import com.kingston.university.coursework.abcbankinggroup.DTOs.Transaction;
 import com.kingston.university.coursework.abcbankinggroup.Services.Account.AccountServiceController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -45,13 +45,12 @@ public class AccountServiceImplentations {
      *
      * @Author Ahmed Al-Adaileh <k1560383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
      */
-    public Account retrieveAccountTransactions(String clientId) throws SQLException {
+    public Account retrieveAccountDetails(String clientId) throws SQLException {
 
         DataSource dataSource = getDataSource();
         Connection connection = null;
         Account account = new Account();
-        TransactionList transactionList = new TransactionList();
-        HashMap<Integer, TransactionList> transactionListHashMap = new HashMap<>();
+        HashMap<Integer, Transaction> transactionListHashMap= new HashMap<>();
 
         try {
             connection = dataSource.getConnection();
@@ -59,21 +58,27 @@ public class AccountServiceImplentations {
             ResultSet resultSet = stmt.executeQuery(
                     "SELECT * " +
                             "FROM account " +
-                            "WHERE client_id = '" + clientId + "'");
+                            "WHERE client_id = '" + clientId + "'" +
+                            "ORDER BY timestamp DESC");
 
             while (resultSet.next()) {
-                transactionList.setId(resultSet.getInt("id"));
-                transactionList.setClientType(resultSet.getString("client_type"));
-                transactionList.setTransactionUUID(resultSet.getString("transaction_uuid"));
-                transactionList.setTransactionType(resultSet.getString("transaction_type"));
-                transactionList.setTransactionAmount(resultSet.getString("transaction_amount"));
-                transactionList.setUnixtimestamp(resultSet.getString("timestamp"));
-                transactionList.setClientType(resultSet.getString("client_type"));
-                transactionList.setDoneBy(resultSet.getString("done_by"));
 
-                account.setClientId(clientId);
+                String client_id = resultSet.getString("client_id");
+                Transaction transaction = new Transaction();
+                int id = resultSet.getInt("id");
 
-                transactionListHashMap.put(resultSet.getInt("id"), transactionList);
+                transaction.setId(id);
+                transaction.setClientId(client_id);
+                transaction.setClientType(resultSet.getString("client_type"));
+                transaction.setTransactionUUID(resultSet.getString("transaction_uuid"));
+                transaction.setTransactionType(resultSet.getString("transaction_type"));
+                transaction.setTransactionAmount(resultSet.getString("transaction_amount"));
+                transaction.setUnixtimestamp(resultSet.getString("timestamp"));
+                transaction.setClientType(resultSet.getString("client_type"));
+                transaction.setDoneBy(resultSet.getString("done_by"));
+
+                transactionListHashMap.put(id, transaction);
+                account.setClientId(client_id);
             }
 
             account.setTransactionList(transactionListHashMap);

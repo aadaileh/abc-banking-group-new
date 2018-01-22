@@ -50,8 +50,8 @@ public class AccountServiceController extends AccountServiceImplentations implem
      *
      * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
      */
-    @ApiOperation("Retrieves all transaction related to client-id")
-    @RequestMapping(value = "/api/account-service/{clientId}/transactions",
+    @ApiOperation("Retrieves all account details and transactions related to client-id")
+    @RequestMapping(value = "/api/account-service/account/{clientId}",
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
             method = RequestMethod.GET)
     @ResponseBody
@@ -61,7 +61,21 @@ public class AccountServiceController extends AccountServiceImplentations implem
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
     public Account getAccount(@PathVariable String clientId) throws SQLException {
 
-        return accountServiceImplentations.retrieveAccountTransactions(clientId);
+        Account accountDetails = accountServiceImplentations.retrieveAccountDetails(clientId);
+
+//        Account accountDetails = new Account();
+//        accountDetails.setClientId("xx");
+//
+//        HashMap<String, String> internalHashMap = new HashMap<>();
+//        internalHashMap.put("1", "one");
+//        internalHashMap.put("2", "two");
+//
+//        HashMap<Integer, HashMap<String, String>> internalHashMap2 = new HashMap<>();
+//        internalHashMap2.put(1, internalHashMap);
+//
+//        accountDetails.setTransactionListNew(internalHashMap2);
+
+        return accountDetails;
     }
 
 

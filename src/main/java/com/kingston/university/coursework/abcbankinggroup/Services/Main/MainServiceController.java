@@ -1,6 +1,7 @@
 package com.kingston.university.coursework.abcbankinggroup.Services.Main;
 
 import com.kingston.university.coursework.abcbankinggroup.Clients.FeignClient;
+import com.kingston.university.coursework.abcbankinggroup.DTOs.Account;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.Credentials;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.User;
 import feign.Feign;
@@ -86,7 +87,7 @@ public class MainServiceController {
      *
      * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
      */
-    @ApiOperation("Authenticate system users by verifying their login credentials")
+    @ApiOperation("Fetchs user's data based on username")
     @RequestMapping(value = "/api/main-service/users/{username}",
             method = RequestMethod.GET)
     @ResponseBody
@@ -98,7 +99,35 @@ public class MainServiceController {
 
         FeignClient feignClient = getFeignClient("/api/login-service/users");
 
-        return feignClient.getUser(username);
+        return feignClient.getUserDetails(username);
+    }
+
+    /**
+     * Method to retrieve all transactions related to account based on the client-id. All
+     * kind of transaction returned sorted according timestamp. If no results found, empty
+     * Account object is returned.
+     *
+     * @param clientId contains client-id
+     * @return Account transactions data (if success), or null in case of failure
+     *
+     * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
+    @ApiOperation("Retrieves all account details and transactions related to the given client-id")
+    @RequestMapping(value = "/api/main-service/account/{clientId}",
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
+            method = RequestMethod.GET)
+    @ResponseBody
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Created"),
+            @ApiResponse(code = 401, message = "Unauthorized"),
+            @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
+    public Account getAccountDetails(@PathVariable String clientId) {
+
+        FeignClient feignClient = getFeignClient("/api/account-service/account/");
+
+        Account accountDetailsX = feignClient.getAccountDetailsFromClient(clientId);
+        int x=0;
+        return accountDetailsX;
     }
 
     /**
@@ -107,13 +136,16 @@ public class MainServiceController {
      * @return
      */
     private FeignClient getFeignClient(String path) {
-        return Feign.builder()
-                .client(new OkHttpClient())
-                .encoder(new GsonEncoder())
-                .decoder(new GsonDecoder())
-                .requestInterceptor(getRequestInterceptor())
-                .logger(new Slf4jLogger(FeignClient.class))
-                .target(FeignClient.class, feignUrl + path);
+
+        Feign.Builder builder = Feign.builder();
+        Feign.Builder client = builder.client(new OkHttpClient());
+        Feign.Builder encoder = client.encoder(new GsonEncoder());
+        Feign.Builder decoder = encoder.decoder(new GsonDecoder());
+        Feign.Builder requestInterceptor = decoder.requestInterceptor(getRequestInterceptor());
+        Feign.Builder logger = requestInterceptor.logger(new Slf4jLogger(FeignClient.class)).logLevel(feign.Logger.Level.FULL);
+        FeignClient feignClient = logger.target(FeignClient.class, feignUrl + path);
+
+        return feignClient;
     }
 
     private BasicAuthRequestInterceptor getRequestInterceptor() {

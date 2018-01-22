@@ -3,6 +3,8 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+include_once("settings.php");
+
 if(count($_POST) == 2) {
 	$curl = curl_init();
 
@@ -47,7 +49,7 @@ if(count($_POST) == 2) {
 		$_SESSION["user_email"] = $data->email;
 		$_SESSION["user_address"] = $data->address;
 
-		header("Location: /abc-banking-group-coursework/account.php");
+		header("Location: /account.php");
 	} else {
 		echo "FAILURE";
 	}
@@ -71,11 +73,11 @@ if(count($_POST) == 2) {
 	
 	
 	
-		<script type="text/javascript" async="" src="./login_files/ga.js.Download"></script><script type="text/javascript" id="www-widgetapi-script" src="./login_files/www-widgetapi.js.Download" async=""></script><script src="./login_files/iframe_api"></script>
+		<script type="text/javascript" async="" src="./fund-transfer_files/ga.js.Download"></script><script type="text/javascript" id="www-widgetapi-script" src="./fund-transfer_files/www-widgetapi.js.Download" async=""></script><script src="./fund-transfer_files/iframe_api"></script>
 		<!-- CSS -->
-		<link rel="stylesheet" href="./login_files/common.css">
-		<link rel="stylesheet" href="./login_files/sweetalert.css">
-		<link rel="stylesheet" type="text/css" href="./login_files/all_css.css">
+		<link rel="stylesheet" href="./fund-transfer_files/common.css">
+		<link rel="stylesheet" href="./fund-transfer_files/sweetalert.css">
+		<link rel="stylesheet" type="text/css" href="./fund-transfer_files/all_css.css">
 
 	
 		
@@ -84,26 +86,26 @@ if(count($_POST) == 2) {
 		
 		
 	
-		<link rel="stylesheet" type="text/css" href="./login_files/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./fund-transfer_files/font-awesome.min.css">
 	
-		<link id="style-0b792965-dzebo07f" rel="stylesheet" type="text/css" href="./login_files/stripe_dynamic_css">
-		<link id="style-3c6e4999-autozada" rel="stylesheet" type="text/css" href="./login_files/stripe_dynamic_css(1)">
-		<link id="style-1300b5e8-zvbdbml3" rel="stylesheet" type="text/css" href="./login_files/stripe_dynamic_css(2)">
-		<link id="style-3c6e4999-clgaknqg" rel="stylesheet" type="text/css" href="./login_files/stripe_dynamic_css(3)">
-		<link id="style-3c6e4999-zbawwujg" rel="stylesheet" type="text/css" href="./login_files/stripe_dynamic_css(4)">
-	<link id="vbid-0b792965-lok1anrm-STRIPE_DATA" rel="stylesheet" type="text/css" href="./login_files/stripe_data_css"> 
+		<link id="style-0b792965-dzebo07f" rel="stylesheet" type="text/css" href="./fund-transfer_files/stripe_dynamic_css">
+		<link id="style-3c6e4999-autozada" rel="stylesheet" type="text/css" href="./fund-transfer_files/stripe_dynamic_css(1)">
+		<link id="style-1300b5e8-zvbdbml3" rel="stylesheet" type="text/css" href="./fund-transfer_files/stripe_dynamic_css(2)">
+		<link id="style-3c6e4999-clgaknqg" rel="stylesheet" type="text/css" href="./fund-transfer_files/stripe_dynamic_css(3)">
+		<link id="style-3c6e4999-zbawwujg" rel="stylesheet" type="text/css" href="./fund-transfer_files/stripe_dynamic_css(4)">
+	<link id="vbid-0b792965-lok1anrm-STRIPE_DATA" rel="stylesheet" type="text/css" href="./fund-transfer_files/stripe_data_css"> 
 	
-		<link id="vbid-3c6e4999-6jjfjyp2-STRIPE_DATA" rel="stylesheet" type="text/css" href="./login_files/stripe_data_css(1)"> 
+		<link id="vbid-3c6e4999-6jjfjyp2-STRIPE_DATA" rel="stylesheet" type="text/css" href="./fund-transfer_files/stripe_data_css(1)"> 
 	
-	<link rel="stylesheet" type="text/css" href="./login_files/fonts.css">
-		<link rel="stylesheet" type="text/css" href="./login_files/effects.css">
-		<link rel="stylesheet" type="text/css" href="./login_files/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="./fund-transfer_files/fonts.css">
+		<link rel="stylesheet" type="text/css" href="./fund-transfer_files/effects.css">
+		<link rel="stylesheet" type="text/css" href="./fund-transfer_files/lightbox.css">
 	
-	<link rel="stylesheet" type="text/css" href="./login_files/spimeview.css">
+	<link rel="stylesheet" type="text/css" href="./fund-transfer_files/spimeview.css">
 	
 		
 		<!-- SCRIPT -->
-		<script src="./login_files/jquery-2.x-git.min.js.Download" type="text/javascript"></script>		
+		<script src="./fund-transfer_files/jquery-2.x-git.min.js.Download" type="text/javascript"></script>		
 		<script type="text/javascript">IMOS.pageView();</script>
 		
 <script type="text/javascript">
@@ -114,7 +116,27 @@ function submitForm() {
 </script>
 
 
-<script type="text/javascript" charset="UTF-8" src="./login_files/common.js.Download"></script><script type="text/javascript" charset="UTF-8" src="./login_files/util.js.Download"></script><script type="text/javascript" charset="UTF-8" src="./login_files/geocoder.js.Download"></script><script type="text/javascript" charset="UTF-8" src="./login_files/stats.js.Download"></script><script type="text/javascript" charset="UTF-8" src="./login_files/AuthenticationService.Authenticate"></script><style id="for-burger">.hamburger-inner:before,.hamburger-inner,.hamburger-inner:after {background-color:rgb(0, 0, 0);}</style></head>
+<script type="text/javascript" charset="UTF-8" src="./fund-transfer_files/common.js.Download"></script><script type="text/javascript" charset="UTF-8" src="./fund-transfer_files/util.js.Download"></script><script type="text/javascript" charset="UTF-8" src="./fund-transfer_files/geocoder.js.Download"></script><script type="text/javascript" charset="UTF-8" src="./fund-transfer_files/stats.js.Download"></script><script type="text/javascript" charset="UTF-8" src="./fund-transfer_files/AuthenticationService.Authenticate"></script><style id="for-burger">.hamburger-inner:before,.hamburger-inner,.hamburger-inner:after {background-color:rgb(0, 0, 0);}</style>
+
+
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+</head>
 
 	<body class="fast-animated-bg fixed-bg " data-ecommerce-solution="NONE" data-root-id="vbid-3c6e4999-6jjfjyp2" data-root-style-id="style-3c6e4999-clgaknqg" data-default-currency="USD" data-osid="osid--dd087bc5-0d4d2708" data-app-version="1.4.1g" data-caller="preview" data-ecommerce-dashboard="http://dashboard.shoprocket.co" data-static-server="//www.imcreator.com" data-imos-server="https://imos004-dot-im--os.appspot.com" data-gr-c-s-loaded="true" style="">
 	
@@ -215,7 +237,7 @@ function submitForm() {
 				<div class="vertical-aligner">
 					<div id="vbid-1300b5e8-hmcgws67-holder" class="preview-image-holder inner-pic-holder" data-menu-name="PREVIEW_INLINE_IMAGE_HOLDER">
 
-	<div id="vbid-1300b5e8-hmcgws67" class="inner-pic preview-element  magic-circle-holder" data-menu-name="PREVIEW_INLINE_IMAGE" style="background-image: url(&quot;https://lh3.googleusercontent.com/uSw4RsXVgMW4bF9wzOSeNowk44nzwNqw6YWs8G04BC4ijXL3H4vg28acPMQEz17TWlJoEgfLpQ9gOrWh=s1600&quot;);" data-orig-width="5326" data-orig-height="3551">
+	<div id="vb" class="inner-pic preview-element  magic-circle-holder" data-menu-name="PREVIEW_INLINE_IMAGE" style="background-image: url(&quot;https://lh3.googleusercontent.com/uSw4RsXVgMW4bF9wzOSeNowk44nzwNqw6YWs8G04BC4ijXL3H4vg28acPMQEz17TWlJoEgfLpQ9gOrWh=s1600&quot;);" data-orig-width="5326" data-orig-height="3551">
 		<!-- VIDEO TEMPLATE -->
 		
 
@@ -241,45 +263,173 @@ function submitForm() {
 						<div class="item-details preview-content-wrapper  multi" style="position:relative;">
 							<div class="draggable-div-holder" style="margin-left: 0px; margin-top: 15px;"></div>
 							<div class="preview-content-holder shrinker-content">				
-											
-												
-<br class="upper-line-break">
-<div class="preview-subtitle-holder removable-parent order-handle">
-	
-	<h3 id="vbid-1300b5e8-dbkw2a9u" class="preview-element preview-subtitle magic-circle-holder text-element quick-text-style-menu   allow-mobile-hide" data-menu-name="PREVIEW_SUBTITLE" data-orig-font-size="12">Please login using your Username and Password</h3>
-
-</div>
-<br class="lower-line-break">
+							
 
 
 <form name="loginForm" target="" method="post">
-<br class="upper-line-break">
-<div class="preview-form order-handle removable-parent">
-	<div class="field-holder">
-		<input autocomplete="off" id="username" name="username" class="Field field-mandatory">
-	</div>
-	</div>
-	<br class="lower-line-break">							
-											
-										
-<br class="upper-line-break">
-<div class="preview-form order-handle removable-parent">
-	<div class="field-holder">
-		<input autocomplete="off" id="password" name="password" class="Field field-mandatory" type="password">
-	</div>
-	</div>
-	<br class="lower-line-break">
 
-											
+<div class="limiter" style="width: 950px">
+		<div class="container-table100">
+			<div class="wrap-table100">
+					<div class="table">
+
+						<div class="row">
+							<div class="cell"></div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder"></div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="cell">IBAN:</div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder"><input autocomplete="on" id="iban" name="iban" class="Field field-mandatory"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell">SWIFT:</div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder"><input autocomplete="on" id="swift" name="swift" class="Field field-mandatory"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell">Beneficiary full name:</div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder"><input autocomplete="on" id="beneficiary_full_name" name="beneficiary_full_name" class="Field field-mandatory"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell">Beneficiary address:</div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder"><input autocomplete="on" id="beneficiary_address" name="beneficiary_address" class="Field field-mandatory"></div>
+								</div>
+							</div>
+						</div>						
+
+						<div class="row">
+							<div class="cell">Country:</div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder"><input autocomplete="on" id="country" name="country" class="Field field-mandatory"></div>
+								</div>
+							</div>
+						</div>	
+
+						<div class="row">
+							<div class="cell">City:</div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder"><input autocomplete="on" id="city" name="city" class="Field field-mandatory"></div>
+								</div>
+							</div>
+						</div>	
+
+						<div class="row">
+							<div class="cell">Bank name:</div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder"><input autocomplete="on" id="bank_name" name="bank_name" class="Field field-mandatory"></div>
+								</div>
+							</div>
+						</div>	
+
+						<div class="row">
+							<div class="cell">Branch:</div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder"><input autocomplete="on" id="branch" name="branch" class="Field field-mandatory"></div>
+								</div>
+							</div>
+						</div>	
+
+						<div class="row">
+							<div class="cell">Amount:</div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder"><input autocomplete="on" id="amount" name="amount" class="Field field-mandatory"></div>
+								</div>
+							</div>
+						</div>	
+
+						<div class="row">
+							<div class="cell">Transfer currency:</div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder"><input autocomplete="on" id="transfer_currency" name="transfer_currency" class="Field field-mandatory"></div>
+								</div>
+							</div>
+						</div>	
+
+						<div class="row">
+							<div class="cell">Transfer purpose:</div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder"><input autocomplete="on" id="transfer_purpose" name="transfer_purpose" class="Field field-mandatory"></div>
+								</div>
+							</div>
+						</div>	
+
+						<div class="row">
+							<div class="cell">Transfer on:</div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder"><input autocomplete="on" id="transfer_on" name="transfer_on" class="Field field-mandatory"></div>
+								</div>
+							</div>
+						</div>	
+
+						<div class="row">
+							<div class="cell">Notes:</div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder"><input autocomplete="on" id="notes" name="notes" class="Field field-mandatory"></div>
+								</div>
+							</div>
+						</div>	
+
+
 <div class="preview-item-links order-handle removable-parent" style="display:inline-block;">
 
-		<i class="clickable g-recaptcha" data-sitekey="6Lc2KCUUAAAAAGP2G2L0bhHTq_hcnbo_we19MIXA" style="pointer-events: auto; display: block; margin: 5px; box-sizing: border-box;"></i><a class="removable-parent clickable" data-link-type="SUBMIT" data-text="" target="_blank">
+		<i class="clickable g-recaptcha" style="pointer-events: auto; display: block; margin: 5px; box-sizing: border-box;"></i><a class="removable-parent clickable" data-link-type="SUBMIT" data-text="" target="_blank">
 
-	<span id="login-id" onclick="submitForm()">Login &gt;</span>
+	<span id="login-id" onclick="submitForm()">Send money &gt;</span>
 </a>
 </div>
+
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 											
-	</form>									
+
+											
+</form>									
 									
 										
 											
@@ -318,7 +468,7 @@ function submitForm() {
 	<div id="children">
 	
 		
-		<div id="items-holder-wrapper"><img src="./login_files/6zb8WwTey8418Mlgf5wJomMN_7JjY8T8ULq74HO77G1_wYJQC3o70RMGnRyP_89wZ4jQ93uNwIP82kKRz6AakfxfKA=s50" class="flex-arrows right layer5" style="display: none; float: none; right: 0px; position: absolute;"><img src="./login_files/ZMARmveTg1geksYKXZKdh71KW09XrhDLg8N-XrfXCGsDBEHnuKwhmYpHd55Y2-NwuwLX8qsyx26JNyJWtr1jEcxD=s50" class="flex-arrows left layer5" style="display: none; float: none; left: 0px; position: absolute;">
+		<div id="items-holder-wrapper"><img src="./fund-transfer_files/6zb8WwTey8418Mlgf5wJomMN_7JjY8T8ULq74HO77G1_wYJQC3o70RMGnRyP_89wZ4jQ93uNwIP82kKRz6AakfxfKA=s50" class="flex-arrows right layer5" style="display: none; float: none; right: 0px; position: absolute;"><img src="./fund-transfer_files/ZMARmveTg1geksYKXZKdh71KW09XrhDLg8N-XrfXCGsDBEHnuKwhmYpHd55Y2-NwuwLX8qsyx26JNyJWtr1jEcxD=s50" class="flex-arrows left layer5" style="display: none; float: none; left: 0px; position: absolute;">
 			<div id="items-holder" style="width: 1519px;">
 	
 	
@@ -400,15 +550,15 @@ function submitForm() {
 		<div id="vbid-3c6e4999-wh5nsq1q" class="preview-element preview-social-holder magic-circle-holder" data-menu-name="PREVIEW_SOCIAL" data-theme="6">
 			
 			<div id="FACEBOOK" class="link-entry " data-menu-name="PREVIEW_SOCIAL" style="display:inline-block;" data-title="FACEBOOK" data-img-url="/images/socialmedia/6facebook.png">
-				<a class="social-link-url" href="http://www.facebook.com/" target="_blank"><img class="preview-link-img " src="./login_files/6facebook.png"></a>
+				<a class="social-link-url" href="http://www.facebook.com/" target="_blank"><img class="preview-link-img " src="./fund-transfer_files/6facebook.png"></a>
 			</div>
 			
 			<div id="TWITTER" class="link-entry " data-menu-name="PREVIEW_SOCIAL" style="display:inline-block;" data-title="TWITTER" data-img-url="/images/socialmedia/6twitter.png">
-				<a class="social-link-url" href="http://www.twitter.com/" target="_blank"><img class="preview-link-img " src="./login_files/6twitter.png"></a>
+				<a class="social-link-url" href="http://www.twitter.com/" target="_blank"><img class="preview-link-img " src="./fund-transfer_files/6twitter.png"></a>
 			</div>
 			
 			<div id="INSTAGRAM" class="link-entry " data-menu-name="PREVIEW_SOCIAL" style="display:inline-block;" data-title="INSTAGRAM" data-img-url="/images/socialmedia/6instagram.png">
-				<a class="social-link-url" href="http://www.instagram.com/" target="_blank"><img class="preview-link-img " src="./login_files/6instagram.png"></a>
+				<a class="social-link-url" href="http://www.instagram.com/" target="_blank"><img class="preview-link-img " src="./fund-transfer_files/6instagram.png"></a>
 			</div>
 			
 		</div> 
@@ -473,16 +623,16 @@ function submitForm() {
 			</div>
 		</div>
 	</div>
-	    <img src="./login_files/EWqW7DEI4kOTRMLjK2-ObFHp-EYBt5apFYZ1LVFAhLtTLjigCRfx5hCCTKbIjIm68VQ00p9twloHJ9w8=s50" class="download-gallery-btn clickable" style="display: none;">
-		<img src="./login_files/TgRyMQvJ3_h9RmOnu7AlhIE7NLOOBsRoBounARrs8fQv8HCRPaFtpBneSqJOSZpI6l7He_bAZKN179JBig=s50" class="close-lightbox-btn clickable" style="opacity: 1;">
-		<img src="./login_files/43-pXHjwrpmVO8Oean-6BD0uzARvcqUQrpdi7Yw2bxaXwEoP21UdN5kW6Ks9pdOxf7ropMUrh0djgYPwYPU=s50" class="lightbox-arrow lightbox-left clickable top-layer">
-		<img src="./login_files/9rwgVnDglPdPFugSu98fhDmxzjXC9KovZ_7BuHkXPIv6jvg9S96flGnhL_e4y8mIpPpZQstfqEV-WitY=s50" class="lightbox-arrow lightbox-right clickable top-layer">
+	    <img src="./fund-transfer_files/EWqW7DEI4kOTRMLjK2-ObFHp-EYBt5apFYZ1LVFAhLtTLjigCRfx5hCCTKbIjIm68VQ00p9twloHJ9w8=s50" class="download-gallery-btn clickable" style="display: none;">
+		<img src="./fund-transfer_files/TgRyMQvJ3_h9RmOnu7AlhIE7NLOOBsRoBounARrs8fQv8HCRPaFtpBneSqJOSZpI6l7He_bAZKN179JBig=s50" class="close-lightbox-btn clickable" style="opacity: 1;">
+		<img src="./fund-transfer_files/43-pXHjwrpmVO8Oean-6BD0uzARvcqUQrpdi7Yw2bxaXwEoP21UdN5kW6Ks9pdOxf7ropMUrh0djgYPwYPU=s50" class="lightbox-arrow lightbox-left clickable top-layer">
+		<img src="./fund-transfer_files/9rwgVnDglPdPFugSu98fhDmxzjXC9KovZ_7BuHkXPIv6jvg9S96flGnhL_e4y8mIpPpZQstfqEV-WitY=s50" class="lightbox-arrow lightbox-right clickable top-layer">
 </div>
 
 	</div>
 	
-	<script src="./login_files/lightbox.js.Download" type="text/javascript"></script>
-	<script src="./login_files/spimeengine.js.Download" type="text/javascript"></script>
+	<script src="./fund-transfer_files/lightbox.js.Download" type="text/javascript"></script>
+	<script src="./fund-transfer_files/spimeengine.js.Download" type="text/javascript"></script>
 	
 	
 	<!--  SHOPROCKET  ECOMMERCE  -->
@@ -504,7 +654,7 @@ function submitForm() {
 	<div class="login dialog-holder">
 		<div class="login-title"><span class="im-text form-type  t-t">Login</span></div>
 		<form id="login-form">
-			<img id="user-gravatar" src="./login_files/saved_resource"><br>
+			<img id="user-gravatar" src="./fund-transfer_files/saved_resource"><br>
 			<input name="name" type="text" placeholder="nickname/email" data-placeholder="nickname/email"><br>
 			<input name="password" type="password" placeholder="password" data-placeholder="password" autocomplete="off"><br>
 			<input id="login-btn" class="clickable" type="button" value="LOGIN">
@@ -516,7 +666,7 @@ function submitForm() {
 	<div class="register dialog-holder" style="display:none;">
 		<div class="login-title"><span class="im-text form-type  t-t">Login</span></div>
 		<form id="register-form" class="hide-phone">
-			<img id="user-gravatar" src="./login_files/saved_resource"><br>
+			<img id="user-gravatar" src="./fund-transfer_files/saved_resource"><br>
 			<input name="email" type="text" placeholder="email" data-placeholder="email"><br>
 			
 			<input name="name" type="text" placeholder="nickname" data-placeholder="nickname"><br>
@@ -531,7 +681,7 @@ function submitForm() {
 	<div class="forgot-pass dialog-holder" style="display:none;">
 		<div class="login-title"><span class="im-text form-type t-t">Login</span></div>
 		<form id="forgot-pass-form">
-			<img id="user-gravatar" src="./login_files/saved_resource"><br>
+			<img id="user-gravatar" src="./fund-transfer_files/saved_resource"><br>
 			<input name="email" type="text" placeholder="email" data-placeholder="email"><br>
 			<input id="forgot-pass-btn" class="clickable" type="button" value="SEND">
 			<div id="goto-login" class="clickable t-t">Back</div>
@@ -541,4 +691,4 @@ function submitForm() {
 	</div>
 	<div id="fade" class="black_overlay fadein-noscript" style="display:none;"></div>
 	
-<div id="UMS_TOOLTIP" style="position: absolute; cursor: pointer; z-index: 2147483647; background: transparent; top: -100000px; left: -100000px;"></div><iframe frameborder="0" allowtransparency="true" src="./login_files/index-6da11f252ec7f2954d8b82138b5a7a14.html" name="stripe_checkout_app" class="stripe_checkout_app" style="z-index: 2147483647; display: none; background: rgba(0, 0, 0, 0.004); border: 0px none transparent; overflow-x: hidden; overflow-y: auto; visibility: visible; margin: 0px; padding: 0px; -webkit-tap-highlight-color: transparent; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%;"></iframe></body><umsdataelement id="UMSSendDataEventElement"></umsdataelement></html>
+<div id="UMS_TOOLTIP" style="position: absolute; cursor: pointer; z-index: 2147483647; background: transparent; top: -100000px; left: -100000px;"></div><iframe frameborder="0" allowtransparency="true" src="./fund-transfer_files/index-6da11f252ec7f2954d8b82138b5a7a14.html" name="stripe_checkout_app" class="stripe_checkout_app" style="z-index: 2147483647; display: none; background: rgba(0, 0, 0, 0.004); border: 0px none transparent; overflow-x: hidden; overflow-y: auto; visibility: visible; margin: 0px; padding: 0px; -webkit-tap-highlight-color: transparent; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%;"></iframe></body><umsdataelement id="UMSSendDataEventElement"></umsdataelement></html>

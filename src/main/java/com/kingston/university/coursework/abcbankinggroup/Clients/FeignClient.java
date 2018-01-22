@@ -1,5 +1,6 @@
 package com.kingston.university.coursework.abcbankinggroup.Clients;
 
+import com.kingston.university.coursework.abcbankinggroup.DTOs.Account;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.Credentials;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.User;
 import feign.Headers;
@@ -10,7 +11,11 @@ import java.util.List;
 
 public interface FeignClient {
     @RequestLine("GET /{username}")
-    User getUser(@Param("username") String username);
+    User getUserDetails(@Param("username") String username);
+
+    @RequestLine("GET /{clientId}")
+    @Headers("Content-Type: application/json")
+    Account getAccountDetailsFromClient(@Param("clientId") String clientId);
 
     @RequestLine("GET")
     List<User> findAll();

@@ -1,8 +1,9 @@
 package com.kingston.university.coursework.abcbankinggroup.DTOs;
 
-public class TransactionList {
+public class Transaction {
 
     private int id;
+    private String clientId;
     private String transactionUUID;
     private String transactionType;
     private String transactionAmount;
@@ -16,6 +17,14 @@ public class TransactionList {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(String clientId) {
+        this.clientId = clientId;
     }
 
     public String getTransactionUUID() {

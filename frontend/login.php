@@ -3,12 +3,14 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+include_once("settings.php");
+
 if(count($_POST) == 2) {
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
 	CURLOPT_PORT => "8080",
-	CURLOPT_URL => "http://localhost:8080/api/main-service/login",
+	CURLOPT_URL => $GLOBALS["host"] . "/api/main-service/login",
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_ENCODING => "",
 	CURLOPT_MAXREDIRS => 10,
@@ -42,6 +44,7 @@ if(count($_POST) == 2) {
 	echo "</pre>";
 
 	if ($data->loggedIn) {
+		$_SESSION["client_id"] = $data->clientId;
 		$_SESSION["logged_in"] = true;
 		$_SESSION["user_name"] = $data->name;
 		$_SESSION["user_email"] = $data->email;

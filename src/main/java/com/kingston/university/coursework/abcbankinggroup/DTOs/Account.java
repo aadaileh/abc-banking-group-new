@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Account {
 
     private String clientId;
-    private HashMap<Integer, TransactionList> TransactionList;
+    private HashMap<Integer, Transaction> TransactionList;
 
     public String getClientId() {
         return clientId;
@@ -15,11 +15,11 @@ public class Account {
         this.clientId = clientId;
     }
 
-    public HashMap<Integer, TransactionList> getTransactionList() {
+    public HashMap<Integer, Transaction> getTransactionList() {
         return TransactionList;
     }
 
-    public void setTransactionList(HashMap<Integer, TransactionList> transactionList) {
+    public void setTransactionList(HashMap<Integer, Transaction> transactionList) {
         TransactionList = transactionList;
     }
 }

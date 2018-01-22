@@ -1,3 +1,9 @@
+<?php
+session_start();
+include_once("settings.php");
+?>
+
+
 <!DOCTYPE html>
 <!-- saved from url=(0052)https://www.imcreator.com/viewer/vbid-6a196-st6trjnk -->
 <html xmlns="http://www.w3.org/1999/xhtml" class="gr__imcreator_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

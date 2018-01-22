@@ -5,5 +5,5 @@ ini_set('display_errors', 1);
 
 reset($_SESSION);
 session_destroy();
-header("Location: /abc-banking-group-coursework/home.php");
+header("Location: /home.php");
 ?>

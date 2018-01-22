@@ -1,11 +1,70 @@
 <?php
-session_start();
 error_reporting(E_ALL);
-ini_set('display_errors', 0);
+ini_set('display_errors', 1);
 
-// echo '<pre>SESSION (account.php):';
-// print_r($_SESSION);
-// echo '</pre>';
+session_start();
+
+include_once("settings.php");
+
+
+echo $GLOBALS["host"] . "/api/account-service/account/" . $_SESSION["client_id"];
+echo "(0)";
+
+if($_SESSION["logged_in"] == true) {
+echo "(1)";
+	$curl = curl_init();
+echo "(2)";
+	curl_setopt_array($curl, array(
+	CURLOPT_PORT => "8080",
+	CURLOPT_URL => $GLOBALS["host"] . "/api/account-service/account/" . $_SESSION["client_id"],
+	CURLOPT_RETURNTRANSFER => true,
+	CURLOPT_ENCODING => "",
+	CURLOPT_MAXREDIRS => 10,
+	CURLOPT_TIMEOUT => 30,
+	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+	CURLOPT_CUSTOMREQUEST => "GET",
+	CURLOPT_POSTFIELDS => "{
+			\"username\":\"" . $_POST['username'] . "\",
+			\"password\":\"" . $_POST['password'] . "\"
+		}",
+	CURLOPT_HTTPHEADER => array(
+	"authorization: Basic YXBpdXNlcjpwYXNz",
+	"content-type: application/json"
+	),
+	));
+echo "3";
+	$response = curl_exec($curl);
+echo "4";	
+	$err = curl_error($curl);
+
+	curl_close($curl);
+
+	if ($err) {
+	echo "cURL Error #:" . $err;
+
+	} else {
+	//echo $response;
+	$data = json_decode($response);
+
+	echo "<pre>data:";
+	print_r($data);
+	echo "</pre>";
+
+	// if ($data->loggedIn) {
+	// 	$_SESSION["logged_in"] = true;
+	// 	$_SESSION["user_name"] = $data->name;
+	// 	$_SESSION["user_email"] = $data->email;
+	// 	$_SESSION["user_address"] = $data->address;
+
+	// 	header("Location: /account.php");
+	// } else {
+	// 	session_destroy();
+	// 	$error = '<div style="height: 30px; text-align: center;color: red;font-family: Arial; font-size: 10pt;">Wrong credentials. Please try again!</div>';
+	// }
+	}
+}
+
+exit;
 
 ?>
 
@@ -219,7 +278,10 @@ ini_set('display_errors', 0);
 	
 
 				</div>
-			</div><div class="text-side shrinker-parent">
+			</div>
+
+
+			<div class="text-side shrinker-parent">
 					<div class="vertical-aligner">
 						<div class="item-details preview-content-wrapper  multi" style="position:relative;">
 							<div class="draggable-div-holder" style="margin-left: 0px; margin-top: 15px;"></div>
@@ -238,69 +300,20 @@ ini_set('display_errors', 0);
 							<div class="cell">Credit</div>							
 							<div class="cell">Balance</div>
 						</div>
+<?php
 
-						<div class="row">
-							<div class="cell">17.01.2018 11:20:43</div>
-							<div class="cell" style="text-align: left;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>							
-							<div class="cell">17.01.2018 11:20:43</div>
-							<div class="cell">1200</div>
-							<div class="cell">--</div>
-							<div class="cell">56810</div>
-						</div>
+echo '						
+<div class="row">
+<div class="cell">17.01.2018 11:20:43</div>
+<div class="cell" style="text-align: left;">xxx</div>							
+<div class="cell">17.01.2018 11:20:43</div>
+<div class="cell">1200</div>
+<div class="cell">--</div>
+<div class="cell">56810</div>
+</div>
+						';
+?>
 
-						<div class="row">
-							<div class="cell" style="color: red;">17.01.2018 11:20:43</div>
-							<div class="cell" style="text-align: left;color: red;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>							
-							<div class="cell" style="color: red;">17.01.2018 11:20:43</div>
-							<div class="cell" style="color: red;">--</div>
-							<div class="cell" style="color: red;">600</div>
-							<div class="cell" style="color: red;">56810</div>
-						</div>
-
-						<div class="row">
-							<div class="cell">17.01.2018 11:20:43</div>
-							<div class="cell" style="text-align: left;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>							
-							<div class="cell">17.01.2018 11:20:43</div>
-							<div class="cell">1200</div>
-							<div class="cell">--</div>
-							<div class="cell">56810</div>
-						</div>
-
-						<div class="row">
-							<div class="cell">17.01.2018 11:20:43</div>
-							<div class="cell" style="text-align: left;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>							
-							<div class="cell">17.01.2018 11:20:43</div>
-							<div class="cell">1200</div>
-							<div class="cell">--</div>
-							<div class="cell">56810</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" style="color: red;">17.01.2018 11:20:43</div>
-							<div class="cell" style="text-align: left;color: red;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>							
-							<div class="cell" style="color: red;">17.01.2018 11:20:43</div>
-							<div class="cell" style="color: red;">--</div>
-							<div class="cell" style="color: red;">30</div>
-							<div class="cell" style="color: red;">56810</div>
-						</div>
-
-						<div class="row">
-							<div class="cell">17.01.2018 11:20:43</div>
-							<div class="cell" style="text-align: left;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>							
-							<div class="cell">17.01.2018 11:20:43</div>
-							<div class="cell">1200</div>
-							<div class="cell">--</div>
-							<div class="cell">56810</div>
-						</div>
-
-						<div class="row">
-							<div class="cell">17.01.2018 11:20:43</div>
-							<div class="cell" style="text-align: left;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>							
-							<div class="cell">17.01.2018 11:20:43</div>
-							<div class="cell">1200</div>
-							<div class="cell">--</div>
-							<div class="cell">56810</div>
-						</div>
 
 					</div>
 			</div>
