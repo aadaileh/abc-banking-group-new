@@ -1,7 +1,7 @@
 package com.kingston.university.coursework.abcbankinggroup.Services.Account.impl;
 
 import com.kingston.university.coursework.abcbankinggroup.Connection.DatabaseConnectionSingleton;
-import com.kingston.university.coursework.abcbankinggroup.DTOs.Account;
+import com.kingston.university.coursework.abcbankinggroup.DTOs.FundTransferRequest;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.Transaction;
 import com.kingston.university.coursework.abcbankinggroup.Services.Account.AccountServiceController;
 import org.slf4j.Logger;
@@ -15,7 +15,8 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.UUID;
 
 @Service
 public class AccountServiceImplentations {
@@ -45,13 +46,11 @@ public class AccountServiceImplentations {
      *
      * @Author Ahmed Al-Adaileh <k1560383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
      */
-    public Account retrieveAccountDetails(String clientId) throws SQLException {
+    public ArrayList<Transaction> retrieveAccountDetails(String clientId) throws SQLException {
 
         DataSource dataSource = getDataSource();
         Connection connection = null;
-        Account account = new Account();
-        HashMap<Integer, Transaction> transactionListHashMap= new HashMap<>();
-
+        ArrayList<Transaction> transactions = new ArrayList<>();
         try {
             connection = dataSource.getConnection();
             Statement stmt = connection.createStatement();
@@ -59,7 +58,7 @@ public class AccountServiceImplentations {
                     "SELECT * " +
                             "FROM account " +
                             "WHERE client_id = '" + clientId + "'" +
-                            "ORDER BY timestamp DESC");
+                            "ORDER BY timestamp ASC");
 
             while (resultSet.next()) {
 
@@ -73,17 +72,14 @@ public class AccountServiceImplentations {
                 transaction.setTransactionUUID(resultSet.getString("transaction_uuid"));
                 transaction.setTransactionType(resultSet.getString("transaction_type"));
                 transaction.setTransactionAmount(resultSet.getString("transaction_amount"));
-                transaction.setUnixtimestamp(resultSet.getString("timestamp"));
+                transaction.setUnixTimeStamp(resultSet.getString("timestamp"));
                 transaction.setClientType(resultSet.getString("client_type"));
                 transaction.setDoneBy(resultSet.getString("done_by"));
 
-                transactionListHashMap.put(id, transaction);
-                account.setClientId(client_id);
+                transactions.add(transaction);
             }
 
-            account.setTransactionList(transactionListHashMap);
-
-            return account;
+            return transactions;
 
         } catch (Exception e) {
 
@@ -93,9 +89,103 @@ public class AccountServiceImplentations {
             connection.close();
         }
 
-        return account;
+        return transactions;
     }
 
+    /**
+     * Method to retrieve the account balance based on the given client-id
+     *
+     * @param clientId client-id
+     * @return Float account balance
+     *
+     * @throws SQLException
+     *
+     * @Author Ahmed Al-Adaileh <k1560383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
+    public double retrieveAccountBalance(String clientId) throws SQLException {
+
+        DataSource dataSource = getDataSource();
+        Connection connection = null;
+        String transactionType = null;
+        Float transactionAmount = null;
+        double balance = 0;
+
+        try {
+            connection = dataSource.getConnection();
+            Statement stmt = connection.createStatement();
+            ResultSet resultSet = stmt.executeQuery(
+                    "SELECT * " +
+                            "FROM account " +
+                            "WHERE client_id = '" + clientId + "'");
+
+            while (resultSet.next()) {
+                transactionType = resultSet.getString("transaction_type");
+                transactionAmount = resultSet.getFloat("transaction_amount");
+
+                if (transactionType.equals("w")){
+                    transactionAmount = transactionAmount * -1;
+                }
+                balance += transactionAmount;
+            }
+
+            return balance;
+
+        } catch (Exception e) {
+
+            LOG.debug(e.getMessage());
+
+        } finally {
+            connection.close();
+        }
+
+        return balance;
+    }
+
+    /**
+     * Update the account by adding new withdrawal transaction
+     *
+     * @param fundTransferRequest contains client-id
+     * @return boolean
+     *
+     * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
+    public Boolean updateAccountTable(FundTransferRequest fundTransferRequest) throws SQLException {
+
+        DataSource dataSource = getDataSource();
+        Connection connection = null;
+
+        try {
+            connection = dataSource.getConnection();
+            Statement stmt = connection.createStatement();
+            ResultSet resultSet = stmt.executeQuery(
+                    "INSERT INTO `account` (" +
+                            "`transaction_uuid`, " +
+                            "`client_id`, " +
+                            "`transaction_type`, " +
+                            "`transaction_amount`, " +
+                            "`timestamp`, " +
+                            "`done_by`, " +
+                            "`client_type`) " +
+                            "VALUES (" +
+                            "'" + UUID.randomUUID().toString() + "', " +
+                            "'" + fundTransferRequest.getClientId() + "', " +
+                            "'w', " +
+                            "" + fundTransferRequest.getAmount() + ", " +
+                            "NOW(), " +
+                            "'" + fundTransferRequest.getBeneficiaryFullName() + "', " +
+                            "'online-banking');");
+
+            return true;
+
+        } catch (Exception e) {
+
+            LOG.debug(e.getMessage());
+            return false;
+
+        } finally {
+            connection.close();
+        }
+    }
 
     /**
      * Build connection to database

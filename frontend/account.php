@@ -1,22 +1,17 @@
 <?php
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 
 session_start();
 
 include_once("settings.php");
 
 
-echo $GLOBALS["host"] . "/api/account-service/account/" . $_SESSION["client_id"];
-echo "(0)";
-
 if($_SESSION["logged_in"] == true) {
-echo "(1)";
 	$curl = curl_init();
-echo "(2)";
 	curl_setopt_array($curl, array(
 	CURLOPT_PORT => "8080",
-	CURLOPT_URL => $GLOBALS["host"] . "/api/account-service/account/" . $_SESSION["client_id"],
+	CURLOPT_URL => $GLOBALS["host"] . "/api/main-service/account/" . $_SESSION["client_id"],
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_ENCODING => "",
 	CURLOPT_MAXREDIRS => 10,
@@ -32,9 +27,9 @@ echo "(2)";
 	"content-type: application/json"
 	),
 	));
-echo "3";
+
 	$response = curl_exec($curl);
-echo "4";	
+	
 	$err = curl_error($curl);
 
 	curl_close($curl);
@@ -46,25 +41,15 @@ echo "4";
 	//echo $response;
 	$data = json_decode($response);
 
-	echo "<pre>data:";
-	print_r($data);
-	echo "</pre>";
+	if (isset($data) && count($data) > 0) {
+		// do nothing
 
-	// if ($data->loggedIn) {
-	// 	$_SESSION["logged_in"] = true;
-	// 	$_SESSION["user_name"] = $data->name;
-	// 	$_SESSION["user_email"] = $data->email;
-	// 	$_SESSION["user_address"] = $data->address;
-
-	// 	header("Location: /account.php");
-	// } else {
-	// 	session_destroy();
-	// 	$error = '<div style="height: 30px; text-align: center;color: red;font-family: Arial; font-size: 10pt;">Wrong credentials. Please try again!</div>';
-	// }
+	} else {
+		session_destroy();
+		$error = '<div style="height: 30px; text-align: center;color: red;font-family: Arial; font-size: 10pt;">Wrong credentials. Please try again!</div>';
+	}
 	}
 }
-
-exit;
 
 ?>
 
@@ -302,16 +287,31 @@ exit;
 						</div>
 <?php
 
-echo '						
-<div class="row">
-<div class="cell">17.01.2018 11:20:43</div>
-<div class="cell" style="text-align: left;">xxx</div>							
-<div class="cell">17.01.2018 11:20:43</div>
-<div class="cell">1200</div>
-<div class="cell">--</div>
-<div class="cell">56810</div>
-</div>
-						';
+	// echo "<pre>data:";
+	// print_r($data);
+	// echo "</pre>";
+
+foreach ($data as $k => $v) {
+
+	$debit = $v->transactionType == 'w' ? $v->transactionAmount * -1 : 0;
+	$credit = $v->transactionType == 'd' ? $v->transactionAmount : 0;
+	$balance = $balance + $debit + $credit;
+
+	$style = $debit < 0 ? 'style="color: red;"' : 'style="color: green;"';
+	$style2 = $debit < 0 ? 'color: red;"' : 'color: green;'; 
+
+	echo '						
+		<div class="row">
+		<div class="cell" ' . $style . '>' . $v->unixTimeStamp . '</div>
+		<div class="cell" style="text-align: left;' . $style2 . '">' . $v->doneBy . ' via ' . strtoupper($v->clientType) . ', Transaction-ID: ' . $v->transactionUUID . '</div>
+		<div class="cell" ' . $style . '>' . $v->unixTimeStamp . '</div>
+		<div class="cell" ' . $style . '>' . $debit . '</div>
+		<div class="cell" ' . $style . '>' . $credit . '</div>
+		<div class="cell" ' . $style . '>' . $balance . '</div>
+	</div>
+	';
+
+}
 ?>
 
 

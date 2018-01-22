@@ -1,16 +1,21 @@
 <?php 
-session_start();
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
+
+session_start();
 
 include_once("settings.php");
 
-if(count($_POST) == 2) {
+echo "<pre>post:";
+print_r($_POST);
+echo "</pre>";
+	
+if(count($_POST) > 0) {
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
 	CURLOPT_PORT => "8080",
-	CURLOPT_URL => "http://localhost:8080/api/main/login",
+	CURLOPT_URL => $GLOBALS["host"] . "/api/main-service/transaction/",
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_ENCODING => "",
 	CURLOPT_MAXREDIRS => 10,
@@ -18,6 +23,7 @@ if(count($_POST) == 2) {
 	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	CURLOPT_CUSTOMREQUEST => "POST",
 	CURLOPT_POSTFIELDS => "{
+			\"client_id\":\"" . $_SESSION["client_id"] . "\",
 			\"username\":\"" . $_POST['username'] . "\",
 			\"password\":\"" . $_POST['password'] . "\"
 		}",
@@ -359,7 +365,7 @@ function submitForm() {
 							<div class="cell">Amount:</div>
 							<div class="cell" style="text-align: left;">
 								<div class="preview-form order-handle removable-parent">
-									<div class="field-holder"><input autocomplete="on" id="amount" name="amount" class="Field field-mandatory"></div>
+									<div class="field-holder"><input autocomplete="on" id="amount" name="amount" class="Field field-mandatory" type="number" min="1" max="10000"></div>
 								</div>
 							</div>
 						</div>	
@@ -368,7 +374,14 @@ function submitForm() {
 							<div class="cell">Transfer currency:</div>
 							<div class="cell" style="text-align: left;">
 								<div class="preview-form order-handle removable-parent">
-									<div class="field-holder"><input autocomplete="on" id="transfer_currency" name="transfer_currency" class="Field field-mandatory"></div>
+									<div class="field-holder">
+									<select autocomplete="on" id="transfer_currency" name="transfer_currency" class="Field field-mandatory">
+									  <option value="EURO">Please choose currency</option>
+									  <option value="GBP">GBP</option>
+									  <option value="EURO">EURO</option>
+									  <option value="DOLLAR">Dollar</option>
+									</select>
+									</div>
 								</div>
 							</div>
 						</div>	
@@ -386,7 +399,7 @@ function submitForm() {
 							<div class="cell">Transfer on:</div>
 							<div class="cell" style="text-align: left;">
 								<div class="preview-form order-handle removable-parent">
-									<div class="field-holder"><input autocomplete="on" id="transfer_on" name="transfer_on" class="Field field-mandatory"></div>
+									<div class="field-holder"><input autocomplete="on" id="transfer_on" name="transfer_on" class="Field" type="date"></div>
 								</div>
 							</div>
 						</div>	
@@ -400,16 +413,21 @@ function submitForm() {
 							</div>
 						</div>	
 
+						<div class="row">
+							<div class="cell"></div>
+							<div class="cell" style="text-align: left;">
+								<div class="preview-form order-handle removable-parent">
+									<div class="field-holder">
 
-<div class="preview-item-links order-handle removable-parent" style="display:inline-block;">
 
-		<i class="clickable g-recaptcha" style="pointer-events: auto; display: block; margin: 5px; box-sizing: border-box;"></i><a class="removable-parent clickable" data-link-type="SUBMIT" data-text="" target="_blank">
-
-	<span id="login-id" onclick="submitForm()">Send money &gt;</span>
-</a>
-</div>
-
+								</div>
+							</div>
+						</div>	
 					</div>
+
+
+<div class="preview-item-links order-handle removable-parent" style="display:inline-block;"><i class="clickable g-recaptcha" style="pointer-events: auto; display: block; margin: 5px; box-sizing: border-box;"></i><a class="removable-parent clickable" data-link-type="SUBMIT" data-text="" target="_blank"><span id="login-id" onclick="submitForm()">Send money &gt;</span></a></div>
+
 			</div>
 		</div>
 	</div>

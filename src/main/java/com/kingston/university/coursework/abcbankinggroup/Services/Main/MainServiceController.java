@@ -1,9 +1,7 @@
 package com.kingston.university.coursework.abcbankinggroup.Services.Main;
 
 import com.kingston.university.coursework.abcbankinggroup.Clients.FeignClient;
-import com.kingston.university.coursework.abcbankinggroup.DTOs.Account;
-import com.kingston.university.coursework.abcbankinggroup.DTOs.Credentials;
-import com.kingston.university.coursework.abcbankinggroup.DTOs.User;
+import com.kingston.university.coursework.abcbankinggroup.DTOs.*;
 import feign.Feign;
 import feign.auth.BasicAuthRequestInterceptor;
 import feign.gson.GsonDecoder;
@@ -26,6 +24,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 
 @RestController
 @Configuration
@@ -68,14 +67,9 @@ public class MainServiceController {
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
     public User login(@RequestBody Credentials credentials) {
 
-//        boolean usernameAlreadyExists = false;
-//        if(usernameAlreadyExists) {
-//            throw new IllegalArgumentException("error.username");
-//        }
-
         FeignClient feignClient = getFeignClient("/api/login-service/login");
-
-        return feignClient.loginServiceVerifyLogin(credentials);
+        User user = feignClient.loginServiceVerifyLogin(credentials);
+        return user;
     }
 
     /**
@@ -121,14 +115,69 @@ public class MainServiceController {
             @ApiResponse(code = 201, message = "Created"),
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
-    public Account getAccountDetails(@PathVariable String clientId) {
+    public ArrayList<Transaction> getAccountDetails(@PathVariable String clientId) {
 
         FeignClient feignClient = getFeignClient("/api/account-service/account/");
 
-        Account accountDetailsX = feignClient.getAccountDetailsFromClient(clientId);
-        int x=0;
-        return accountDetailsX;
+        ArrayList<Transaction> accountDetails = feignClient.getAccountDetailsFromClient(clientId);
+        return accountDetails;
     }
+
+    /**
+     * Method to fullfill a fund transfer process. Usually the fund-transfer process consists from the following steps:
+     * 1) get the available balance, 2) get transfer details 3) check transfer details by (comparing balance to request)
+     * and (verifying benificiary details). 4) Update Account. 5) Add record to the main transfer table 6) Print receipt.
+     * All tese methods will be available in the transaction-service and will be called from here.
+     *
+     * @param fundTransferRequest transfer's all related fields
+     * @return Account transactions data (if success), or null in case of failure
+     *
+     * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
+    @ApiOperation("Retrieves all account details and transactions related to the given client-id")
+    @RequestMapping(value = "/api/main-service/transfer-fund",
+            consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
+            method = RequestMethod.PUT)
+    @ResponseBody
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Created"),
+            @ApiResponse(code = 401, message = "Unauthorized"),
+            @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
+    public FundTransferResponse transferFunds(@RequestBody FundTransferRequest fundTransferRequest) {
+
+        /**
+         * GET  /api/account-service/balance/{clientId}
+         * GET /api/transaction-service/check
+         * POST /api/transaction-service/transaction/add
+         * PUT /api/account-service/update
+         */
+
+        //GET  /api/account-service/balance/{clientId}
+        FeignClient feignClientAccountServiceBalance = getFeignClient("/api/account-service/balance/");
+        double accountBalance = feignClientAccountServiceBalance.getAccountBalance(fundTransferRequest.getClientId());
+
+        //POST /api/transaction-service/check
+        FeignClient feignClientTransactionServiceCheck = getFeignClient("/api/transaction-service/check");
+        fundTransferRequest.setAvailableBalance(accountBalance);
+        FundTransferResponse fundTransferResponse = feignClientTransactionServiceCheck.verifyTransfer(fundTransferRequest);
+
+        //POST /api/transaction-service/transaction/add
+        FeignClient feignClientTransactionServiceAdd = getFeignClient("/api/transaction-service/transaction/add");
+        Boolean performTransfer = feignClientTransactionServiceAdd.performTransfer(fundTransferRequest);
+        fundTransferResponse.setPerformTransferStatus(true);
+
+        //PUT /api/account-service/update
+        if(performTransfer != null && performTransfer) {
+            FeignClient feignClientAccountServiceUpdate = getFeignClient("/api/account-service/update/");
+            feignClientAccountServiceUpdate.updateAccountTable(fundTransferRequest);
+            fundTransferResponse.setUpdateAccountStatus(true);
+        }
+
+        fundTransferResponse.setBalance(accountBalance);
+        return fundTransferResponse;
+    }
+
 
     /**
      * Prepare Feign-client for communication with other services

@@ -7,7 +7,7 @@ public class Transaction {
     private String transactionUUID;
     private String transactionType;
     private String transactionAmount;
-    private String unixtimestamp;
+    private String unixTimeStamp;
     private String doneBy;
     private String clientType;
 
@@ -51,12 +51,12 @@ public class Transaction {
         this.transactionAmount = transactionAmount;
     }
 
-    public String getUnixtimestamp() {
-        return unixtimestamp;
+    public String getUnixTimeStamp() {
+        return unixTimeStamp;
     }
 
-    public void setUnixtimestamp(String unixtimestamp) {
-        this.unixtimestamp = unixtimestamp;
+    public void setUnixTimeStamp(String unixTimeStamp) {
+        this.unixTimeStamp = unixTimeStamp;
     }
 
     public String getDoneBy() {

@@ -1,7 +1,8 @@
-package com.kingston.university.coursework.abcbankinggroup.Services.Account;
+package com.kingston.university.coursework.abcbankinggroup.Services.Transaction.Account;
 
-import com.kingston.university.coursework.abcbankinggroup.DTOs.Transaction;
-import com.kingston.university.coursework.abcbankinggroup.Services.Account.impl.AccountServiceImplentations;
+import com.kingston.university.coursework.abcbankinggroup.DTOs.FundTransferRequest;
+import com.kingston.university.coursework.abcbankinggroup.DTOs.FundTransferResponse;
+import com.kingston.university.coursework.abcbankinggroup.Services.Transaction.Account.impl.TransactionServiceImplentations;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -20,10 +21,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
 
 /**
- * Main Controller for the Account-Service. It implements all needed
+ * Main Controller for the Transaction-Service. It implements all needed
  * methods for the mentioned service.
  *
  * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
@@ -34,62 +34,64 @@ import java.util.ArrayList;
 @EnableDiscoveryClient
 @CrossOrigin(origins = "*", maxAge = 3600)
 @EnableSwagger2
-public class AccountServiceController extends AccountServiceImplentations implements AccountServiceInterface {
+public class TransactionServiceController extends TransactionServiceImplentations implements TransactionServiceInterface {
 
-    private static final Logger LOG = LoggerFactory.getLogger(AccountServiceController.class);
+    private static final Logger LOG = LoggerFactory.getLogger(TransactionServiceController.class);
 
     @Autowired
-    private AccountServiceImplentations accountServiceImplentations;
+    private TransactionServiceImplentations transactionServiceImplentations;
 
     /**
-     * Method to retrieve all transactions related to account based on the client-id. All
-     * kind of transaction returned sorted according timestamp. If no results found, empty
-     * Account object is returned.
+     * Method to verify the fund transfer by checking the items of the transfer including the sufficiency of the
+     * balance.
      *
-     * @param clientId contains client-id
-     * @return Account transactions data (if success), or null in case of failure
+     * @param fundTransferRequest contains client-id
+     * @return FundTransferResponse
      *
      * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
      */
-    @ApiOperation("Retrieves all account details and transactions related to client-id")
-    @RequestMapping(value = "/api/account-service/account/{clientId}",
+    @ApiOperation("Verify all related and necessary information before processing the fund transfer")
+    @RequestMapping(value = "/api/transaction-service/check",
+            consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
-            method = RequestMethod.GET)
+            method = RequestMethod.POST)
     @ResponseBody
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "Created"),
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
-    public ArrayList<Transaction> getAccount(@PathVariable String clientId) throws SQLException {
+    public FundTransferResponse verifyFundTransfer(@RequestBody FundTransferRequest fundTransferRequest) {
 
-        ArrayList<Transaction> accountDetails = accountServiceImplentations.retrieveAccountDetails(clientId);
+        FundTransferResponse fundTransferResponse = transactionServiceImplentations.verifyFundTransfer(fundTransferRequest);
 
-        return accountDetails;
+        return fundTransferResponse;
     }
 
     /**
-     * Method to retrieve the latest balance of the account
+     * Add the fund transfer details to the transfer table for later processing by external applications
      *
-     * @param clientId contains client-id
-     * @return Float the latest balance
+     * @param fundTransferRequest contains client-id
+     * @return boolean
      *
      * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
      */
-    @ApiOperation("Returns the account balance based on the given client-id")
-    @RequestMapping(value = "/api/account-service/balance/{clientId}",
+    @ApiOperation("Verify all related and necessary information before processing the fund transfer")
+    @RequestMapping(value = "/api/transaction-service/transaction/add",
+            consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
-            method = RequestMethod.GET)
+            method = RequestMethod.POST)
     @ResponseBody
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "Created"),
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
-    public double getBalance(@PathVariable String clientId) throws SQLException {
+    public Boolean performTransfer(@RequestBody FundTransferRequest fundTransferRequest) throws SQLException {
 
-        double accountDetails = accountServiceImplentations.retrieveAccountBalance(clientId);
+        Boolean performTransfer = transactionServiceImplentations.performTheTransfer(fundTransferRequest);
 
-        return accountDetails;
+        return performTransfer;
     }
+
 
     @ExceptionHandler
     void handleIllegalArgumentException(

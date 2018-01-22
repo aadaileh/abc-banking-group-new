@@ -1,12 +1,11 @@
 package com.kingston.university.coursework.abcbankinggroup.Clients;
 
-import com.kingston.university.coursework.abcbankinggroup.DTOs.Account;
-import com.kingston.university.coursework.abcbankinggroup.DTOs.Credentials;
-import com.kingston.university.coursework.abcbankinggroup.DTOs.User;
+import com.kingston.university.coursework.abcbankinggroup.DTOs.*;
 import feign.Headers;
 import feign.Param;
 import feign.RequestLine;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public interface FeignClient {
@@ -15,7 +14,23 @@ public interface FeignClient {
 
     @RequestLine("GET /{clientId}")
     @Headers("Content-Type: application/json")
-    Account getAccountDetailsFromClient(@Param("clientId") String clientId);
+    ArrayList<Transaction> getAccountDetailsFromClient(@Param("clientId") String clientId);
+
+    @RequestLine("GET /{clientId}")
+    @Headers("Content-Type: application/json")
+    double getAccountBalance(@Param("clientId") String clientId);
+
+    @RequestLine("POST")
+    @Headers("Content-Type: application/json")
+    FundTransferResponse verifyTransfer(FundTransferRequest fundTransferRequest);
+
+    @RequestLine("POST")
+    @Headers("Content-Type: application/json")
+    Boolean performTransfer(FundTransferRequest fundTransferRequest);
+
+    @RequestLine("PUT")
+    @Headers("Content-Type: application/json")
+    Boolean updateAccountTable(FundTransferRequest fundTransferRequest);
 
     @RequestLine("GET")
     List<User> findAll();
