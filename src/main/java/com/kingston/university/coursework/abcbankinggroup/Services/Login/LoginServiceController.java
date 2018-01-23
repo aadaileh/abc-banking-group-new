@@ -9,7 +9,6 @@ import io.swagger.annotations.ApiResponses;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Configuration;
@@ -20,7 +19,6 @@ import org.springframework.web.bind.annotation.*;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.servlet.http.HttpServletResponse;
-import javax.sql.DataSource;
 import java.io.IOException;
 import java.sql.SQLException;
 
@@ -39,12 +37,6 @@ import java.sql.SQLException;
 public class LoginServiceController extends LoginServiceImplentations implements LoginServiceInterface {
 
     private static final Logger LOG = LoggerFactory.getLogger(LoginServiceController.class);
-
-    @Value("${spring.datasource.url}")
-    private String dbUrl;
-
-    @Autowired
-    private DataSource dataSource;
 
     @Autowired
     private LoginServiceImplentations loginServiceImplentations;

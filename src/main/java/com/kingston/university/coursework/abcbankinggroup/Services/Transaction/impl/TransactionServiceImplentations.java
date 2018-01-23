@@ -1,9 +1,9 @@
-package com.kingston.university.coursework.abcbankinggroup.Services.Transaction.Account.impl;
+package com.kingston.university.coursework.abcbankinggroup.Services.Transaction.impl;
 
 import com.kingston.university.coursework.abcbankinggroup.Connection.DataSourceAbstract;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.FundTransferRequest;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.FundTransferResponse;
-import com.kingston.university.coursework.abcbankinggroup.Services.Transaction.Account.TransactionServiceController;
+import com.kingston.university.coursework.abcbankinggroup.Services.Transaction.TransactionServiceController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

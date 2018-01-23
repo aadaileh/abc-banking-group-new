@@ -1,8 +1,8 @@
-package com.kingston.university.coursework.abcbankinggroup.Services.Transaction.Account;
+package com.kingston.university.coursework.abcbankinggroup.Services.Transaction;
 
 import com.kingston.university.coursework.abcbankinggroup.DTOs.FundTransferRequest;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.FundTransferResponse;
-import com.kingston.university.coursework.abcbankinggroup.Services.Transaction.Account.impl.TransactionServiceImplentations;
+import com.kingston.university.coursework.abcbankinggroup.Services.Transaction.impl.TransactionServiceImplentations;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
