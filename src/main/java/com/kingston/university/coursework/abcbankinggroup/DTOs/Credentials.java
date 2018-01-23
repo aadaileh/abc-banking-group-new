@@ -1,6 +1,5 @@
 package com.kingston.university.coursework.abcbankinggroup.DTOs;
 
-//@Getter @Setter @AllArgsConstructor @Accessors(fluent = true)
 public class Credentials {
 
     private String username;

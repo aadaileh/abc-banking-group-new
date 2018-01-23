@@ -62,13 +62,16 @@ public class MainServiceController {
             method = RequestMethod.POST)
     @ResponseBody
     @ApiResponses(value = {
-            @ApiResponse(code = 201, message = "Created"),
+            @ApiResponse(code = 201, message = "Authenticated"),
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
     public User login(@RequestBody Credentials credentials) {
 
         FeignClient feignClient = getFeignClient("/api/login-service/login");
         User user = feignClient.loginServiceVerifyLogin(credentials);
+
+        LOG.info("Successfully logged in for credentials:" + credentials.getUsername() + ", " + credentials.getPassword());
+
         return user;
     }
 
@@ -86,8 +89,9 @@ public class MainServiceController {
             method = RequestMethod.GET)
     @ResponseBody
     @ApiResponses(value = {
-            @ApiResponse(code = 201, message = "Created"),
+            @ApiResponse(code = 201, message = "Found"),
             @ApiResponse(code = 401, message = "Unauthorized"),
+            @ApiResponse(code = 404, message = "Not Found"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
     public User getUser(@PathVariable String username) {
 
@@ -112,8 +116,9 @@ public class MainServiceController {
             method = RequestMethod.GET)
     @ResponseBody
     @ApiResponses(value = {
-            @ApiResponse(code = 201, message = "Created"),
+            @ApiResponse(code = 201, message = "Found"),
             @ApiResponse(code = 401, message = "Unauthorized"),
+            @ApiResponse(code = 404, message = "Not Found"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
     public ArrayList<Transaction> getAccountDetails(@PathVariable String clientId) {
 
@@ -124,7 +129,7 @@ public class MainServiceController {
     }
 
     /**
-     * Method to fullfill a fund transfer process. Usually the fund-transfer process consists from the following steps:
+     * Method to perform a fund transfer process. Usually the fund-transfer process consists from the following steps:
      * 1) get the available balance, 2) get transfer details 3) check transfer details by (comparing balance to request)
      * and (verifying benificiary details). 4) Update Account. 5) Add record to the main transfer table 6) Print receipt.
      * All these methods will be available in both transaction-service and account-service. These will be called from here.
@@ -134,7 +139,7 @@ public class MainServiceController {
      *
      * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
      */
-    @ApiOperation("Perform all necessary actions to fullfill a fund transfer")
+    @ApiOperation("Perform all necessary actions to perform a fund transfer")
     @RequestMapping(value = "/api/main-service/transfer-fund",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
