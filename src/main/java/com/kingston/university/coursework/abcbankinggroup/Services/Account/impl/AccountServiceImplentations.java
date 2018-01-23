@@ -1,13 +1,12 @@
 package com.kingston.university.coursework.abcbankinggroup.Services.Account.impl;
 
-import com.kingston.university.coursework.abcbankinggroup.Connection.DatabaseConnectionSingleton;
+import com.kingston.university.coursework.abcbankinggroup.Connection.DataSourceAbstract;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.FundTransferRequest;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.Transaction;
 import com.kingston.university.coursework.abcbankinggroup.Services.Account.AccountServiceController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
@@ -19,18 +18,9 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 @Service
-public class AccountServiceImplentations {
+public class AccountServiceImplentations extends DataSourceAbstract{
 
     private static final Logger LOG = LoggerFactory.getLogger(AccountServiceController.class);
-
-    @Value("${spring.datasource.url}")
-    private String dbUrl;
-
-    @Value("${spring.datasource.username}")
-    private String username;
-
-    @Value("${spring.datasource.password}")
-    private String password;
 
     @Autowired
     private DataSource dataSource;
@@ -48,7 +38,7 @@ public class AccountServiceImplentations {
      */
     public ArrayList<Transaction> retrieveAccountDetails(String clientId) throws SQLException {
 
-        DataSource dataSource = getDataSource();
+        dataSource = getDataSource();
         Connection connection = null;
         ArrayList<Transaction> transactions = new ArrayList<>();
         try {
@@ -104,7 +94,7 @@ public class AccountServiceImplentations {
      */
     public double retrieveAccountBalance(String clientId) throws SQLException {
 
-        DataSource dataSource = getDataSource();
+        dataSource = getDataSource();
         Connection connection = null;
         String transactionType = null;
         Float transactionAmount = null;
@@ -151,7 +141,7 @@ public class AccountServiceImplentations {
      */
     public Boolean updateAccountTable(FundTransferRequest fundTransferRequest) throws SQLException {
 
-        DataSource dataSource = getDataSource();
+        dataSource = getDataSource();
         Connection connection = null;
 
         try {
@@ -169,11 +159,11 @@ public class AccountServiceImplentations {
                             "VALUES (" +
                             "'" + UUID.randomUUID().toString() + "', " +
                             "'" + fundTransferRequest.getClientId() + "', " +
-                            "'w', " +
+                            "'" + fundTransferRequest.getTransactionType() + "', " +
                             "" + fundTransferRequest.getAmount() + ", " +
                             "NOW(), " +
                             "'" + fundTransferRequest.getBeneficiaryFullName() + "', " +
-                            "'online-banking');");
+                            "'" + fundTransferRequest.getClientType() + "');");
 
             return true;
 
@@ -185,21 +175,5 @@ public class AccountServiceImplentations {
         } finally {
             connection.close();
         }
-    }
-
-    /**
-     * Build connection to database
-     * @return Datasource to the database
-     *
-     * @throws SQLException
-     *
-     * @Author Ahmed Al-Adaileh <k1560383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
-     */
-    private DataSource getDataSource() throws SQLException {
-        DatabaseConnectionSingleton databaseConnectionSingleton = DatabaseConnectionSingleton.getInstance();
-        databaseConnectionSingleton.setDbUrl(dbUrl);
-        databaseConnectionSingleton.setUsername(username);
-        databaseConnectionSingleton.setPassword(password);
-        return databaseConnectionSingleton.dataSource();
     }
 }

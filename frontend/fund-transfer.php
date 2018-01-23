@@ -24,6 +24,8 @@ if(count($_POST) > 0) {
 	CURLOPT_CUSTOMREQUEST => "PUT",
 	CURLOPT_POSTFIELDS => "{
 			\"clientId\":\"" . $_SESSION["client_id"] . "\",
+			\"transactionType\":\"w\",
+			\"clientType\":\"online-banking\",
 			\"iban\":\"" . $_POST['iban'] . "\",
 			\"swift\":\"" . $_POST['swift'] . "\",
 			\"beneficiaryFullName\":\"" . $_POST['beneficiary_full_name'] . "\",

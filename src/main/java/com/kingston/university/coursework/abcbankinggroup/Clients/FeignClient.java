@@ -19,6 +19,14 @@ public interface FeignClient {
     @Headers("Content-Type: application/json")
     double getAccountBalance(@Param("clientId") String clientId);
 
+    @RequestLine("GET /api/account-service/get-and-count/")
+    @Headers("Content-Type: application/json")
+    boolean getAndCount();
+
+    @RequestLine("GET /api/account-service/deliver-cash")
+    @Headers("Content-Type: application/json")
+    boolean deliverCash();
+
     @RequestLine("POST")
     @Headers("Content-Type: application/json")
     FundTransferResponse verifyTransfer(FundTransferRequest fundTransferRequest);

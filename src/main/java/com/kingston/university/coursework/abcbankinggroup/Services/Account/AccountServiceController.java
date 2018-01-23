@@ -115,6 +115,59 @@ public class AccountServiceController extends AccountServiceImplentations implem
         return accountServiceImplentations.updateAccountTable(fundTransferRequest);
     }
 
+
+    /**
+     * Method to take the deposit put in the ATM and count it.
+     *
+     * @return boolean
+     *
+     * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
+    @ApiOperation("Returns the account balance based on the given client-id")
+    @RequestMapping(value = "/api/account-service/get-and-count/",
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
+            method = RequestMethod.GET)
+    @ResponseBody
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Created"),
+            @ApiResponse(code = 401, message = "Unauthorized"),
+            @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
+    public Boolean getAndCount() {
+
+        /**
+         * This method simulates the mechanical process of getting the envelope and counting it.
+         * I assume that this check returns TRUE.
+         */
+
+        return true;
+    }
+
+    /**
+     * Method to deliver the cash mechanically after a successful withdrawal action via an ATM.
+     *
+     * @return boolean
+     *
+     * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
+    @ApiOperation("Delivers cash back after a successful withdrawal action via an ATM")
+    @RequestMapping(value = "/api/account-service/deliver-cash",
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
+            method = RequestMethod.GET)
+    @ResponseBody
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Created"),
+            @ApiResponse(code = 401, message = "Unauthorized"),
+            @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
+    public Boolean deliverCashByATM() {
+
+        /**
+         * This method simulates the mechanical process of delivering the cash after a successful withdrawal action.
+         * I assume that this check returns TRUE.
+         */
+
+        return true;
+    }
+
     @ExceptionHandler
     void handleIllegalArgumentException(
             IllegalArgumentException e,

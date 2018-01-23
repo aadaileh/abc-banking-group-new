@@ -127,7 +127,7 @@ public class MainServiceController {
      * Method to fullfill a fund transfer process. Usually the fund-transfer process consists from the following steps:
      * 1) get the available balance, 2) get transfer details 3) check transfer details by (comparing balance to request)
      * and (verifying benificiary details). 4) Update Account. 5) Add record to the main transfer table 6) Print receipt.
-     * All tese methods will be available in the transaction-service and will be called from here.
+     * All these methods will be available in both transaction-service and account-service. These will be called from here.
      *
      * @param fundTransferRequest transfer's all related fields
      * @return Account transactions data (if success), or null in case of failure
@@ -145,13 +145,6 @@ public class MainServiceController {
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
     public FundTransferResponse transferFunds(@RequestBody FundTransferRequest fundTransferRequest) {
-
-        /**
-         * GET  /api/account-service/balance/{clientId}
-         * GET /api/transaction-service/check
-         * POST /api/transaction-service/transaction/add
-         * PUT /api/account-service/update
-         */
 
         //GET  /api/account-service/balance/{clientId}
         FeignClient feignClientAccountServiceBalance = getFeignClient("/api/account-service/balance/");
@@ -173,6 +166,89 @@ public class MainServiceController {
             feignClientAccountServiceUpdate.updateAccountTable(fundTransferRequest);
             fundTransferResponse.setUpdateAccountStatus(true);
         }
+
+        fundTransferResponse.setBalance(accountBalance);
+        return fundTransferResponse;
+    }
+
+    /**
+     * Method to deposit funds to the account. Usually the deposit process consists from the following steps:
+     * 1) Initiate the mechanical process to get and count the money. 2) Update Account records. 3) Print receipt.
+     * All these methods will be available in both transaction-service and account-service. These will be called from here.
+     *
+     * @param fundTransferRequest transfer's all related fields
+     * @return Account transactions data (if success), or null in case of failure
+     *
+     * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
+    @ApiOperation("Deposits money to own account via ATM")
+    @RequestMapping(value = "/api/main-service/deposit",
+            consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
+            method = RequestMethod.PUT)
+    @ResponseBody
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Created"),
+            @ApiResponse(code = 401, message = "Unauthorized"),
+            @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
+    public FundTransferResponse deposit(@RequestBody FundTransferRequest fundTransferRequest) {
+
+        //1) Initaing the mechanical process to get and count the money
+        FeignClient feignClientAccountServiceGetAndCount = getFeignClient("");
+        boolean getAndCountResult = feignClientAccountServiceGetAndCount.getAndCount();
+
+        //2) Update Account records.
+        FeignClient feignClientAccountServiceUpdate = getFeignClient("/api/account-service/update/");
+        feignClientAccountServiceUpdate.updateAccountTable(fundTransferRequest);
+
+        FundTransferResponse fundTransferResponse = new FundTransferResponse();
+        fundTransferResponse.setUpdateAccountStatus(true);
+        return fundTransferResponse;
+    }
+
+    /**
+     * Method to withdraw money from ATM. Usually the withdrawal process consists from the following steps:
+     * 1) get the available balance, 2) check transfer details by (comparing balance to request) 3) Update
+     * Account. 4) Initiate mechanical process to deliver money 5) Print receipt.
+     * All these methods will be available in both transaction-service and account-service. These will be called from here.
+     *
+     * @param fundTransferRequest transfer's all related fields
+     * @return Account transactions data (if success), or null in case of failure
+     *
+     * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+     */
+    @ApiOperation("Withdraws money from own account via ATM")
+    @RequestMapping(value = "/api/main-service/withdraw",
+            consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
+            produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
+            method = RequestMethod.PUT)
+    @ResponseBody
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Created"),
+            @ApiResponse(code = 401, message = "Unauthorized"),
+            @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
+    public FundTransferResponse withdraw(@RequestBody FundTransferRequest fundTransferRequest) {
+
+        //1) get the available balance
+        FeignClient feignClientAccountServiceBalance = getFeignClient("/api/account-service/balance/");
+        double accountBalance = feignClientAccountServiceBalance.getAccountBalance(fundTransferRequest.getClientId());
+
+        //2) check transfer details by (comparing balance to request)
+        FeignClient feignClientTransactionServiceCheck = getFeignClient("/api/transaction-service/check");
+        fundTransferRequest.setAvailableBalance(accountBalance);
+        FundTransferResponse fundTransferResponse = feignClientTransactionServiceCheck.verifyTransfer(fundTransferRequest);
+
+        //3) Update Account.
+        if(fundTransferResponse.isResults()) {
+            FeignClient feignClientAccountServiceUpdate = getFeignClient("/api/account-service/update/");
+            feignClientAccountServiceUpdate.updateAccountTable(fundTransferRequest);
+            fundTransferResponse.setUpdateAccountStatus(true);
+        }
+
+        //4) Initiate mechanical process to deliver money
+        FeignClient feignClientTransactionServiceDeliverCash = getFeignClient("");
+        fundTransferRequest.setAvailableBalance(accountBalance);
+        feignClientTransactionServiceDeliverCash.deliverCash();
 
         fundTransferResponse.setBalance(accountBalance);
         return fundTransferResponse;
@@ -202,19 +278,6 @@ public class MainServiceController {
         return new BasicAuthRequestInterceptor(basicAuthenticationUsername, basicAuthenticationPassword);
     }
 
-    ////    @Bean
-//    public DataSource dataSource() throws SQLException {
-//        if (dbUrl == null || dbUrl.isEmpty()) {
-//            return new HikariDataSource();
-//        } else {
-//            HikariConfig config = new HikariConfig();
-//            config.setJdbcUrl(dbUrl);
-//            config.setUsername("b9579c6ae9cba0");
-//            config.setPassword("89a88141");
-//            return new HikariDataSource(config);
-//        }
-//    }
-
     @ExceptionHandler
     void handleIllegalArgumentException(
             IllegalArgumentException e,
@@ -222,8 +285,4 @@ public class MainServiceController {
 
         response.sendError(HttpStatus.BAD_REQUEST.value());
     }
-
-//    public ResponseEntity handle() {
-//        return new ResponseEntity(HttpStatus.OK);
-//    }
 }

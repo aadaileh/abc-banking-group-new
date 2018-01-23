@@ -135,7 +135,7 @@ function submitForm() {
 			<div class="header-wrapper item-wrapper menus-wrapper " style="">
 					
 					<div class="item-content leaf menu_layout header content" data-preview-style="style-3c6e4999-autozada" data-style="style-7f715-scjjarqgxu" data-behavior-type="NOTHING" data-orig-thumb-height="" data-orig-thumb-width="" data-vbid="vbid-3c6e4999-glvf0jbj" data-bgimg="">
-<div class="preview-content-wrapperx">
+<div class="preview-content-wrapper">
 <div class="preview-content-holder">
 	<div class="left-div" data-orig-font-size="14">
 	<div class="benet" style="min-height:inherit;"></div>
@@ -286,6 +286,7 @@ function submitForm() {
 -->
 
 <iframe src="http://localhost/atm/site/index.html" width="800px;" height="500px;z-index: 100000;"></iframe>
+  </div>
 											
 										
 									

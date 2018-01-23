@@ -1,13 +1,12 @@
 package com.kingston.university.coursework.abcbankinggroup.Services.Transaction.Account.impl;
 
-import com.kingston.university.coursework.abcbankinggroup.Connection.DatabaseConnectionSingleton;
+import com.kingston.university.coursework.abcbankinggroup.Connection.DataSourceAbstract;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.FundTransferRequest;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.FundTransferResponse;
 import com.kingston.university.coursework.abcbankinggroup.Services.Transaction.Account.TransactionServiceController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
@@ -17,18 +16,9 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 @Service
-public class TransactionServiceImplentations {
+public class TransactionServiceImplentations extends DataSourceAbstract {
 
     private static final Logger LOG = LoggerFactory.getLogger(TransactionServiceController.class);
-
-    @Value("${spring.datasource.url}")
-    private String dbUrl;
-
-    @Value("${spring.datasource.username}")
-    private String username;
-
-    @Value("${spring.datasource.password}")
-    private String password;
 
     @Autowired
     private DataSource dataSource;
@@ -54,13 +44,13 @@ public class TransactionServiceImplentations {
             LOG.error("fund transfer check failure: client-id is missing");
         }
 
-        if(fundTransferRequest.getIban().isEmpty()) {
+        if(fundTransferRequest.getIban() != null && fundTransferRequest.getIban().isEmpty()) {
             errors.add("IBAN is missing");
             fundTransferResponse.setResults(false);
             LOG.error("fund transfer check failure: IBAN is missing");
         }
 
-        if(fundTransferRequest.getSwift().isEmpty()) {
+        if(fundTransferRequest.getSwift() != null && fundTransferRequest.getSwift().isEmpty()) {
             errors.add("SWIFT is missing");
             fundTransferResponse.setResults(false);
             LOG.error("fund transfer check failure: SWIFT is missing");
@@ -90,7 +80,7 @@ public class TransactionServiceImplentations {
      */
     public Boolean performTheTransfer(FundTransferRequest fundTransferRequest) throws SQLException {
 
-        DataSource dataSource = getDataSource();
+        dataSource = getDataSource();
         Connection connection = null;
 
         try {
@@ -136,22 +126,5 @@ public class TransactionServiceImplentations {
         } finally {
             connection.close();
         }
-    }
-
-
-    /**
-     * Build connection to database
-     * @return Datasource to the database
-     *
-     * @throws SQLException
-     *
-     * @Author Ahmed Al-Adaileh <k1560383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
-     */
-    private DataSource getDataSource() throws SQLException {
-        DatabaseConnectionSingleton databaseConnectionSingleton = DatabaseConnectionSingleton.getInstance();
-        databaseConnectionSingleton.setDbUrl(dbUrl);
-        databaseConnectionSingleton.setUsername(username);
-        databaseConnectionSingleton.setPassword(password);
-        return databaseConnectionSingleton.dataSource();
     }
 }

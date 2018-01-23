@@ -4,6 +4,8 @@ public class FundTransferRequest {
 
     private double availableBalance;
     private String clientId;
+    private String transactionType; //'d' or 'w'
+    private String clientType; //'atm' or 'online-banking'
     private String iban;
     private String swift;
     private String beneficiaryFullName;
@@ -32,6 +34,22 @@ public class FundTransferRequest {
 
     public void setClientId(String clientId) {
         this.clientId = clientId;
+    }
+
+    public String getTransactionType() {
+        return transactionType;
+    }
+
+    public void setTransactionType(String transactionType) {
+        this.transactionType = transactionType;
+    }
+
+    public String getClientType() {
+        return clientType;
+    }
+
+    public void setClientType(String clientType) {
+        this.clientType = clientType;
     }
 
     public String getIban() {

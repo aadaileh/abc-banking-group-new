@@ -1,13 +1,12 @@
 package com.kingston.university.coursework.abcbankinggroup.Services.Login.impl;
 
-import com.kingston.university.coursework.abcbankinggroup.Connection.DatabaseConnectionSingleton;
+import com.kingston.university.coursework.abcbankinggroup.Connection.DataSourceAbstract;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.Credentials;
 import com.kingston.university.coursework.abcbankinggroup.DTOs.User;
 import com.kingston.university.coursework.abcbankinggroup.Services.Login.LoginServiceController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
@@ -17,18 +16,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 @Service
-public class LoginServiceImplentations{
+public class LoginServiceImplentations extends DataSourceAbstract {
 
     private static final Logger LOG = LoggerFactory.getLogger(LoginServiceController.class);
-
-    @Value("${spring.datasource.url}")
-    private String dbUrl;
-
-    @Value("${spring.datasource.username}")
-    private String username;
-
-    @Value("${spring.datasource.password}")
-    private String password;
 
     @Autowired
     private DataSource dataSource;
@@ -46,7 +36,7 @@ public class LoginServiceImplentations{
      */
     public User verifyCredentials(Credentials credentials) throws SQLException {
 
-        DataSource dataSource = getDataSource();
+        dataSource = getDataSource();
         Connection connection = null;
         User user = new User();
 
@@ -98,7 +88,7 @@ public class LoginServiceImplentations{
      */
     public User returnUser(String username) throws SQLException {
 
-        DataSource dataSource = getDataSource();
+        dataSource = getDataSource();
         Connection connection = null;
         User user = new User();
 
@@ -148,21 +138,5 @@ public class LoginServiceImplentations{
                 "WHERE id = " + id;
         return stmt.executeUpdate(
                 updateRowWithTimestamp);
-    }
-
-    /**
-     * Build connection to database
-     * @return Datasource to the database
-     *
-     * @throws SQLException
-     *
-     * @Author Ahmed Al-Adaileh <k1560383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
-     */
-    private DataSource getDataSource() throws SQLException {
-        DatabaseConnectionSingleton databaseConnectionSingleton = DatabaseConnectionSingleton.getInstance();
-        databaseConnectionSingleton.setDbUrl(dbUrl);
-        databaseConnectionSingleton.setUsername(username);
-        databaseConnectionSingleton.setPassword(password);
-        return databaseConnectionSingleton.dataSource();
     }
 }

@@ -25,7 +25,7 @@
         var pass1 = document.getElementById("user_amount").value;
 
 
-        window.location= "http://localhost:4567/deposit/"+pass1+"/1"
+        window.location= "/atm/site/html/deposit-menu-amount-cheq.php?amount=" + pass1
 
     }
 

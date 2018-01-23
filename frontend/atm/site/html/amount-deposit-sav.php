@@ -23,10 +23,7 @@
     <script>
     function myFunction(e) {
         var pass1 = document.getElementById("user_amount").value;
-
-
-        window.location= "http://localhost:4567/withdraw/"+pass1+"/0"
-
+        window.location= "/atm/site/html/deposit-menu-amount-sav.php?amount=" + pass1
     }
 
     </script>

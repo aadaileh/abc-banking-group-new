@@ -33,7 +33,6 @@ public class DatabaseConnectionSingleton {
         this.password = password;
     }
 
-    //    @Bean
     public javax.sql.DataSource dataSource() throws SQLException {
         if (dbUrl == null || dbUrl.isEmpty()) {
             return new HikariDataSource();

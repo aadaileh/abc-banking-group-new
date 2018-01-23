@@ -19,13 +19,11 @@
       var time = 300000; //5 minutes
       var theTimer = setTimeout("document.location.href='../index.html'",time);
     </script>
-    
+
     <script>
     function myFunction(e) {
         var pass1 = document.getElementById("user_amount").value;
-
-
-        window.location= "http://localhost:4567/withdraw/"+pass1+"/1"
+        window.location= "/atm/site/html/withdraw-menu-amount-cheq.php?amount=" + pass1
 
     }
 
