@@ -78,7 +78,7 @@ if(count($_GET) > 0) {
 
   <script type="text/javascript">
     var time = 300000; //5 minutes
-    var theTimer = setTimeout("document.location.href='../index.html'",time);
+    var theTimer = setTimeout("document.location.href='../index.php'",time);
   </script>
 
   <body>
