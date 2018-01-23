@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98585c54-a67e-4bfb-9af8-fcfdc26c54ff" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/amount-deposit-cheq.php" afterPath="$PROJECT_DIR$/frontend/atm/site/html/amount-deposit-cheq.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/amount-deposit-sav.php" afterPath="$PROJECT_DIR$/frontend/atm/site/html/amount-deposit-sav.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/amount-withdraw-cheq.php" afterPath="$PROJECT_DIR$/frontend/atm/site/html/amount-withdraw-cheq.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/amount-withdraw-sav.php" afterPath="$PROJECT_DIR$/frontend/atm/site/html/amount-withdraw-sav.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/deposit-menu-amount-cheq.php" afterPath="$PROJECT_DIR$/frontend/atm/site/html/deposit-menu-amount-cheq.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/deposit-menu-amount-sav.php" afterPath="$PROJECT_DIR$/frontend/atm/site/html/deposit-menu-amount-sav.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/deposit-menu-amount.html" afterPath="$PROJECT_DIR$/frontend/atm/site/html/deposit-menu-amount.html" />
-      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/deposit-menu.html" afterPath="$PROJECT_DIR$/frontend/atm/site/html/deposit-menu.html" />
-      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/main.html" afterPath="$PROJECT_DIR$/frontend/atm/site/html/main.html" />
-      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/withdraw-menu-amount-cheq.php" afterPath="$PROJECT_DIR$/frontend/atm/site/html/withdraw-menu-amount-cheq.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/withdraw-menu-amount-sav.php" afterPath="$PROJECT_DIR$/frontend/atm/site/html/withdraw-menu-amount-sav.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/withdraw-menu.html" afterPath="$PROJECT_DIR$/frontend/atm/site/html/withdraw-menu.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/DTOs/Credentials.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/DTOs/Credentials.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -62,6 +47,16 @@
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,7 +155,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Transaction/Account/impl/AccountServiceImplentations.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/FundTransferResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Transaction/Account/TransactionServiceController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Envelope.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/FundTransferRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Connection/DatabaseConnectionSingleton.java" />
@@ -179,6 +173,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Credentials.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -245,6 +240,13 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="abcbankinggroup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="abc-banking-group-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abc-banking-group-new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -858,13 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Envelope.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -1027,6 +1022,14 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding />
         </state>
       </provider>
