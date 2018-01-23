@@ -36,7 +36,7 @@ if(count($_POST) > 0) {
 			\"transferPurpose\":\"" . $_POST['transfer_purpose'] . "\",
 			\"transferOn\":\"" . $_POST['transfer_on'] . "\",
 			\"notes\":\"" . $_POST['notes'] . "\",
-			\"transferCurrency\":\"" . $_POST['transfer_currency'] . "\"
+			\"currencyType\":\"" . $_POST['transfer_currency'] . "\"
 		}",
 	CURLOPT_HTTPHEADER => array(
 	"authorization: Basic YXBpdXNlcjpwYXNz",

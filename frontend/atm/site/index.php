@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Css -->
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="html/css/login.css">
+  </head>
+
+  <body>
+
+    <script>
+    function myFunction(e) {
+        var pass1 = document.getElementById("user").value;
+        var pass2 = document.getElementById("pass").value;
+        var ok = true;
+
+        var user = {
+          username: "",
+          password: ""
+        };
+
+        user.username = pass1;
+        user.password = pass2;
+
+        window.location= "http://localhost:4567/login/"+pass1+"/"+pass2
+
+    }
+
+    </script>
+
+    <div class="box">
+      <h1>ATM Login</h1>
+      <div class="form">
+          <input type="text" placeholder="Card Number" id = "user" style="font-size:bold; color: #777;">
+          <input type="password" placeholder="PIN Code" id = "pass">
+      </div>
+
+
+
+      <div class="button">
+          <!--<a href="html/main.html"><span class="glyphicon glyphicon glyphicon-chevron-right" onclick="javascript:myFunction(true)"</span></a>-->
+          <span class="glyphicon glyphicon glyphicon-chevron-right" onclick="javascript:myFunction(true)"</span>
+      </div>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

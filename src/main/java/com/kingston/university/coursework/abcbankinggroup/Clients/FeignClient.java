@@ -6,7 +6,6 @@ import feign.Param;
 import feign.RequestLine;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public interface FeignClient {
     @RequestLine("GET /{username}")
@@ -32,13 +31,9 @@ public interface FeignClient {
     @Headers("Content-Type: application/json")
     Boolean updateAccountTable(FundTransferRequest fundTransferRequest);
 
-    @RequestLine("GET")
-    List<User> findAll();
-
     @RequestLine("POST")
     @Headers("Content-Type: application/json")
     User loginServiceVerifyLogin(Credentials credentials);
-
 }
 
 // Unit-Testing Code..

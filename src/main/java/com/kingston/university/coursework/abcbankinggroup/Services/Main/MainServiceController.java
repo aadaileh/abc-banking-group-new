@@ -186,13 +186,14 @@ public class MainServiceController {
      */
     private FeignClient getFeignClient(String path) {
 
-        Feign.Builder builder = Feign.builder();
-        Feign.Builder client = builder.client(new OkHttpClient());
-        Feign.Builder encoder = client.encoder(new GsonEncoder());
-        Feign.Builder decoder = encoder.decoder(new GsonDecoder());
-        Feign.Builder requestInterceptor = decoder.requestInterceptor(getRequestInterceptor());
-        Feign.Builder logger = requestInterceptor.logger(new Slf4jLogger(FeignClient.class)).logLevel(feign.Logger.Level.FULL);
-        FeignClient feignClient = logger.target(FeignClient.class, feignUrl + path);
+        FeignClient feignClient = Feign.builder()
+                .client(new OkHttpClient())
+                .encoder(new GsonEncoder())
+                .decoder(new GsonDecoder())
+                .requestInterceptor(getRequestInterceptor())
+                .logger(new Slf4jLogger(FeignClient.class))
+                .logLevel(feign.Logger.Level.FULL)
+                .target(FeignClient.class, feignUrl + path);
 
         return feignClient;
     }

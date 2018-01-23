@@ -39,7 +39,7 @@ if ($_SESSION["logged_in"] == 1) {
 
 		<li class="removable-parent">
 		
-			<a class="removable-parent" href="atm.php" data-link-type="EXISTING" target="_self">
+			<a class="removable-parent" href="/atm/site/index.php" data-link-type="EXISTING" target="_self">
 			<span id="vbid-6a196-4jtkgmay" class="preview-element Link item-link magic-circle-holder text-element custom" data-menu-name="PREVIEW_LINK">ATM</span>
 			</a>
 	
