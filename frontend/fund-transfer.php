@@ -14,7 +14,7 @@ if(count($_POST) > 0) {
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	CURLOPT_PORT => "8080",
+	CURLOPT_PORT => $GLOBALS["port"],
 	CURLOPT_URL => $GLOBALS["host"] . "/api/main-service/transfer-fund",
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_ENCODING => "",

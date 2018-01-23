@@ -3,7 +3,7 @@
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_PORT => "443",
+  CURLOPT_PORT => $GLOBALS["port"],
   CURLOPT_URL => "https://warm-harbor-89034.herokuapp.com/db",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",

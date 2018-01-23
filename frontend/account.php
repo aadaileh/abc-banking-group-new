@@ -10,7 +10,7 @@ include_once("settings.php");
 if($_SESSION["logged_in"] == true) {
 	$curl = curl_init();
 	curl_setopt_array($curl, array(
-	CURLOPT_PORT => "8080",
+	CURLOPT_PORT => $GLOBALS["port"],
 	CURLOPT_URL => $GLOBALS["host"] . "/api/main-service/account/" . $_SESSION["client_id"],
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_ENCODING => "",

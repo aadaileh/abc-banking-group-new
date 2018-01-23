@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98585c54-a67e-4bfb-9af8-fcfdc26c54ff" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/frontend/account.php" afterPath="$PROJECT_DIR$/frontend/account.php" />
       <change beforePath="$PROJECT_DIR$/frontend/fund-transfer.php" afterPath="$PROJECT_DIR$/frontend/fund-transfer.php" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Transaction/Account/TransactionServiceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Transaction/Account/TransactionServiceController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Transaction/Account/impl/TransactionServiceImplentations.java" afterPath="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Transaction/Account/impl/TransactionServiceImplentations.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceController.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Transaction/Account/TransactionServiceController.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Transaction/Account/TransactionServiceController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Transaction/Account/impl/TransactionServiceImplentations.class" afterPath="$PROJECT_DIR$/target/classes/com/kingston/university/coursework/abcbankinggroup/Services/Transaction/Account/impl/TransactionServiceImplentations.class" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.php" afterPath="$PROJECT_DIR$/frontend/index.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/login.php" afterPath="$PROJECT_DIR$/frontend/login.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/settings.php" afterPath="$PROJECT_DIR$/frontend/settings.php" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,11 +66,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransactionServiceImplentations.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TransactionServiceImplentations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Transaction/Account/impl/TransactionServiceImplentations.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="174">
               <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -173,7 +177,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/LoginServiceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentations.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/TransactionList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Account.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Transaction.java" />
@@ -189,6 +192,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Transaction/Account/impl/TransactionServiceImplentations.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/AccountServiceController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -896,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -916,14 +913,14 @@
         <state relative-caret-position="147">
           <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
           <folding>
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="false" />
+            <element signature="e#269#270#0" expanded="false" />
+            <element signature="e#317#318#0" expanded="false" />
+            <element signature="e#357#358#0" expanded="false" />
+            <element signature="e#422#423#0" expanded="false" />
+            <element signature="e#460#461#0" expanded="false" />
+            <element signature="e#545#546#0" expanded="false" />
+            <element signature="e#594#595#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -933,38 +930,38 @@
         <state relative-caret-position="420">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1285#1286#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1499#1500#0" expanded="true" />
-            <element signature="e#1535#1536#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#1701#1702#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="false" />
+            <element signature="e#394#395#0" expanded="false" />
+            <element signature="e#427#428#0" expanded="false" />
+            <element signature="e#455#456#0" expanded="false" />
+            <element signature="e#490#491#0" expanded="false" />
+            <element signature="e#521#522#0" expanded="false" />
+            <element signature="e#569#570#0" expanded="false" />
+            <element signature="e#609#610#0" expanded="false" />
+            <element signature="e#651#652#0" expanded="false" />
+            <element signature="e#689#690#0" expanded="false" />
+            <element signature="e#751#752#0" expanded="false" />
+            <element signature="e#805#806#0" expanded="false" />
+            <element signature="e#847#848#0" expanded="false" />
+            <element signature="e#885#886#0" expanded="false" />
+            <element signature="e#947#948#0" expanded="false" />
+            <element signature="e#1001#1002#0" expanded="false" />
+            <element signature="e#1045#1046#0" expanded="false" />
+            <element signature="e#1085#1086#0" expanded="false" />
+            <element signature="e#1151#1152#0" expanded="false" />
+            <element signature="e#1209#1210#0" expanded="false" />
+            <element signature="e#1249#1250#0" expanded="false" />
+            <element signature="e#1285#1286#0" expanded="false" />
+            <element signature="e#1343#1344#0" expanded="false" />
+            <element signature="e#1393#1394#0" expanded="false" />
+            <element signature="e#1426#1427#0" expanded="false" />
+            <element signature="e#1455#1456#0" expanded="false" />
+            <element signature="e#1499#1500#0" expanded="false" />
+            <element signature="e#1535#1536#0" expanded="false" />
+            <element signature="e#1572#1573#0" expanded="false" />
+            <element signature="e#1605#1606#0" expanded="false" />
+            <element signature="e#1657#1658#0" expanded="false" />
+            <element signature="e#1701#1702#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1135,6 +1132,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding />
         </state>
       </provider>

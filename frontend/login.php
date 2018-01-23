@@ -1,4 +1,5 @@
 <?php 
+
 session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -9,7 +10,7 @@ if(count($_POST) == 2) {
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
-	CURLOPT_PORT => "8080",
+	CURLOPT_PORT => $GLOBALS["port"],
 	CURLOPT_URL => $GLOBALS["host"] . "/api/main-service/login",
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_ENCODING => "",
