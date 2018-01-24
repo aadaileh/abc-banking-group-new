@@ -7,12 +7,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="abc-banking-group" />
+        <module name="abc-banking-group (1)" />
         <module name="abc-banking-group-new" />
+        <module name="Account Service" />
+        <module name="Authentication Service" />
+        <module name="Main Service" />
+        <module name="Transaction Service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="abc-banking-group" target="1.8" />
+      <module name="abc-banking-group (1)" target="1.8" />
       <module name="abc-banking-group-new" target="1.8" />
+      <module name="Account Service" target="1.8" />
+      <module name="Authentication Service" target="1.8" />
+      <module name="Main Service" target="1.8" />
+      <module name="Transaction Service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

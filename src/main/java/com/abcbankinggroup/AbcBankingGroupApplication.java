@@ -2,6 +2,7 @@ package com.abcbankinggroup;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * Main "Application" class that is used to bootstrap the Spring Boot application.
@@ -9,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Ahmed Al-Adaileh, k1560383@kingston.ac.uk, ahmed.adaileh@gmail.com
  */
 @SpringBootApplication
-//@EnableDiscoveryClient
+@EnableDiscoveryClient
 public class AbcBankingGroupApplication {
 
     /**
