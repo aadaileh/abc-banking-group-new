@@ -6,6 +6,8 @@ import com.abcbankinggroup.Factory.CommonFactoryAbstract;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +20,18 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * <h1>Main Service for the Coursework: ABC Banking Group</h1>
+ * <p>
+ * It is always the first point to get requests and distribute them to different other services.
+ * The whole communication is done based on the NetFlix Feign Client. This service negotiate with: Authentication-service,
+ * Account-service and Transaction-service.
+ * </p>
+ *
+ * @Author  Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @version 1.0
+ * @since   26.01.2018
+ */
 @RestController
 @Configuration
 @EnableAutoConfiguration
@@ -26,7 +40,7 @@ import java.util.ArrayList;
 @EnableSwagger2
 public class MainServiceController extends CommonFactoryAbstract {
 
-//    private static final Logger LOG = LoggerFactory.getLogger(MainServiceController.class);
+    private static final Logger LOG = LoggerFactory.getLogger(MainServiceController.class);
 
     /**
      * Method to verify the given credentials. Credentials can be either coming from ATM (card-id, pin) or

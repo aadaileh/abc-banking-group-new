@@ -143,4 +143,10 @@ public class AuthenticationServiceImplentations extends CommonFactoryAbstract {
         return stmt.executeUpdate(
                 updateRowWithTimestamp);
     }
+
+
+    /** ONLY DONE FOR UNIT-TESTING PURPOSES.*/
+    public void setDataSource(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
 }

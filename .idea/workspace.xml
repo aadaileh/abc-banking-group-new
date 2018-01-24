@@ -2,29 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98585c54-a67e-4bfb-9af8-fcfdc26c54ff" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Clients/FeignClientTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/abcbankinggroup/DTOs/AccountTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_atteo_evo_inflector_1_2_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_rest_1_5_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_core_2_6_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_webmvc_2_6_9_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_0_23_0_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceControllerTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentationsTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Clients/FeignClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Clients/FeignClient.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Connection/DataSourceAbstract.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Factory/CommonFactoryAbstract.java" />
+      <change beforePath="$PROJECT_DIR$/abc-banking-group.iml" afterPath="$PROJECT_DIR$/abc-banking-group.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceInterface.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceInterface.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceInterface.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceInterface.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentations.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentations.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/TransactionServiceInterface.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/TransactionServiceInterface.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/impl/TransactionServiceImplentations.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/impl/TransactionServiceImplentations.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/TransactionServiceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/TransactionServiceController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Connection/DataSourceAbstract.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Account/AccountServiceController.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Account/AccountServiceController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Account/AccountServiceInterface.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Account/AccountServiceInterface.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Authentication/AuthenticationServiceInterface.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Authentication/AuthenticationServiceInterface.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentations.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentations.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Main/MainServiceController.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Main/MainServiceController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Transaction/TransactionServiceInterface.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Transaction/TransactionServiceInterface.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Transaction/impl/TransactionServiceImplentations.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Transaction/impl/TransactionServiceImplentations.class" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Clients/FeignClientTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Clients/FeignClientTest.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
+      <change beforePath="$PROJECT_DIR$/target/classes/banner.txt" afterPath="$PROJECT_DIR$/target/classes/banner.txt" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/AbcBankingGroupApplication.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Clients/FeignClient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Configuration/DataBaseConfiguration.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Configuration/SecurityConfiguration.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Configuration/SwaggerConfiguration.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Connection/DatabaseConnectionSingleton.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/Account.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/Credentials.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/Envelope.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/FundTransferRequest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/FundTransferResponse.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/Transaction.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Factory/CommonFactoryAbstract.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Account/AccountServiceController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Account/AccountServiceInterface.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Authentication/AuthenticationServiceController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Authentication/AuthenticationServiceInterface.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentations.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Main/MainServiceController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Main/MainServiceInterface.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Transaction/TransactionServiceController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Transaction/TransactionServiceInterface.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Transaction/impl/TransactionServiceImplentations.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/abcbankinggroup/Clients/FeignClientTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/abcbankinggroup/Clients/FeignClientTest.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,77 +61,49 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/abc_banking_group_new$All_in_abc_banking_group__2_.coverage" NAME="All in abc-banking-group (2) Coverage Results" MODIFIED="1516802101431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/abc_banking_group_new$All_in_abc_banking_group__1_.coverage" NAME="All in abc-banking-group (1) Coverage Results" MODIFIED="1516800621380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/abc_banking_group_new$AuthenticationServiceControllerTest_verifyLoginTest.coverage" NAME="AuthenticationServiceControllerTest.verifyLoginTest Coverage Results" MODIFIED="1516801841898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.abcbankinggroup.Services.Authentication.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/abc_banking_group_new$All_in_abc_banking_group.coverage" NAME="All in abc-banking-group Coverage Results" MODIFIED="1516800327253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myAutoScrollToSource" value="true" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\unite-testing report" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf>
       <file leaf-file-name="MainServiceController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="80" column="44" lean-forward="false" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+            <state relative-caret-position="231">
+              <caret line="39" column="15" lean-forward="false" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommonFactoryAbstract.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Factory/CommonFactoryAbstract.java">
+      <file leaf-file-name="AuthenticationServiceController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="103" column="104" lean-forward="false" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="104" />
+            <state relative-caret-position="252">
+              <caret line="39" column="15" lean-forward="false" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FeignClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Clients/FeignClient.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="31" column="59" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="59" />
+            <state relative-caret-position="163">
+              <caret line="133" column="8" lean-forward="false" selection-start-line="133" selection-start-column="8" selection-end-line="133" selection-end-column="8" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FeignClientTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Clients/FeignClientTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FundTransferResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/FundTransferResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountServiceController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="101" column="12" lean-forward="false" selection-start-line="101" selection-start-column="12" selection-end-line="102" selection-end-column="65" />
-              <folding>
-                <element signature="e#8542#8543#0" expanded="true" />
-                <element signature="e#8598#8599#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -116,34 +111,19 @@
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="63">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="21">
-                <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbcBankingGroupApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/AbcBankingGroupApplication.java">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,8 +137,8 @@
         <option value="Singleton" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="JUnit4 Test Class" />
         <option value="Enum" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -185,6 +165,9 @@
       <find>dataSource</find>
       <find>basicAuthenticationUsername</find>
       <find>swa</find>
+      <find>1.5.9.RELEASE</find>
+      <find>rest</find>
+      <find>web</find>
     </findStrings>
     <replaceStrings>
       <replace>;</replace>
@@ -201,11 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Login/impl/LoginServiceImplentationsxxx.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Connection/DataSource.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Configuration/SwaggerConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/Login/LoginServiceInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/LoginServiceInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/LoginServiceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Account/impl/LoginServiceImplentations.java" />
@@ -236,22 +214,27 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Services/Main/MainServiceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/DTOs/Credentials.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentations.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/AbcBankingGroupApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Configuration/SwaggerConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/TransactionServiceInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Connection/CommonFactoryAbstract.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Factory/CommonFactoryAbstract.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Clients/FeignClient.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/abcbankinggroup/DTOs/AccountTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Clients/OkHttpClient.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Clients/FeignClientTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentations.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentationsTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/TransactionServiceController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -287,8 +270,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -329,7 +312,27 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="abcbankinggroup" type="462c0819:PsiDirectoryNode" />
-              <item name="Clients" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="abc-banking-group-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abc-banking-group-new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="abcbankinggroup" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="abc-banking-group-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abc-banking-group-new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="abcbankinggroup" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+              <item name="Transaction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="abc-banking-group-new" type="b2602c69:ProjectViewProjectNode" />
@@ -372,7 +375,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -381,13 +384,15 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../unite-testing report" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.abcbankinggroup.Services.Authentication.impl" />
+      <recent name="com.abcbankinggroup.Services.Authentication" />
       <recent name="com.abcbankinggroup.Clients" />
       <recent name="com.abcbankinggroup.DTOs" />
     </key>
@@ -433,7 +438,7 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="AbcBankingGroupApplication" type="Application" factoryName="Application" singleton="true" temporary="true">
+    <configuration name="AbcBankingGroupApplication" type="Application" factoryName="Application" singleton="true" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.abcbankinggroup.*" />
@@ -486,6 +491,76 @@
       <envs />
     </configuration>
     <configuration name="coursework-transaction-service debugger" type="GCPDebug" factoryName="Google Stackdriver Debug" CloudProjectName="coursework-transaction-service" />
+    <configuration name="All in abc-banking-group (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="abc-banking-group" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="AuthenticationServiceControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.abcbankinggroup.Services.Authentication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="abc-banking-group" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.abcbankinggroup.Services.Authentication" />
+      <option name="MAIN_CLASS_NAME" value="com.abcbankinggroup.Services.Authentication.AuthenticationServiceControllerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="AuthenticationServiceImplentationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.abcbankinggroup.Services.Authentication.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="abc-banking-group" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.abcbankinggroup.Services.Authentication.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.abcbankinggroup.Services.Authentication.impl.AuthenticationServiceImplentationsTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="FeignClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -500,31 +575,6 @@
       <option name="MAIN_CLASS_NAME" value="com.abcbankinggroup.Clients.FeignClientTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="FeignClientTest.getUserDetailsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.abcbankinggroup.Clients.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="abc-banking-group" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.abcbankinggroup.Clients" />
-      <option name="MAIN_CLASS_NAME" value="com.abcbankinggroup.Clients.FeignClientTest" />
-      <option name="METHOD_NAME" value="getUserDetailsTest" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -616,19 +666,22 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="package" />
       </method>
     </configuration>
-    <list size="5">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Google App Engine Deployment.Google App Engine Deployment" />
       <item index="1" class="java.lang.String" itemvalue="Google Stackdriver Debug.coursework-transaction-service debugger" />
       <item index="2" class="java.lang.String" itemvalue="Application.AbcBankingGroupApplication" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FeignClientTest.getUserDetailsTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FeignClientTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AuthenticationServiceControllerTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in abc-banking-group (2)" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.FeignClientTest" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.AuthenticationServiceImplentationsTest" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.AbcBankingGroupApplication" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FeignClientTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FeignClientTest.getUserDetailsTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.AbcBankingGroupApplication" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AuthenticationServiceImplentationsTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FeignClientTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.All in abc-banking-group (2)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AuthenticationServiceControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -649,34 +702,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FeignClientTest - 2018.01.24 at 14h 10m 05s.xml">
+    <history-entry file="AuthenticationServiceImplentationsTest - 2018.01.24 at 15h 18m 39s.xml">
+      <configuration name="AuthenticationServiceImplentationsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthenticationServiceImplentationsTest - 2018.01.24 at 15h 20m 34s.xml">
+      <configuration name="AuthenticationServiceImplentationsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthenticationServiceImplentationsTest - 2018.01.24 at 15h 22m 31s.xml">
+      <configuration name="AuthenticationServiceImplentationsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthenticationServiceImplentationsTest - 2018.01.24 at 15h 22m 43s.xml">
+      <configuration name="AuthenticationServiceImplentationsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthenticationServiceImplentationsTest - 2018.01.24 at 15h 23m 52s.xml">
+      <configuration name="AuthenticationServiceImplentationsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthenticationServiceImplentationsTest - 2018.01.24 at 15h 24m 31s.xml">
+      <configuration name="AuthenticationServiceImplentationsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AuthenticationServiceImplentationsTest - 2018.01.24 at 15h 24m 57s.xml">
+      <configuration name="AuthenticationServiceImplentationsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FeignClientTest - 2018.01.24 at 15h 08m 03s.xml">
       <configuration name="FeignClientTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FeignClientTest - 2018.01.24 at 14h 10m 31s.xml">
+    <history-entry file="FeignClientTest - 2018.01.24 at 15h 08m 52s.xml">
       <configuration name="FeignClientTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FeignClientTest - 2018.01.24 at 14h 11m 56s.xml">
-      <configuration name="FeignClientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FeignClientTest - 2018.01.24 at 14h 12m 46s.xml">
-      <configuration name="FeignClientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FeignClientTest - 2018.01.24 at 14h 13m 28s.xml">
-      <configuration name="FeignClientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FeignClientTest - 2018.01.24 at 14h 14m 46s.xml">
-      <configuration name="FeignClientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FeignClientTest - 2018.01.24 at 14h 14m 59s.xml">
-      <configuration name="FeignClientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FeignClientTest - 2018.01.24 at 14h 15m 16s.xml">
-      <configuration name="FeignClientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FeignClientTest - 2018.01.24 at 14h 22m 12s.xml">
-      <configuration name="FeignClientTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FeignClientTest - 2018.01.24 at 14h 23m 09s.xml">
+    <history-entry file="FeignClientTest - 2018.01.24 at 15h 09m 07s.xml">
       <configuration name="FeignClientTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -702,13 +755,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37328768" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40478906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5986317" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18474758" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39794755" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27336198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Google Cloud Storage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -721,6 +773,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39794755" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -743,10 +797,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22348917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47662485" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18474758" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27389902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39794755" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Google Cloud Storage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -765,12 +820,6 @@
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceController.java</url>
-          <line>87</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentations.java</url>
           <line>94</line>
           <properties />
@@ -784,19 +833,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceController.java</url>
-          <line>74</line>
+          <line>82</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java</url>
-          <line>110</line>
+          <line>124</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/TransactionServiceController.java</url>
-          <line>89</line>
+          <line>96</line>
           <properties />
           <option name="timeStamp" value="60" />
         </line-breakpoint>
@@ -819,50 +868,44 @@
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceController.java</url>
-          <line>65</line>
-          <properties />
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java</url>
-          <line>191</line>
+          <line>205</line>
           <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java</url>
-          <line>183</line>
+          <line>197</line>
           <properties />
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java</url>
-          <line>221</line>
+          <line>235</line>
           <properties />
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java</url>
-          <line>226</line>
+          <line>240</line>
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java</url>
-          <line>232</line>
+          <line>246</line>
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java</url>
-          <line>238</line>
+          <line>252</line>
           <properties />
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java</url>
-          <line>241</line>
+          <line>255</line>
           <properties />
           <option name="timeStamp" value="74" />
         </line-breakpoint>
@@ -874,24 +917,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Clients/FeignClientTest.java</url>
-          <line>67</line>
+          <line>69</line>
           <properties />
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Clients/FeignClientTest.java</url>
-          <line>54</line>
+          <line>56</line>
           <properties />
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Clients/FeignClientTest.java</url>
-          <line>94</line>
+          <line>96</line>
           <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceControllerTest.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceController.java</url>
+          <line>93</line>
+          <properties />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Factory/CommonFactoryAbstract.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="83" />
+      <option name="time" value="87" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -955,25 +1016,9 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/abcbankinggroup/RemoteCallService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/abcbankinggroup/configuration/FeignClientConfiguration.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/UUID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="140" column="23" lean-forward="false" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/appengine/app.yaml" />
     <entry file="file://$PROJECT_DIR$/frontend/account.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/abcbankinggroup/MyFirstDbConnection.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Configuration/DataBaseConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -989,14 +1034,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kingston/university/coursework/abcbankinggroup/Connection/DataSource.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/9.5.0/feign-core-9.5.0.jar!/feign/ReflectiveFeign.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -1084,21 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/FundTransferRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/TransactionServiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="76" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/impl/TransactionServiceImplentations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
@@ -1137,7 +1159,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="21">
             <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1145,7 +1166,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1154,16 +1174,8 @@
         <state relative-caret-position="252">
           <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1171,7 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1187,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="23" column="62" lean-forward="false" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1199,58 +1209,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="65" column="61" lean-forward="false" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1281">
-          <caret line="74" column="19" lean-forward="false" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="101" column="12" lean-forward="false" selection-start-line="101" selection-start-column="12" selection-end-line="102" selection-end-column="65" />
-          <folding>
-            <element signature="e#8542#8543#0" expanded="true" />
-            <element signature="e#8598#8599#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/abcbankinggroup/DTOs/AccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Clients/OkHttpClient.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/FundTransferResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/FundTransferRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/Account.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Clients/FeignClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Clients/FeignClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="105" column="5" lean-forward="false" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="52" column="8" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Factory/CommonFactoryAbstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentationsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="47" column="46" lean-forward="false" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding>
+            <element signature="e#5031#5032#0" expanded="true" />
+            <element signature="e#5075#5076#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="39" column="15" lean-forward="false" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="80" column="44" lean-forward="false" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+        <state relative-caret-position="231">
+          <caret line="39" column="15" lean-forward="false" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Clients/OkHttpClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/TransactionServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="40" column="12" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc-banking-group.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1258,42 +1334,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Factory/CommonFactoryAbstract.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="103" column="104" lean-forward="false" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="104" />
+        <state relative-caret-position="126">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Clients/FeignClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="31" column="59" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="59" />
+        <state relative-caret-position="63">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/FundTransferResponse.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="117" lean-forward="false" selection-start-line="1" selection-start-column="117" selection-end-line="1" selection-end-column="117" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/abcbankinggroup/Clients/FeignClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        <state relative-caret-position="163">
+          <caret line="133" column="8" lean-forward="false" selection-start-line="133" selection-start-column="8" selection-end-line="133" selection-end-column="8" />
           <folding />
         </state>
       </provider>

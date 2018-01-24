@@ -1,8 +1,8 @@
 package com.abcbankinggroup.Services.Account;
 
+import com.abcbankinggroup.DTOs.FundTransferRequest;
 import com.abcbankinggroup.DTOs.Transaction;
 import com.abcbankinggroup.Services.Account.impl.AccountServiceImplentations;
-import com.abcbankinggroup.DTOs.FundTransferRequest;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -24,10 +24,18 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 /**
- * Main Controller for the Account-Service. It implements all needed
- * methods for the mentioned service.
+ * <h1>Account Service</h1>
  *
- * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * <p>
+ * Main Controller for the Account-Service. It implements all needed
+ * methods for the mentioned service including account's records, balance, and clients.
+ * It serves the Main Service over the NetFlix Feign client.
+ * </p>
+ *
+ *
+ * @Author  Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @version 1.0
+ * @since   26.01.2018
  */
 @RestController
 @Configuration

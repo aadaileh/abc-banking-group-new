@@ -23,16 +23,22 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 /**
- * Main Controller for the Authentication-Service. It implements all needed
- * methods for the mentioned service.
+ * <h1>Authentication Service</h1>
  *
- * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * <p>
+ * Main Controller for the Authentication-Service. It implements all needed
+ * methods for the mentioned service, to verify and authenticate requests and clients.
+ * </p>
+ *
+ * @Author  Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @version 1.0
+ * @since   26.01.2018
  */
 @RestController
 @Configuration
 @EnableAutoConfiguration
 @EnableDiscoveryClient
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "nn*", maxAge = 3600)
 @EnableSwagger2
 public class AuthenticationServiceController extends AuthenticationServiceImplentations implements AuthenticationServiceInterface {
 
@@ -89,7 +95,7 @@ public class AuthenticationServiceController extends AuthenticationServiceImplen
     }
 
     @ExceptionHandler
-    void handleIllegalArgumentException(
+    private void handleIllegalArgumentException(
             IllegalArgumentException e,
             HttpServletResponse response) throws IOException {
 
@@ -98,5 +104,10 @@ public class AuthenticationServiceController extends AuthenticationServiceImplen
 
     public ResponseEntity handle() {
         return new ResponseEntity(HttpStatus.OK);
+    }
+
+    /** ONLY DONE FOR UNIT-TESTING PURPOSES.*/
+    public void setAuthenticationServiceImplentations(AuthenticationServiceImplentations authenticationServiceImplentations) {
+        this.authenticationServiceImplentations = authenticationServiceImplentations;
     }
 }

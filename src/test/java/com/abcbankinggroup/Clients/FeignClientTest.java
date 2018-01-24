@@ -25,6 +25,7 @@ public class FeignClientTest {
     private static final String CLIENT_TYPE = "some-client-type";
     private static final String DONE_BY = "some-done-by";
     private static final double ACCOUNT_BALANCE = 500;
+    private static final String BANK_NAME = "some-bank-name";
 
     @Mock
     FundTransferRequest fundTransferRequestMock;
@@ -45,19 +46,20 @@ public class FeignClientTest {
         ArrayList<Transaction> transactions = new ArrayList<>();
         transactions.add(transaction);
 
-        fundTransferRequestMock = new FundTransferRequest();
+        FundTransferRequest fundTransferRequestMock = new FundTransferRequest();
         fundTransferRequestMock.setAvailableBalance(ACCOUNT_BALANCE);
         fundTransferRequestMock.setAmount(300);
+        fundTransferRequestMock.setBankName(BANK_NAME);
 
-        FundTransferResponse fundTransferResponseTrue = new FundTransferResponse();
-        fundTransferResponseTrue.setResults(true);
+        FundTransferResponse fundTransferResponse = new FundTransferResponse();
+        fundTransferResponse.setResults(true);
 
         when(feignClientMock.getUserDetails(anyString())).thenReturn(user);
         when(feignClientMock.getAccountDetailsFromClient(anyString())).thenReturn(transactions);
         when(feignClientMock.getAccountBalance(anyString())).thenReturn(ACCOUNT_BALANCE);
         when(feignClientMock.getAndCount()).thenReturn(true);
         when(feignClientMock.deliverCash()).thenReturn(true);
-        when(feignClientMock.verifyTransfer(fundTransferRequestMock)).thenReturn(fundTransferResponseTrue);
+        when(feignClientMock.verifyTransfer(fundTransferRequestMock)).thenReturn(fundTransferResponse);
     }
 
     @Test
@@ -101,13 +103,5 @@ public class FeignClientTest {
         boolean deliverCash = feignClientMock.deliverCash();
 
         assertTrue(deliverCash);
-    }
-
-    @Test
-    public void verifyTransferTest() {
-
-        FundTransferResponse fundTransferResponse = feignClientMock.verifyTransfer(fundTransferRequestMock);
-
-        assertTrue(fundTransferResponse.isResults());
     }
 }

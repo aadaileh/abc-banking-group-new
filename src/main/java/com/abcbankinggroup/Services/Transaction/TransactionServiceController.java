@@ -23,10 +23,17 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 /**
- * Main Controller for the Transaction-Service. It implements all needed
- * methods for the mentioned service.
+ * <h1>Transaction Service</h1>
  *
- * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * <p>
+ * Main Controller for the Transaction-Service. It implements all needed
+ * methods for the mentioned service, including getting, verifying different
+ * transaction actions performed from both online-banking or ATM
+ * </p>
+ *
+ * @Author  Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @version 1.0
+ * @since   26.01.2018
  */
 @RestController
 @Configuration
@@ -75,7 +82,7 @@ public class TransactionServiceController extends TransactionServiceImplentation
      *
      * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
      */
-    @ApiOperation("Add a record to the database including all necessary fields as a preperation for later processing by external applications.")
+    @ApiOperation("Create a fund-transfer record that can be consumed by external Fund-Transferring applications.")
     @RequestMapping(value = "/api/transaction-service/transaction/add",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
