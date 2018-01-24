@@ -1,7 +1,7 @@
 package com.abcbankinggroup.Services.Transaction.impl;
 
 import com.abcbankinggroup.Services.Transaction.TransactionServiceController;
-import com.abcbankinggroup.Connection.DataSourceAbstract;
+import com.abcbankinggroup.Factory.CommonFactoryAbstract;
 import com.abcbankinggroup.DTOs.FundTransferRequest;
 import com.abcbankinggroup.DTOs.FundTransferResponse;
 import org.slf4j.Logger;
@@ -16,7 +16,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 @Service
-public class TransactionServiceImplentations extends DataSourceAbstract {
+public class TransactionServiceImplentations extends CommonFactoryAbstract {
 
     private static final Logger LOG = LoggerFactory.getLogger(TransactionServiceController.class);
 

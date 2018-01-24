@@ -4,6 +4,7 @@ import com.abcbankinggroup.DTOs.FundTransferRequest;
 import com.abcbankinggroup.DTOs.FundTransferResponse;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.sql.SQLException;
 
@@ -14,7 +15,7 @@ import java.sql.SQLException;
  * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
  */
 @Service
-//@EnableSwagger2
+@EnableSwagger2
 public interface TransactionServiceInterface {
 
     /**

@@ -61,15 +61,22 @@ public class AccountServiceController extends AccountServiceImplentations implem
             @ApiResponse(code = 201, message = "Created"),
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
-    public ArrayList<Transaction> getAccount(@PathVariable String clientId) throws SQLException {
+    public ArrayList<Transaction> getAccount(@PathVariable String clientId) {
 
-        ArrayList<Transaction> accountDetails = accountServiceImplentations.retrieveAccountDetails(clientId);
+        ArrayList<Transaction> accountDetails = null;
+        try {
+            accountDetails = accountServiceImplentations.retrieveAccountDetails(clientId);
+            LOG.info("account details for the clinet-id [" + clientId + "] is returned");
+        } catch (SQLException e) {
+            LOG.error("something went wrong while retrieving the account's details for the clinet-id ["
+                    + clientId + "] Message: " + e.getMessage());
+        }
 
         return accountDetails;
     }
 
     /**
-     * Method to retrieve the latest balance of the account
+     * Method to retrieve the current balance of the account
      *
      * @param clientId contains client-id
      * @return Float the latest balance
@@ -85,9 +92,16 @@ public class AccountServiceController extends AccountServiceImplentations implem
             @ApiResponse(code = 201, message = "Created"),
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
-    public double getBalance(@PathVariable String clientId) throws SQLException {
+    public double getBalance(@PathVariable String clientId) {
 
-        double accountDetails = accountServiceImplentations.retrieveAccountBalance(clientId);
+        double accountDetails = 0;
+        try {
+            accountDetails = accountServiceImplentations.retrieveAccountBalance(clientId);
+            LOG.info("current account balance for the clinet-id [" + clientId + "] is returned");
+        } catch (SQLException e) {
+            LOG.error("something went wrong while retrieving the account's balance for the clinet-id ["
+                    + clientId + "] Message: " + e.getMessage());
+        }
 
         return accountDetails;
     }
@@ -100,7 +114,7 @@ public class AccountServiceController extends AccountServiceImplentations implem
      *
      * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
      */
-    @ApiOperation("Returns the account balance based on the given client-id")
+    @ApiOperation("Updates the account records by adding the latest transferred fund")
     @RequestMapping(value = "/api/account-service/update",
             consumes = MediaType.APPLICATION_JSON_UTF8_VALUE,
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
@@ -110,9 +124,20 @@ public class AccountServiceController extends AccountServiceImplentations implem
             @ApiResponse(code = 201, message = "Created"),
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
-    public Boolean updateAccountTable(@RequestBody FundTransferRequest fundTransferRequest) throws SQLException {
+    public Boolean updateAccountTable(@RequestBody FundTransferRequest fundTransferRequest) {
 
-        return accountServiceImplentations.updateAccountTable(fundTransferRequest);
+        Boolean accountUpdated = false;
+
+        try {
+            accountUpdated = accountServiceImplentations.updateAccountTable(fundTransferRequest);
+            LOG.info("account record successfully updated  for the clinet-id ["
+                    + fundTransferRequest.getClientId() + "]");
+        } catch (SQLException e) {
+            LOG.error("something went wrong while updating the account record for the clinet-id ["
+                    + fundTransferRequest.getClientId() + "] Message: " + e.getMessage());
+        }
+
+        return accountUpdated;
     }
 
 
@@ -123,7 +148,7 @@ public class AccountServiceController extends AccountServiceImplentations implem
      *
      * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
      */
-    @ApiOperation("Returns the account balance based on the given client-id")
+    @ApiOperation("Receives the deposit and count it mechanically")
     @RequestMapping(value = "/api/account-service/get-and-count/",
             produces = MediaType.APPLICATION_JSON_UTF8_VALUE,
             method = RequestMethod.GET)
@@ -171,6 +196,14 @@ public class AccountServiceController extends AccountServiceImplentations implem
     @ExceptionHandler
     void handleIllegalArgumentException(
             IllegalArgumentException e,
+            HttpServletResponse response) throws IOException {
+
+        response.sendError(HttpStatus.BAD_REQUEST.value());
+    }
+
+    @ExceptionHandler
+    void handleSQLException(
+            SQLException e,
             HttpServletResponse response) throws IOException {
 
         response.sendError(HttpStatus.BAD_REQUEST.value());

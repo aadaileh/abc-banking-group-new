@@ -1,6 +1,6 @@
 package com.abcbankinggroup.Services.Account.impl;
 
-import com.abcbankinggroup.Connection.DataSourceAbstract;
+import com.abcbankinggroup.Factory.CommonFactoryAbstract;
 import com.abcbankinggroup.DTOs.Transaction;
 import com.abcbankinggroup.DTOs.FundTransferRequest;
 import com.abcbankinggroup.Services.Account.AccountServiceController;
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 @Service
-public class AccountServiceImplentations extends DataSourceAbstract {
+public class AccountServiceImplentations extends CommonFactoryAbstract {
 
     private static final Logger LOG = LoggerFactory.getLogger(AccountServiceController.class);
 

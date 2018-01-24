@@ -1,6 +1,6 @@
 package com.abcbankinggroup.Services.Authentication.impl;
 
-import com.abcbankinggroup.Connection.DataSourceAbstract;
+import com.abcbankinggroup.Factory.CommonFactoryAbstract;
 import com.abcbankinggroup.DTOs.Credentials;
 import com.abcbankinggroup.DTOs.User;
 import com.abcbankinggroup.Services.Authentication.AuthenticationServiceController;
@@ -16,7 +16,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 @Service
-public class AuthenticationServiceImplentations extends DataSourceAbstract {
+public class AuthenticationServiceImplentations extends CommonFactoryAbstract {
 
     private static final Logger LOG = LoggerFactory.getLogger(AuthenticationServiceController.class);
 

@@ -2,18 +2,10 @@ package com.abcbankinggroup.Services.Main;
 
 import com.abcbankinggroup.Clients.FeignClient;
 import com.abcbankinggroup.DTOs.*;
-import feign.Feign;
-import feign.auth.BasicAuthRequestInterceptor;
-import feign.gson.GsonDecoder;
-import feign.gson.GsonEncoder;
-import feign.okhttp.OkHttpClient;
-import feign.slf4j.Slf4jLogger;
+import com.abcbankinggroup.Factory.CommonFactoryAbstract;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Configuration;
@@ -32,18 +24,9 @@ import java.util.ArrayList;
 @EnableDiscoveryClient
 @CrossOrigin(origins = "*", maxAge = 3600)
 @EnableSwagger2
-public class MainServiceController {
+public class MainServiceController extends CommonFactoryAbstract {
 
-    private static final Logger LOG = LoggerFactory.getLogger(MainServiceController.class);
-
-    @Value("${spring.feign.url}")
-    private String feignUrl;
-
-    @Value("${spring.basicauthentication.username}")
-    private String basicAuthenticationUsername;
-
-    @Value("${spring.basicauthentication.password}")
-    private String basicAuthenticationPassword;
+//    private static final Logger LOG = LoggerFactory.getLogger(MainServiceController.class);
 
     /**
      * Method to verify the given credentials. Credentials can be either coming from ATM (card-id, pin) or
@@ -257,30 +240,6 @@ public class MainServiceController {
 
         fundTransferResponse.setBalance(accountBalance);
         return fundTransferResponse;
-    }
-
-
-    /**
-     * Prepare Feign-client for communication with other services
-     * @param path
-     * @return
-     */
-    private FeignClient getFeignClient(String path) {
-
-        FeignClient feignClient = Feign.builder()
-                .client(new OkHttpClient())
-                .encoder(new GsonEncoder())
-                .decoder(new GsonDecoder())
-                .requestInterceptor(getRequestInterceptor())
-                .logger(new Slf4jLogger(FeignClient.class))
-                .logLevel(feign.Logger.Level.FULL)
-                .target(FeignClient.class, feignUrl + path);
-
-        return feignClient;
-    }
-
-    private BasicAuthRequestInterceptor getRequestInterceptor() {
-        return new BasicAuthRequestInterceptor(basicAuthenticationUsername, basicAuthenticationPassword);
     }
 
     @ExceptionHandler
