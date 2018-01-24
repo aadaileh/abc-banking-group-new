@@ -1,9 +1,9 @@
-package com.abcbankinggroup.Services.Login.impl;
+package com.abcbankinggroup.Services.Authentication.impl;
 
 import com.abcbankinggroup.Connection.DataSourceAbstract;
 import com.abcbankinggroup.DTOs.Credentials;
 import com.abcbankinggroup.DTOs.User;
-import com.abcbankinggroup.Services.Login.LoginServiceController;
+import com.abcbankinggroup.Services.Authentication.AuthenticationServiceController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,9 +16,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 @Service
-public class LoginServiceImplentations extends DataSourceAbstract {
+public class AuthenticationServiceImplentations extends DataSourceAbstract {
 
-    private static final Logger LOG = LoggerFactory.getLogger(LoginServiceController.class);
+    private static final Logger LOG = LoggerFactory.getLogger(AuthenticationServiceController.class);
 
     @Autowired
     private DataSource dataSource;
@@ -39,11 +39,13 @@ public class LoginServiceImplentations extends DataSourceAbstract {
         dataSource = getDataSource();
         Connection connection = null;
         User user = new User();
+        ResultSet resultSet = null;
+        Statement statement = null;
 
         try {
             connection = dataSource.getConnection();
-            Statement stmt = connection.createStatement();
-            ResultSet resultSet = stmt.executeQuery(
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(
                     "SELECT * " +
                             "FROM client " +
                             "WHERE username_card_id = '" + credentials.getUsername() + "' " +
@@ -61,7 +63,7 @@ public class LoginServiceImplentations extends DataSourceAbstract {
 
             //Set the timestamp user-last-logged-in when successfully logged in
             if (user.isLoggedIn()){
-                int updatedRowId = updateRecord(stmt, user.getClientId());
+                updateRecord(statement, user.getClientId());
             }
 
             return user;
@@ -71,7 +73,9 @@ public class LoginServiceImplentations extends DataSourceAbstract {
             LOG.debug(e.getMessage());
 
         } finally {
-            connection.close();
+            try { resultSet.close(); } catch (Exception e) { /* ignored */ }
+            try { statement.close(); } catch (Exception e) { /* ignored */ }
+            try { connection.close(); } catch (Exception e) { /* ignored */ }
         }
 
         return user;

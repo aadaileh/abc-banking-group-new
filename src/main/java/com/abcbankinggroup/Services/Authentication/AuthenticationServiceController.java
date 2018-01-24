@@ -1,8 +1,8 @@
-package com.abcbankinggroup.Services.Login;
+package com.abcbankinggroup.Services.Authentication;
 
 import com.abcbankinggroup.DTOs.Credentials;
 import com.abcbankinggroup.DTOs.User;
-import com.abcbankinggroup.Services.Login.impl.LoginServiceImplentations;
+import com.abcbankinggroup.Services.Authentication.impl.AuthenticationServiceImplentations;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 /**
- * Main Controller for the Login-Service. It implements all needed
+ * Main Controller for the Authentication-Service. It implements all needed
  * methods for the mentioned service.
  *
  * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
@@ -34,12 +34,12 @@ import java.sql.SQLException;
 @EnableDiscoveryClient
 @CrossOrigin(origins = "*", maxAge = 3600)
 @EnableSwagger2
-public class LoginServiceController extends LoginServiceImplentations implements LoginServiceInterface {
+public class AuthenticationServiceController extends AuthenticationServiceImplentations implements AuthenticationServiceInterface {
 
-    private static final Logger LOG = LoggerFactory.getLogger(LoginServiceController.class);
+    private static final Logger LOG = LoggerFactory.getLogger(AuthenticationServiceController.class);
 
     @Autowired
-    private LoginServiceImplentations loginServiceImplentations;
+    private AuthenticationServiceImplentations authenticationServiceImplentations;
 
     /**
      * Method to verify the given credentials. Credentials can be either coming from ATM (card-id, pin) or
@@ -63,7 +63,7 @@ public class LoginServiceController extends LoginServiceImplentations implements
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
     public User verifyLogin(@RequestBody Credentials credentials) throws SQLException {
 
-        return loginServiceImplentations.verifyCredentials(credentials);
+        return authenticationServiceImplentations.verifyCredentials(credentials);
     }
 
     /**
@@ -85,7 +85,7 @@ public class LoginServiceController extends LoginServiceImplentations implements
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
     public User getUser(@PathVariable String username) throws SQLException {
 
-        return loginServiceImplentations.returnUser(username);
+        return authenticationServiceImplentations.returnUser(username);
     }
 
     @ExceptionHandler

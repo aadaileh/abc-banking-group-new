@@ -1,4 +1,4 @@
-package com.abcbankinggroup.Services.Login;
+package com.abcbankinggroup.Services.Authentication;
 
 import com.abcbankinggroup.DTOs.Credentials;
 import com.abcbankinggroup.DTOs.User;
@@ -9,14 +9,14 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.sql.SQLException;
 
 /**
- * Main interface for the Login-Service. It describes and defines all needed
+ * Main interface for the Authentication-Service. It describes and defines all needed
  * methods for the mentioned service.
  *
  * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
  */
 @Service
 @EnableSwagger2
-public interface LoginServiceInterface {
+public interface AuthenticationServiceInterface {
 
     /**
      * Method to verify the given credentials. Credentials can be either coming from ATM (card-id, pin) or

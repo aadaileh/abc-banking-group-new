@@ -68,7 +68,7 @@ public class MainServiceController {
     public User login(@RequestBody Credentials credentials) {
 
         FeignClient feignClient = getFeignClient("/api/login-service/login");
-        User user = feignClient.loginServiceVerifyLogin(credentials);
+        User user = feignClient.authenticationServiceVerifyLogin(credentials);
 
         LOG.info("Successfully logged in for credentials:" + credentials.getUsername() + ", " + credentials.getPassword());
 

@@ -41,7 +41,7 @@ public interface FeignClient {
 
     @RequestLine("POST")
     @Headers("Content-Type: application/json")
-    User loginServiceVerifyLogin(Credentials credentials);
+    User authenticationServiceVerifyLogin(Credentials credentials);
 }
 
 // Unit-Testing Code..
