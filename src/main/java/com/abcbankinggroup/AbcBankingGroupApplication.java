@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Ahmed Al-Adaileh, k1560383@kingston.ac.uk, ahmed.adaileh@gmail.com
  */
 @SpringBootApplication
+//@EnableDiscoveryClient
 public class AbcBankingGroupApplication {
 
     /**

@@ -25,6 +25,8 @@ print_r($response_warm_harbor);
 print_r($err_warm_harbor);
 echo "</pre>";
 
+echo "Now sleep for 3 minutes, to free MySql resources...".
+sleep(180);
 
 #calm-sea
 $curl_calm_sea = curl_init();
