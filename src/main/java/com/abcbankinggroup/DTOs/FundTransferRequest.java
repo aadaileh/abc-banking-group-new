@@ -1,5 +1,16 @@
 package com.abcbankinggroup.DTOs;
 
+/**
+ * <h1>Data Transfer Object: FundTransferRequest</h1>
+ *
+ * <p>
+ * Contains all related attributes and their getters and setters
+ * </p>
+ *
+ * @Author  Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @version 1.0
+ * @since   26.01.2018
+ */
 public class FundTransferRequest {
 
     private double availableBalance;

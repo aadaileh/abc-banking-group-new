@@ -6,6 +6,21 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.ArrayList;
 
+/**
+ * <h1>Main Service Interface for the Coursework: ABC Banking Group</h1>
+ *
+ * <p>
+ * Here is the declaration and definition of all methods implemented in the
+ * related controller. It is always the first point to get requests and
+ * distribute them to different other services. The whole communication is
+ * done based on the NetFlix Feign Client. This service negotiate with:
+ * Authentication-service, Account-service and Transaction-service.
+ * </p>
+ *
+ * @Author  Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @version 1.0
+ * @since   26.01.2018
+ */
 public interface MainServiceInterface {
 
         /**

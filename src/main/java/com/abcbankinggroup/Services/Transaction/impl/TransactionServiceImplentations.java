@@ -15,6 +15,17 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+/**
+ * <h1>Transaction service implementations</h1>
+ *
+ * <p>
+ * Contains the implementation of all members of the Transaction-Service
+ * </p>
+ *
+ * @Author  Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @version 1.0
+ * @since   26.01.2018
+ */
 @Service
 public class TransactionServiceImplentations extends CommonFactoryAbstract {
 

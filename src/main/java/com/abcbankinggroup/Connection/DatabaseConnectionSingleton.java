@@ -6,6 +6,18 @@ import org.springframework.stereotype.Component;
 
 import java.sql.SQLException;
 
+/**
+ * <h1>Database Connection Singleton</h1>
+ *
+ * <p>
+ * This is a singleton to deal with all database interactions. It demonstrate
+ * the implementation of a singleton, which is existing only once in the heap.
+ * </p>
+ *
+ * @Author  Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @version 1.0
+ * @since   26.01.2018
+ */
 @Component
 public class DatabaseConnectionSingleton {
 

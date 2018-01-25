@@ -9,10 +9,16 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.sql.SQLException;
 
 /**
+ * <h1>Authentication Service Interface</h1>
+ *
+ * <p>
  * Main interface for the Authentication-Service. It describes and defines all needed
  * methods for the mentioned service.
+ * </p>
  *
- * @Author Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @Author  Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @version 1.0
+ * @since   26.01.2018
  */
 @Service
 @EnableSwagger2

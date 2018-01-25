@@ -18,6 +18,19 @@ import org.springframework.stereotype.Component;
 import javax.sql.DataSource;
 import java.sql.SQLException;
 
+/**
+ * <h1>CommonFactoryAbstract Abstract Class</h1>
+ *
+ * <p>
+ * Contains the necessary methods which are used in different places. It is introduced
+ * in this application to increase the code-reusability and inheritance. It does demonstrate
+ * the use of abstract classes
+ * </p>
+ *
+ * @Author  Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @version 1.0
+ * @since   26.01.2018
+ */
 @Component
 public abstract class CommonFactoryAbstract {
 

@@ -10,6 +10,19 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
+/**
+ * <h1>Security Configuration</h1>
+ *
+ * <p>
+ * Contains the necessary methods and parameters to activate and set-up
+ * the basic-authentication, which is implemented in this application instead of
+ * the OAUTH2 authentication daemon.
+ * </p>
+ *
+ * @Author  Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @version 1.0
+ * @since   26.01.2018
+ */
 @EnableWebSecurity
 @Order(99)
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
@@ -33,18 +46,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     private static final String ROLE_MANAGER = "MANAGER";
 
     /** the username that all users of the API will have to use */
-    @Value("apiuser")
+    @Value("${spring.basicauthentication.username}")
     private String apiUsername;
 
     /** the password that all users of the API will have to use */
-    @Value("pass")
+    @Value("${spring.basicauthentication.password}")
     private String apiPassword;
-
-    @Value("user")
-    private String managementUsername;
-
-    @Value("pass")
-    private String managementPassword;
 
     /** Configure security settings for this micro service with Http basic authentication */
     @Override
@@ -74,11 +81,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         auth.inMemoryAuthentication()
                 .withUser(apiUsername)
                 .password(apiPassword)
-                .roles(ROLE_API_USER)
-                .and()
-                .withUser(managementUsername)
-                .password(managementPassword)
-                .roles(ROLE_MANAGER);
+                .roles(ROLE_API_USER);
 
     }
 

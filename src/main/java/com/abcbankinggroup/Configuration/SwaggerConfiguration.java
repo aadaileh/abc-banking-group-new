@@ -13,6 +13,19 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.Collections;
 
+/**
+ * <h1>Swagger Configuration Class</h1>
+ *
+ * <p>
+ * Contains the necessary configuration methods and annotations to create
+ * the swagger documentation. It is essential to have this kind of documentation
+ * to list all available services and RESTFul verbs to be use by client.
+ * </p>
+ *
+ * @Author  Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @version 1.0
+ * @since   26.01.2018
+ */
 @Configuration
 @EnableSwagger2
 @EnableAutoConfiguration

@@ -15,6 +15,17 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * <h1>Authentication service implementations</h1>
+ *
+ * <p>
+ * Contains the implementation of all members of the Authentication-Service
+ * </p>
+ *
+ * @Author  Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @version 1.0
+ * @since   26.01.2018
+ */
 @Service
 public class AuthenticationServiceImplentations extends CommonFactoryAbstract {
 

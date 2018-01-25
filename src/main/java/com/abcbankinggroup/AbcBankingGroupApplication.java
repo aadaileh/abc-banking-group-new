@@ -5,9 +5,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
- * Main "Application" class that is used to bootstrap the Spring Boot application.
+ * <h1>ABC Banking Group Application</h1>
  *
- * @author Ahmed Al-Adaileh, k1560383@kingston.ac.uk, ahmed.adaileh@gmail.com
+ * <p>
+ * Main "Application" class that is used to bootstrap the Spring Boot application.
+ * </p>
+ *
+ * @Author  Ahmed Al-Adaileh <k1530383@kingston.ac.uk> <ahmed.adaileh@gmail.com>
+ * @version 1.0
+ * @since   26.01.2018
  */
 @SpringBootApplication
 @EnableDiscoveryClient
