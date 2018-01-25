@@ -21,7 +21,7 @@ import java.sql.SQLException;
 @Component
 public class DatabaseConnectionSingleton {
 
-    private static DatabaseConnectionSingleton ourInstance = new DatabaseConnectionSingleton();
+    private static DatabaseConnectionSingleton databaseConnectionSingleton = new DatabaseConnectionSingleton();
     private String dbUrl;
     private String username;
     private String password;
@@ -30,7 +30,7 @@ public class DatabaseConnectionSingleton {
     }
 
     public static DatabaseConnectionSingleton getInstance() {
-        return ourInstance;
+        return databaseConnectionSingleton;
     }
 
     public void setDbUrl(String dbUrl) {

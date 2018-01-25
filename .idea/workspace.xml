@@ -10,44 +10,7 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/../main-service/Main Service.iml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../transaction-service/Transaction Service.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/AbcBankingGroupApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/AbcBankingGroupApplication.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Configuration/DataBaseConfiguration.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Configuration/SecurityConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Configuration/SecurityConfiguration.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Configuration/SwaggerConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Configuration/SwaggerConfiguration.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Connection/DatabaseConnectionSingleton.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Connection/DatabaseConnectionSingleton.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/Account.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/Account.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/Credentials.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/Credentials.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/Envelope.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/Envelope.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/FundTransferRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/FundTransferRequest.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/FundTransferResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/FundTransferResponse.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/Transaction.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/Transaction.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Factory/CommonFactoryAbstract.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Factory/CommonFactoryAbstract.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceInterface.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceInterface.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceInterface.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceInterface.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentations.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentations.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceInterface.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceInterface.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/TransactionServiceInterface.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/TransactionServiceInterface.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/impl/TransactionServiceImplentations.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/impl/TransactionServiceImplentations.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/AbcBankingGroupApplication.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/AbcBankingGroupApplication.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Clients/FeignClient.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Clients/FeignClient.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Configuration/DataBaseConfiguration.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Configuration/SecurityConfiguration.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Configuration/SecurityConfiguration.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Configuration/SwaggerConfiguration.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Configuration/SwaggerConfiguration.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Connection/DatabaseConnectionSingleton.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Connection/DatabaseConnectionSingleton.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/Account.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/Account.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/Credentials.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/Credentials.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/Envelope.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/Envelope.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/FundTransferRequest.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/FundTransferRequest.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/FundTransferResponse.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/FundTransferResponse.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/Transaction.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/Transaction.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/User.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/DTOs/User.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Factory/CommonFactoryAbstract.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Factory/CommonFactoryAbstract.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Account/impl/AccountServiceImplentations.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentations.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Authentication/impl/AuthenticationServiceImplentations.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Transaction/impl/TransactionServiceImplentations.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Transaction/impl/TransactionServiceImplentations.class" />
       <change beforePath="$PROJECT_DIR$/../account-service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../account-service/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../account-service/frontend/Table_Fixed_Header/Table_Fixed_Header/css/main.css" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../account-service/frontend/Table_Fixed_Header/Table_Fixed_Header/css/util.css" afterPath="" />
@@ -4269,7 +4232,18 @@
     <option name="OUTPUT_DIRECTORY" value="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\unite-testing report" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf>
+      <file leaf-file-name="DatabaseConnectionSingleton.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Connection/DatabaseConnectionSingleton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="32" column="42" lean-forward="false" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -4365,7 +4339,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Configuration/SecurityConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Factory/CommonFactoryAbstract.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Configuration/SwaggerConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Connection/DatabaseConnectionSingleton.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/Account.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/Credentials.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/DTOs/Envelope.java" />
@@ -4380,6 +4353,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/AbcBankingGroupApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Connection/DatabaseConnectionSingleton.java" />
       </list>
     </option>
   </component>
@@ -4421,7 +4395,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -4463,6 +4436,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="abcbankinggroup" type="462c0819:PsiDirectoryNode" />
               <item name="Clients" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="abc-banking-group-new" type="b2602c69:ProjectViewProjectNode" />
+              <item name="abc-banking-group-new" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="abcbankinggroup" type="462c0819:PsiDirectoryNode" />
+              <item name="Connection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="abc-banking-group-new" type="b2602c69:ProjectViewProjectNode" />
@@ -4533,8 +4515,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -4885,23 +4868,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50741166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37328768" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.150913" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24059293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24059293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17669173" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31632653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32116005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39794755" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Google Cloud Storage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -4914,7 +4896,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50741166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17669173" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -5321,14 +5305,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Configuration/DataBaseConfigurationXXX.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Configuration/DataBaseConfigurationXXX.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Clients/FeignClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -5341,7 +5318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="24" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5349,7 +5325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5357,7 +5332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="27" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5365,15 +5339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Connection/DatabaseConnectionSingleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="13" column="78" lean-forward="false" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5381,7 +5346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5389,7 +5353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5397,7 +5360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5405,7 +5367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5413,7 +5374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5421,7 +5381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5528,6 +5487,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Connection/DatabaseConnectionSingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="32" column="42" lean-forward="false" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
           <folding />
         </state>
       </provider>
