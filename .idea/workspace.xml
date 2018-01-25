@@ -2,24 +2,975 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98585c54-a67e-4bfb-9af8-fcfdc26c54ff" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ecwid_consul_consul_api_1_3_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_consul_core_1_3_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_consul_discovery_1_3_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_consul_1_3_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_consul_discovery_1_3_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_ribbon_1_4_0_RELEASE.xml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../account-service/Account Service.iml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../authentication-service/Authentication Service.iml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../main-service/Main Service.iml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../transaction-service/Transaction Service.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/AbcBankingGroupApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/AbcBankingGroupApplication.java" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/css/main.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/css/util.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/Lato/Lato-Black.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/Lato/Lato-BlackItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/Lato/Lato-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/Lato/Lato-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/Lato/Lato-Hairline.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/Lato/Lato-HairlineItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/Lato/Lato-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/Lato/Lato-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/Lato/Lato-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/Lato/Lato-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/Lato/OFL.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/OpenSans/OpenSans-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/OpenSans/OpenSans-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/OpenSans/OpenSans-ExtraBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/OpenSans/OpenSans-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/OpenSans/OpenSans-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/OpenSans/OpenSans-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/OpenSans/OpenSans-Regular.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/OpenSans/OpenSans-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/OpenSans/OpenSans-SemiBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/OpenSans/OpenSans-SemiBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/css/font-awesome.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/animated.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/core.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/fixed-width.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/font-awesome.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/icons.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/larger.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/list.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/mixins.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/path.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/screen-reader.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/stacked.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/variables.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/_animated.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/_core.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/_icons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/_larger.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/_list.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/_path.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/_variables.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-Black.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-BlackItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-ExtraBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-ExtraBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-ExtraLight.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-ExtraLightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-Medium.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-MediumItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-SemiBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-SemiBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-Thin.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/Montserrat-ThinItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/fonts/montserrat/OFL.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/images/icons/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/js/main.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/animate/animate.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/css/bootstrap-grid.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/css/bootstrap-grid.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/css/bootstrap-grid.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/css/bootstrap-reboot.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/css/bootstrap-reboot.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/css/bootstrap-reboot.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/css/bootstrap.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/js/popper.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/js/popper.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/bootstrap/js/tooltip.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/jquery/jquery-3.2.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/perfect-scrollbar/perfect-scrollbar.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/select2/select2.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/select2/select2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/select2/select2.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/Table_Fixed_Header/vendor/select2/select2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/._Table_Fixed_Header" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/._css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/._fonts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/._images" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/._index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/._js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/._vendor" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/css/._main.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/css/._util.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/._Lato" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/._OpenSans" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/._font-awesome-4.7.0" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/._montserrat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/Lato/._Lato-Black.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/Lato/._Lato-BlackItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/Lato/._Lato-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/Lato/._Lato-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/Lato/._Lato-Hairline.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/Lato/._Lato-HairlineItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/Lato/._Lato-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/Lato/._Lato-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/Lato/._Lato-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/Lato/._Lato-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/Lato/._OFL.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/OpenSans/._OpenSans-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/OpenSans/._OpenSans-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/OpenSans/._OpenSans-ExtraBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/OpenSans/._OpenSans-ExtraBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/OpenSans/._OpenSans-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/OpenSans/._OpenSans-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/OpenSans/._OpenSans-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/OpenSans/._OpenSans-Regular.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/OpenSans/._OpenSans-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/OpenSans/._OpenSans-SemiBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/OpenSans/._OpenSans-SemiBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/._HELP-US-OUT.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/._css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/._fonts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/._less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/._scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/css/._font-awesome.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/css/._font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/fonts/._FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/fonts/._fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/fonts/._fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/fonts/._fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/fonts/._fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/fonts/._fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/._animated.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/._bordered-pulled.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/._core.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/._fixed-width.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/._font-awesome.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/._icons.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/._larger.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/._list.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/._mixins.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/._path.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/._rotated-flipped.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/._screen-reader.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/._stacked.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/less/._variables.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/.__animated.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/.__bordered-pulled.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/.__core.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/.__fixed-width.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/.__icons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/.__larger.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/.__list.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/.__mixins.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/.__path.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/.__rotated-flipped.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/.__screen-reader.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/.__stacked.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/.__variables.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/font-awesome-4.7.0/scss/._font-awesome.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-Black.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-BlackItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-ExtraBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-ExtraBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-ExtraLight.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-ExtraLightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-Medium.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-MediumItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-SemiBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-SemiBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-Thin.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._Montserrat-ThinItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/fonts/montserrat/._OFL.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/images/._icons" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/images/icons/._favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/js/._main.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/._animate" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/._bootstrap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/._jquery" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/._perfect-scrollbar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/._select2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/animate/._animate.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/._css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/._js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/css/._bootstrap-grid.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/css/._bootstrap-grid.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/css/._bootstrap-grid.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/css/._bootstrap-grid.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/css/._bootstrap-reboot.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/css/._bootstrap-reboot.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/css/._bootstrap-reboot.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/css/._bootstrap-reboot.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/css/._bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/css/._bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/css/._bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/css/._bootstrap.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/js/._bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/js/._bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/js/._popper.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/js/._popper.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/bootstrap/js/._tooltip.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/jquery/._jquery-3.2.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/perfect-scrollbar/._perfect-scrollbar.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/perfect-scrollbar/._perfect-scrollbar.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/select2/._select2.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/select2/._select2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/select2/._select2.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Fixed_Header/__MACOSX/Table_Fixed_Header/vendor/select2/._select2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/css/main.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/css/util.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/OpenSans/OpenSans-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/OpenSans/OpenSans-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/OpenSans/OpenSans-ExtraBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/OpenSans/OpenSans-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/OpenSans/OpenSans-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/OpenSans/OpenSans-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/OpenSans/OpenSans-Regular.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/OpenSans/OpenSans-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/OpenSans/OpenSans-SemiBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/OpenSans/OpenSans-SemiBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/css/font-awesome.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/animated.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/core.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/fixed-width.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/font-awesome.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/icons.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/larger.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/list.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/mixins.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/path.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/screen-reader.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/stacked.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/variables.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/_animated.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/_core.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/_icons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/_larger.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/_list.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/_path.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/_variables.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-Black.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-BlackItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-ExtraBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-ExtraLight.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-Medium.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-MediumItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-SemiBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-Thin.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/fonts/poppins/Poppins-ThinItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/images/icons/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/js/main.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/animate/animate.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/css/bootstrap-grid.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/css/bootstrap-grid.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/css/bootstrap-grid.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/css/bootstrap-reboot.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/css/bootstrap-reboot.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/css/bootstrap-reboot.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/css/bootstrap.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/js/popper.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/js/popper.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/bootstrap/js/tooltip.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/jquery/jquery-3.2.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/perfect-scrollbar/perfect-scrollbar.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/select2/select2.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/select2/select2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/select2/select2.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/Table_Responsive_v2/vendor/select2/select2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/._Table_Responsive_v2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/._css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/._fonts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/._images" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/._index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/._js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/._vendor" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/css/._main.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/css/._util.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/._OpenSans" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/._font-awesome-4.7.0" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/._poppins" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/OpenSans/._OpenSans-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/OpenSans/._OpenSans-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/OpenSans/._OpenSans-ExtraBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/OpenSans/._OpenSans-ExtraBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/OpenSans/._OpenSans-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/OpenSans/._OpenSans-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/OpenSans/._OpenSans-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/OpenSans/._OpenSans-Regular.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/OpenSans/._OpenSans-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/OpenSans/._OpenSans-SemiBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/OpenSans/._OpenSans-SemiBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/._HELP-US-OUT.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/._css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/._fonts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/._less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/._scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/css/._font-awesome.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/css/._font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/fonts/._FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/fonts/._fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/fonts/._fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/fonts/._fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/fonts/._fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/fonts/._fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/._animated.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/._bordered-pulled.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/._core.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/._fixed-width.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/._font-awesome.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/._icons.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/._larger.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/._list.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/._mixins.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/._path.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/._rotated-flipped.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/._screen-reader.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/._stacked.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/less/._variables.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/.__animated.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/.__bordered-pulled.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/.__core.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/.__fixed-width.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/.__icons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/.__larger.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/.__list.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/.__mixins.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/.__path.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/.__rotated-flipped.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/.__screen-reader.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/.__stacked.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/.__variables.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/font-awesome-4.7.0/scss/._font-awesome.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-Black.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-BlackItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-ExtraBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-ExtraBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-ExtraLight.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-ExtraLightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-Medium.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-MediumItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-SemiBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-SemiBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-Thin.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/fonts/poppins/._Poppins-ThinItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/images/._icons" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/images/icons/._favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/js/._main.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/._animate" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/._bootstrap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/._jquery" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/._perfect-scrollbar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/._select2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/animate/._animate.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/._css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/._js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/css/._bootstrap-grid.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/css/._bootstrap-grid.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/css/._bootstrap-grid.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/css/._bootstrap-grid.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/css/._bootstrap-reboot.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/css/._bootstrap-reboot.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/css/._bootstrap-reboot.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/css/._bootstrap-reboot.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/css/._bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/css/._bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/css/._bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/css/._bootstrap.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/js/._bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/js/._bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/js/._popper.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/js/._popper.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/bootstrap/js/._tooltip.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/jquery/._jquery-3.2.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/perfect-scrollbar/._perfect-scrollbar.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/perfect-scrollbar/._perfect-scrollbar.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/select2/._select2.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/select2/._select2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/select2/._select2.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/Table_Responsive_v2/__MACOSX/Table_Responsive_v2/vendor/select2/._select2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/43-pXHjwrpmVO8Oean-6BD0uzARvcqUQrpdi7Yw2bxaXwEoP21UdN5kW6Ks9pdOxf7ropMUrh0djgYPwYPU=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/6facebook.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/6instagram.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/6twitter.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/6zb8WwTey8418Mlgf5wJomMN_7JjY8T8ULq74HO77G1_wYJQC3o70RMGnRyP_89wZ4jQ93uNwIP82kKRz6AakfxfKA=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/79BzLZRsxbQ-P3jvmdDEafrr95zxDCqMVDbKoE6NxRAD1zwyyi3RQwqICTA-MVT73q5dGwqHwhHTe_nx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/9rwgVnDglPdPFugSu98fhDmxzjXC9KovZ_7BuHkXPIv6jvg9S96flGnhL_e4y8mIpPpZQstfqEV-WitY=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/AuthenticationService.Authenticate" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/EWqW7DEI4kOTRMLjK2-ObFHp-EYBt5apFYZ1LVFAhLtTLjigCRfx5hCCTKbIjIm68VQ00p9twloHJ9w8=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/TgRyMQvJ3_h9RmOnu7AlhIE7NLOOBsRoBounARrs8fQv8HCRPaFtpBneSqJOSZpI6l7He_bAZKN179JBig=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/ZMARmveTg1geksYKXZKdh71KW09XrhDLg8N-XrfXCGsDBEHnuKwhmYpHd55Y2-NwuwLX8qsyx26JNyJWtr1jEcxD=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/all_css.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/all_js.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/common.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/common.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/effects.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/fonts.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/ga.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/geocoder.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/iframe_api" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/imos.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/index-6da11f252ec7f2954d8b82138b5a7a14.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/inner-975baddac6a374ad033fdc34a9226a03.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/inner-be64e0c3627044f9b350f294ab5c215c.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/inner.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/jquery-2.x-git.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/jquery.cookie.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/jquery.mobile.custom.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/lightbox.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/lightbox.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/outer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/saved_resource" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/saved_resource(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/spimeengine.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/spimeview.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/stats.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/stripe_data_css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/stripe_data_css(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/stripe_dynamic_css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/stripe_dynamic_css(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/stripe_dynamic_css(2)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/stripe_dynamic_css(3)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/stripe_dynamic_css(4)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/sweetalert.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/sweetalert.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/translation_js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/util.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/www-widgetapi.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/account_files/xprs_helper.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/amount-deposit-cheq.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/amount-deposit-sav.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/amount-withdraw-cheq.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/amount-withdraw-sav.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/css/amount.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/css/deposit-menu-amount.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/css/deposit-menu.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/css/login.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/css/mystyle.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/deposit-menu-amount-cheq.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/deposit-menu-amount-sav.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/deposit-menu-amount.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/deposit-menu.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/main.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/print.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/withdraw-menu-amount-cheq.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/withdraw-menu-amount-sav.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/html/withdraw-menu.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/atm/site/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/43-pXHjwrpmVO8Oean-6BD0uzARvcqUQrpdi7Yw2bxaXwEoP21UdN5kW6Ks9pdOxf7ropMUrh0djgYPwYPU=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/6facebook.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/6instagram.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/6twitter.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/6zb8WwTey8418Mlgf5wJomMN_7JjY8T8ULq74HO77G1_wYJQC3o70RMGnRyP_89wZ4jQ93uNwIP82kKRz6AakfxfKA=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/79BzLZRsxbQ-P3jvmdDEafrr95zxDCqMVDbKoE6NxRAD1zwyyi3RQwqICTA-MVT73q5dGwqHwhHTe_nx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/9rwgVnDglPdPFugSu98fhDmxzjXC9KovZ_7BuHkXPIv6jvg9S96flGnhL_e4y8mIpPpZQstfqEV-WitY=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/AuthenticationService.Authenticate" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/EWqW7DEI4kOTRMLjK2-ObFHp-EYBt5apFYZ1LVFAhLtTLjigCRfx5hCCTKbIjIm68VQ00p9twloHJ9w8=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/QuotaService.RecordEvent" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/TgRyMQvJ3_h9RmOnu7AlhIE7NLOOBsRoBounARrs8fQv8HCRPaFtpBneSqJOSZpI6l7He_bAZKN179JBig=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/ViewportInfoService.GetViewportInfo" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/ZMARmveTg1geksYKXZKdh71KW09XrhDLg8N-XrfXCGsDBEHnuKwhmYpHd55Y2-NwuwLX8qsyx26JNyJWtr1jEcxD=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/all_css.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/all_js.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/cb_scout5_hdpi.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/common.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/common.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/controls.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/effects.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/fonts.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/ga.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/geocoder.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/google4_hdpi.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/iframe_api" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/imgs8.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/imos.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/index-6da11f252ec7f2954d8b82138b5a7a14.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/inner-975baddac6a374ad033fdc34a9226a03.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/inner-be64e0c3627044f9b350f294ab5c215c.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/inner.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/jquery-2.x-git.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/jquery.cookie.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/jquery.mobile.custom.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/lightbox.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/lightbox.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/map.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/mapcnt6.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/marker.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/onion.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/outer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/saved_resource" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/saved_resource(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/spimeengine.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/spimeview.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/stats.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/stripe_data_css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/stripe_data_css(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/stripe_dynamic_css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/stripe_dynamic_css(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/stripe_dynamic_css(2)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/stripe_dynamic_css(3)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/stripe_dynamic_css(4)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/stripe_dynamic_css(5)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/stripe_dynamic_css(6)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/stripe_dynamic_css(7)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/stripe_dynamic_css(8)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/sv9.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/sweetalert.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/sweetalert.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/tmapctrl4_hdpi.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/tmapctrl_hdpi.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/translation_js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/transparent.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/util.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(10)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(11)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(12)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(13)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(14)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(15)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(16)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(17)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(18)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(19)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(2)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(20)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(21)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(3)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(4)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(5)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(6)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(7)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(8)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/vt(9)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/www-widgetapi.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/contact_files/xprs_helper.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/css/main.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/css/util.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/Lato/Lato-Black.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/Lato/Lato-BlackItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/Lato/Lato-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/Lato/Lato-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/Lato/Lato-Hairline.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/Lato/Lato-HairlineItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/Lato/Lato-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/Lato/Lato-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/Lato/Lato-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/Lato/Lato-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/Lato/OFL.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/OpenSans/OpenSans-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/OpenSans/OpenSans-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/OpenSans/OpenSans-ExtraBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/OpenSans/OpenSans-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/OpenSans/OpenSans-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/OpenSans/OpenSans-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/OpenSans/OpenSans-Regular.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/OpenSans/OpenSans-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/OpenSans/OpenSans-SemiBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/OpenSans/OpenSans-SemiBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/css/font-awesome.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/less/animated.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/less/core.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/less/fixed-width.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/less/font-awesome.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/less/icons.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/less/larger.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/less/list.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/less/mixins.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/less/path.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/less/screen-reader.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/less/stacked.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/less/variables.less" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/scss/_animated.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/scss/_core.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/scss/_icons.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/scss/_larger.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/scss/_list.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/scss/_path.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/scss/_variables.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-Black.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-BlackItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-ExtraBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-ExtraBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-ExtraLight.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-ExtraLightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-Medium.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-MediumItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-SemiBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-SemiBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-Thin.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/Montserrat-ThinItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/montserrat/OFL.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-Black.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-BlackItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-Bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-BoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-ExtraBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-ExtraLight.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-Italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-Light.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-LightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-Medium.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-MediumItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-SemiBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-Thin.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fonts/poppins/Poppins-ThinItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/43-pXHjwrpmVO8Oean-6BD0uzARvcqUQrpdi7Yw2bxaXwEoP21UdN5kW6Ks9pdOxf7ropMUrh0djgYPwYPU=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/6facebook.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/6instagram.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/6twitter.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/6zb8WwTey8418Mlgf5wJomMN_7JjY8T8ULq74HO77G1_wYJQC3o70RMGnRyP_89wZ4jQ93uNwIP82kKRz6AakfxfKA=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/9rwgVnDglPdPFugSu98fhDmxzjXC9KovZ_7BuHkXPIv6jvg9S96flGnhL_e4y8mIpPpZQstfqEV-WitY=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/AuthenticationService.Authenticate" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/EWqW7DEI4kOTRMLjK2-ObFHp-EYBt5apFYZ1LVFAhLtTLjigCRfx5hCCTKbIjIm68VQ00p9twloHJ9w8=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/TgRyMQvJ3_h9RmOnu7AlhIE7NLOOBsRoBounARrs8fQv8HCRPaFtpBneSqJOSZpI6l7He_bAZKN179JBig=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/Thumbs.db" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/ZMARmveTg1geksYKXZKdh71KW09XrhDLg8N-XrfXCGsDBEHnuKwhmYpHd55Y2-NwuwLX8qsyx26JNyJWtr1jEcxD=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/all_css.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/all_js.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/common.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/common.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/effects.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/fonts.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/ga.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/geocoder.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/iframe_api" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/imos.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/index-6da11f252ec7f2954d8b82138b5a7a14.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/inner-975baddac6a374ad033fdc34a9226a03.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/inner-be64e0c3627044f9b350f294ab5c215c.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/inner.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/jquery-2.x-git.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/jquery.cookie.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/jquery.mobile.custom.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/lightbox.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/lightbox.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/outer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/saved_resource" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/saved_resource(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/spimeengine.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/spimeview.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/stats.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/stripe_data_css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/stripe_data_css(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/stripe_dynamic_css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/stripe_dynamic_css(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/stripe_dynamic_css(2)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/stripe_dynamic_css(3)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/stripe_dynamic_css(4)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/sweetalert.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/sweetalert.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/translation_js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/util.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/www-widgetapi.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/fund-transfer_files/xprs_helper.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/43-pXHjwrpmVO8Oean-6BD0uzARvcqUQrpdi7Yw2bxaXwEoP21UdN5kW6Ks9pdOxf7ropMUrh0djgYPwYPU=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/6facebook.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/6instagram.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/6twitter.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/6zb8WwTey8418Mlgf5wJomMN_7JjY8T8ULq74HO77G1_wYJQC3o70RMGnRyP_89wZ4jQ93uNwIP82kKRz6AakfxfKA=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/79BzLZRsxbQ-P3jvmdDEafrr95zxDCqMVDbKoE6NxRAD1zwyyi3RQwqICTA-MVT73q5dGwqHwhHTe_nx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/9rwgVnDglPdPFugSu98fhDmxzjXC9KovZ_7BuHkXPIv6jvg9S96flGnhL_e4y8mIpPpZQstfqEV-WitY=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/AuthenticationService.Authenticate" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/EWqW7DEI4kOTRMLjK2-ObFHp-EYBt5apFYZ1LVFAhLtTLjigCRfx5hCCTKbIjIm68VQ00p9twloHJ9w8=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/TgRyMQvJ3_h9RmOnu7AlhIE7NLOOBsRoBounARrs8fQv8HCRPaFtpBneSqJOSZpI6l7He_bAZKN179JBig=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/VhjXg0Tcjnn8uJbysfaWwiclHDKU8OOnZoQIlTWxdBjdn7y4M9Hoq5tS9qb2d1GiTTW3bIwZe_4XzNcN0Q" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/ZMARmveTg1geksYKXZKdh71KW09XrhDLg8N-XrfXCGsDBEHnuKwhmYpHd55Y2-NwuwLX8qsyx26JNyJWtr1jEcxD=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/all_css.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/all_js.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/common.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/common.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/effects.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/fonts.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/ga.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/geocoder.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/iframe_api" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/imos.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/index-6da11f252ec7f2954d8b82138b5a7a14.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/inner-975baddac6a374ad033fdc34a9226a03.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/inner-be64e0c3627044f9b350f294ab5c215c.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/inner.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/jquery-2.x-git.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/jquery.cookie.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/jquery.mobile.custom.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/lightbox.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/lightbox.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/outer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/saved_resource" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/saved_resource(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/spimeengine.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/spimeview.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/stats.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/stripe_data_css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/stripe_dynamic_css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/stripe_dynamic_css(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/stripe_dynamic_css(10)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/stripe_dynamic_css(11)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/stripe_dynamic_css(2)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/stripe_dynamic_css(3)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/stripe_dynamic_css(4)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/stripe_dynamic_css(5)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/stripe_dynamic_css(6)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/stripe_dynamic_css(7)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/stripe_dynamic_css(8)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/stripe_dynamic_css(9)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/sweetalert.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/sweetalert.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/translation_js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/util.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/www-widgetapi.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/home_files/xprs_helper.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/images/icons/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/js/main.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/43-pXHjwrpmVO8Oean-6BD0uzARvcqUQrpdi7Yw2bxaXwEoP21UdN5kW6Ks9pdOxf7ropMUrh0djgYPwYPU=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/6facebook.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/6instagram.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/6twitter.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/6zb8WwTey8418Mlgf5wJomMN_7JjY8T8ULq74HO77G1_wYJQC3o70RMGnRyP_89wZ4jQ93uNwIP82kKRz6AakfxfKA=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/9rwgVnDglPdPFugSu98fhDmxzjXC9KovZ_7BuHkXPIv6jvg9S96flGnhL_e4y8mIpPpZQstfqEV-WitY=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/AuthenticationService.Authenticate" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/EWqW7DEI4kOTRMLjK2-ObFHp-EYBt5apFYZ1LVFAhLtTLjigCRfx5hCCTKbIjIm68VQ00p9twloHJ9w8=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/TgRyMQvJ3_h9RmOnu7AlhIE7NLOOBsRoBounARrs8fQv8HCRPaFtpBneSqJOSZpI6l7He_bAZKN179JBig=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/ZMARmveTg1geksYKXZKdh71KW09XrhDLg8N-XrfXCGsDBEHnuKwhmYpHd55Y2-NwuwLX8qsyx26JNyJWtr1jEcxD=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/all_css.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/all_js.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/common.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/common.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/effects.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/fonts.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/ga.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/geocoder.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/iframe_api" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/imos.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/index-6da11f252ec7f2954d8b82138b5a7a14.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/inner-975baddac6a374ad033fdc34a9226a03.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/inner-be64e0c3627044f9b350f294ab5c215c.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/inner.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/jquery-2.x-git.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/jquery.cookie.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/jquery.mobile.custom.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/lightbox.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/lightbox.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/outer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/saved_resource" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/saved_resource(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/spimeengine.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/spimeview.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/stats.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/stripe_data_css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/stripe_data_css(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/stripe_dynamic_css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/stripe_dynamic_css(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/stripe_dynamic_css(2)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/stripe_dynamic_css(3)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/stripe_dynamic_css(4)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/sweetalert.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/sweetalert.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/translation_js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/util.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/www-widgetapi.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/login_files/xprs_helper.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/logout.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/menu.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/settings.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/43-pXHjwrpmVO8Oean-6BD0uzARvcqUQrpdi7Yw2bxaXwEoP21UdN5kW6Ks9pdOxf7ropMUrh0djgYPwYPU=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/6facebook.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/6instagram.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/6twitter.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/6zb8WwTey8418Mlgf5wJomMN_7JjY8T8ULq74HO77G1_wYJQC3o70RMGnRyP_89wZ4jQ93uNwIP82kKRz6AakfxfKA=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/79BzLZRsxbQ-P3jvmdDEafrr95zxDCqMVDbKoE6NxRAD1zwyyi3RQwqICTA-MVT73q5dGwqHwhHTe_nx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/9rwgVnDglPdPFugSu98fhDmxzjXC9KovZ_7BuHkXPIv6jvg9S96flGnhL_e4y8mIpPpZQstfqEV-WitY=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/AuthenticationService.Authenticate" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/EWqW7DEI4kOTRMLjK2-ObFHp-EYBt5apFYZ1LVFAhLtTLjigCRfx5hCCTKbIjIm68VQ00p9twloHJ9w8=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/TgRyMQvJ3_h9RmOnu7AlhIE7NLOOBsRoBounARrs8fQv8HCRPaFtpBneSqJOSZpI6l7He_bAZKN179JBig=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/ZMARmveTg1geksYKXZKdh71KW09XrhDLg8N-XrfXCGsDBEHnuKwhmYpHd55Y2-NwuwLX8qsyx26JNyJWtr1jEcxD=s50" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/all_css.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/all_js.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/common.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/common.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/effects.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/fonts.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/ga.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/geocoder.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/iframe_api" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/imos.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/index-6da11f252ec7f2954d8b82138b5a7a14.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/inner-975baddac6a374ad033fdc34a9226a03.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/inner-be64e0c3627044f9b350f294ab5c215c.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/inner.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/jquery-2.x-git.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/jquery.cookie.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/jquery.mobile.custom.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/lightbox.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/lightbox.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/outer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/saved_resource" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/saved_resource(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/spimeengine.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/spimeview.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/stats.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/stripe_data_css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/stripe_data_css(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/stripe_dynamic_css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/stripe_dynamic_css(1)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/stripe_dynamic_css(2)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/stripe_dynamic_css(3)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/stripe_dynamic_css(4)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/stripe_dynamic_css(5)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/stripe_dynamic_css(6)" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/sweetalert.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/sweetalert.min.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/translation_js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/util.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/www-widgetapi.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/team_files/xprs_helper.js.Download" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/animate/animate.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/css/bootstrap-grid.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/css/bootstrap-grid.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/css/bootstrap-grid.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/css/bootstrap-reboot.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/css/bootstrap-reboot.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/css/bootstrap-reboot.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/css/bootstrap.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/js/popper.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/js/popper.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/bootstrap/js/tooltip.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/jquery/jquery-3.2.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/perfect-scrollbar/perfect-scrollbar.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/select2/select2.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/select2/select2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/select2/select2.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/vendor/select2/select2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/wake-heroku-up.php" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../account-service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../account-service/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../account-service/frontend/Table_Fixed_Header/Table_Fixed_Header/css/main.css" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../account-service/frontend/Table_Fixed_Header/Table_Fixed_Header/css/util.css" afterPath="" />
@@ -4241,7 +5192,7 @@
     <option name="OUTPUT_DIRECTORY" value="C:\Users\ahmed\Documents\Ahmed\master\software-architecture\assignments\part2\application\unite-testing report" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -4390,8 +5341,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -4429,8 +5382,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -4790,19 +5741,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37328768" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.150913" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30216646" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28141782" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2857143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Google Cloud Storage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33979475" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -5096,17 +6047,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="21">
             <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -5273,7 +6224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5289,7 +6239,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5297,7 +6246,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5305,7 +6253,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5329,7 +6276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5345,7 +6291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5353,7 +6298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5361,7 +6305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5369,33 +6312,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="22" column="85" lean-forward="false" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../transaction-service/src/test/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-273">
-          <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../main-service/src/test/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../transaction-service/src/test/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceControllerTest.java" />
+    <entry file="file://$PROJECT_DIR$/../main-service/src/test/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceControllerTest.java" />
     <entry file="file://$PROJECT_DIR$/../authentication-service/src/main/java/com/abcbankinggroup/Factory/CommonFactoryAbstract.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="22" column="85" lean-forward="false" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5403,7 +6328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5411,7 +6335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="161" column="38" lean-forward="false" selection-start-line="161" selection-start-column="38" selection-end-line="161" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5419,7 +6342,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="255" column="35" lean-forward="false" selection-start-line="255" selection-start-column="35" selection-end-line="255" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -5443,7 +6365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
