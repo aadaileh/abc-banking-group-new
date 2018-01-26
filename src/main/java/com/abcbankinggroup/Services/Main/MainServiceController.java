@@ -229,7 +229,7 @@ public class MainServiceController extends CommonFactoryAbstract {
             @ApiResponse(code = 201, message = "Created"),
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
-    public FundTransferResponse withdraw(@RequestBody FundTransferRequest fundTransferRequest) {
+        public FundTransferResponse withdraw(@RequestBody FundTransferRequest fundTransferRequest) {
 
         //1) get the available balance
         FeignClient feignClientAccountServiceBalance = getFeignClient("/api/account-service/balance/");

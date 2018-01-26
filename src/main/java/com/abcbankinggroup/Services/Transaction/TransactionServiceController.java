@@ -67,7 +67,7 @@ public class TransactionServiceController extends TransactionServiceImplentation
             @ApiResponse(code = 201, message = "Created"),
             @ApiResponse(code = 401, message = "Unauthorized"),
             @ApiResponse(code = 406, message = "Not Acceptable. Validation of data failed.")})
-    public FundTransferResponse verifyFundTransfer(@RequestBody FundTransferRequest fundTransferRequest) {
+    public FundTransferResponse verify(@RequestBody FundTransferRequest fundTransferRequest) {
 
         FundTransferResponse fundTransferResponse = transactionServiceImplentations.verifyFundTransfer(fundTransferRequest);
 
