@@ -131,7 +131,7 @@ public class TransactionServiceImplentations extends CommonFactoryAbstract {
 
         } catch (Exception e) {
             connection.close();
-            LOG.debug(e.getMessage());
+            LOG.error("Error occured when inserting to the table 'transfers'. It says: [" + e.getMessage() + "]");
             return false;
 
         } finally {

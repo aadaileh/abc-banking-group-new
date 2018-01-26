@@ -22,10 +22,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/../main-service/pom.xml" />
-        <option value="$PROJECT_DIR$/../authentication-service/pom.xml" />
-        <option value="$PROJECT_DIR$/../account-service/pom.xml" />
-        <option value="$PROJECT_DIR$/../transaction-service/pom.xml" />
       </list>
     </option>
   </component>

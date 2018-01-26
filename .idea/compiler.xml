@@ -9,10 +9,6 @@
         <module name="abc-banking-group" />
         <module name="abc-banking-group (1)" />
         <module name="abc-banking-group-new" />
-        <module name="Account Service" />
-        <module name="Authentication Service" />
-        <module name="Main Service" />
-        <module name="Transaction Service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

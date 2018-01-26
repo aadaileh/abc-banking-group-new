@@ -16,6 +16,10 @@ This application is developed using the following components:
 7. Swagger 
 8. Consul (disabled for cloud solution)
 
+### Database
+MySql is used for this application. The database dump file (includes all tables) is part of the 
+submitted zip file. It is can be found under the resources folder `database-dump.sql`
+
 ###Authentication
 #### Basic Authentication:
 - Username: apiuser
