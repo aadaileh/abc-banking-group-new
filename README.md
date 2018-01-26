@@ -5,6 +5,41 @@
 This Java application is developed as part of the coursework to implement a basic software for the 
 ABC Banking Group. It is designed to illustrate the Service-Oriented-Architectural Style.
 
+###Important note:
+This application is runnign in the cloud. The free Host company Heroku is used for this purpose. 
+Services can be reached via the link: https://warm-harbor-89034.herokuapp.com/
+
+Here are some example cUrl calls:
+
+- `curl --request POST \
+     --url https://warm-harbor-89034.herokuapp.com/api/main-service/login \
+     --header 'authorization: Basic YXBpdXNlcjpwYXNz' \
+     --header 'content-type: application/json' \
+     --cookie JSESSIONID=5E262F41A56AC6BAC50A89DD10919DC5 \
+     --data '{  
+   	 "username":"aadaileh",
+      "password":"pass"
+   }'`
+
+- `curl --request GET \
+     --url https://warm-harbor-89034.herokuapp.com/api/account-service/account/1 \
+     --header 'authorization: Basic YXBpdXNlcjpwYXNz' \
+     --cookie JSESSIONID=5E262F41A56AC6BAC50A89DD10919DC5`
+
+This server may return the following message:
+`{
+ 	"timestamp": 1517007867178,
+ 	"status": 400,
+ 	"error": "Bad Request",
+ 	"exception": "com.zaxxer.hikari.pool.HikariPool$PoolInitializationException",
+ 	"message": "Failed to initialize pool: User 'b9579c6ae9cba0' has exceeded the 'max_user_connections' resource (current value: 10)",
+ 	"path": "/api/account-service/account/1"
+ }`
+ 
+ Please wait for couple of minutes and try again. The reason for this error is the free-profile i am using. Heroku offers only ONE MySql connection for free accounts :(
+
+### Frontend (Client applications)
+Frontend website is also hosted in a different place and can be reached via http://abc-banking-group-coursework.epizy.com/home.php
 ###Technical Background
 This application is developed using the following components:
 1. Java SDK 1.8
@@ -32,6 +67,9 @@ submitted zip file. It is can be found under the resources folder `database-dump
 #### ATM Credentials:
 - Username: 12345
 - Password: 123
+
+### Swagger Documentation
+After running the application, swagger can be found under `localhost:8080/swagger-ui.html#/`
 
 ### How to?
 #### How to run the application locally?
