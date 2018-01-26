@@ -9,12 +9,7 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/../authentication-service/Authentication Service.iml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../main-service/Main Service.iml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../transaction-service/Transaction Service.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/TransactionServiceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/TransactionServiceController.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Connection/DatabaseConnectionSingleton.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Connection/DatabaseConnectionSingleton.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Transaction/TransactionServiceController.class" afterPath="$PROJECT_DIR$/target/classes/com/abcbankinggroup/Services/Transaction/TransactionServiceController.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
       <change beforePath="$PROJECT_DIR$/../account-service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../account-service/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../account-service/frontend/Table_Fixed_Header/Table_Fixed_Header/css/main.css" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../account-service/frontend/Table_Fixed_Header/Table_Fixed_Header/css/util.css" afterPath="" />
@@ -4293,8 +4288,8 @@
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            <state relative-caret-position="147">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -4372,7 +4367,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/banner.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Authentication/AuthenticationServiceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Account/AccountServiceController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../transaction-service/pom.xml" />
         <option value="$PROJECT_DIR$/../main-service/pom.xml" />
@@ -4413,6 +4407,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Main/MainServiceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/abcbankinggroup/Services/Transaction/TransactionServiceController.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -5557,8 +5552,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state relative-caret-position="147">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
