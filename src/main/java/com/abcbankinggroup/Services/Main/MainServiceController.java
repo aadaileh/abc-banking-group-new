@@ -38,7 +38,7 @@ import java.util.ArrayList;
 @EnableDiscoveryClient
 @CrossOrigin(origins = "*", maxAge = 3600)
 @EnableSwagger2
-public class MainServiceController extends CommonFactoryAbstract {
+public class MainServiceController extends CommonFactoryAbstract implements MainServiceInterface {
 
     private static final Logger LOG = LoggerFactory.getLogger(MainServiceController.class);
 

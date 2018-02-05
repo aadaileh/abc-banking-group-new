@@ -1,0 +1,4 @@
+com\abcbankinggroup\Services\Authentication\AuthenticationServiceControllerTest.class
+com\abcbankinggroup\Clients\FeignClientTest.class
+com\abcbankinggroup\DTOs\AccountTest.class
+com\abcbankinggroup\Services\Authentication\impl\AuthenticationServiceImplentationsTest.class
